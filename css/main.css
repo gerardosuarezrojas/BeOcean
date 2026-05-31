@@ -816,20 +816,18 @@ header .logo {
 	z-index: 992;
 }
 header .logo a {
-	display: block;
-	margin: 0 20px 0 0;
-	padding: 0;
-	border: none;
-	outline: none;
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-	width: 126px;
-	height: 12px;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-image: url("../images/logo.png");
+   display: block;
+   margin: 0;
+   padding: 0;
+   border: none;
+   outline: none;
 }
+header .logo a img {
+   height: 60px;
+   width: auto;
+   display: block;
+}
+
 @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi) {
 	header .logo a {
 		background-image: url("../images/logo-@2x.png");
