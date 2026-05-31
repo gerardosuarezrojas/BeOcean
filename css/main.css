@@ -1759,8 +1759,8 @@ hr {
 #contact input:focus, 
 #contact textarea:focus, 
 #contact select:focus {
-	color: white;
-	border-color: white;
+	color: #1a1a2e;
+	border-color: #004AAD;
 	background: #ffffff;
 }
 #contact button.submit {
