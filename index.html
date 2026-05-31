@@ -22,77 +22,59 @@
    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300&display=swap" rel="stylesheet">
 
    <!-- BeOcean brand overrides -->
-   <style>
-     body, h1, h2, h3, h4, h5, h6, p, a, li, input, textarea, button, label {
-       font-family: 'Josefin Sans', sans-serif !important;
-     }
-     /* Nav brand color */
-     #main-header { background: #ffffff; }
-     #main-header .logo a { color: #ffffff; font-weight: 700; letter-spacing: 0.06em; }
-     #nav li a { color: #1a1a2e !important; }
-     #nav li a:hover { color: #004AAD !important; background: transparent !important; }
-     #nav li.current a { background: #004AAD !important; color: #ffffff !important; }
-     /* Hero accent */
-     #hero { 
-        background: url('images/hero.jpg') no-repeat center center fixed;
-        background-size: cover;
-      }
-     .flex-caption h1 { font-weight: 700; letter-spacing: -0.01em; }
-     .button.stroke { border-color: #B8D4F0; color: #B8D4F0; }
-     .button.stroke:hover { background: #B8D4F0; color: #0A2F5C; }
-     /* Section headings */
-     .section-head h1 { color: #0A2F5C; }
-     .section-head h1 span { color: #1B6FC8; }
-     /* Service icons */
-     .icon-part [class^="icon-"], .icon-part i { color: #1B6FC8; }
-     /* Portfolio overlay */
-     .item-wrap .overlay { background: rgba(10,47,92,0.85); }
-     /* About section */
-     .about-content h3 { color: #0A2F5C; }
-     /* Team */
-     #team { background: #F5F7FA; }
-     /* Contact button */
-     .submit { background: #1B6FC8 !important; border-color: #1B6FC8 !important; }
-     .submit:hover { background: #0A2F5C !important; border-color: #0A2F5C !important; }
-     /* Footer */
-     footer { background: #1A1A2E; }
-     footer h3 { color: #B8D4F0; }
-     footer p, footer li a { color: rgba(255,255,255,0.5); }
-     footer li a:hover { color: #ffffff; }
-     footer .copyright { color: rgba(255,255,255,0.25); }
-     footer .copyright a { color: rgba(255,255,255,0.4); }
-     /* HR accent */
-     hr { border-color: #1B6FC8; }
-     /* Go top button */
-     #go-top a { background: #1B6FC8; }
-     #go-top a:hover { background: #0A2F5C; }
+<!-- BeOcean brand overrides -->
+<style>
+  body, h1, h2, h3, h4, h5, h6, p, a, li, input, textarea, button, label {
+    font-family: 'Josefin Sans', sans-serif !important;
+  }
+  /* Nav brand color */
+  #main-header { background: #ffffff; }
+  #main-header .logo a { color: #ffffff; font-weight: 700; letter-spacing: 0.06em; }
+  ul#nav li a { color: #1a1a2e !important; }
+  ul#nav li a:hover { color: #ffffff !important; background: #004AAD !important; }
+  ul#nav li.current a { background: #004AAD !important; color: #ffffff !important; }
+  /* Hero */
+  #hero { background: url('images/hero.jpg') no-repeat center center fixed; background-size: cover; }
+  .flex-caption h1 { font-weight: 700; letter-spacing: -0.01em; }
+  .button.stroke { border-color: #B8D4F0; color: #B8D4F0; }
+  .button.stroke:hover { background: #B8D4F0; color: #0A2F5C; }
+  /* Section headings */
+  .section-head h1 { color: #0A2F5C; }
+  .section-head h1 span { color: #1B6FC8; }
+  /* Service icons */
+  .icon-part [class^="icon-"], .icon-part i { color: #1B6FC8; }
+  /* Portfolio overlay */
+  .item-wrap .overlay { background: rgba(10,47,92,0.85); }
+  /* About section */
+  .about-content h3 { color: #0A2F5C; }
+  /* Contact */
+  #contact { background: #ffffff; }
+  #contact h1 { color: #004AAD; }
+  #contact input, #contact textarea, #contact select { background: transparent; }
+  #contact button.submit { color: #ffffff; }
+  .submit { background: #1B6FC8 !important; border-color: #1B6FC8 !important; }
+  .submit:hover { background: #0A2F5C !important; border-color: #0A2F5C !important; }
+  /* Footer */
+  footer { background: #1A1A2E; }
+  footer h3 { color: #B8D4F0; }
+  footer p, footer li a { color: rgba(255,255,255,0.5); }
+  footer li a:hover { color: #ffffff; }
+  footer .copyright { color: rgba(255,255,255,0.25); }
+  footer .copyright a { color: rgba(255,255,255,0.4); }
+  /* HR accent */
+  hr { border-color: #1B6FC8; }
+  /* Go top button */
+  #go-top a { background: #1B6FC8; }
+  #go-top a:hover { background: #0A2F5C; }
+  /* Mobile logo */
+  @media only screen and (max-width: 768px) {
+    header .logo { display: inline-block !important; vertical-align: middle; }
+    header .logo a { background-image: none !important; width: auto !important; height: auto !important; font: normal !important; color: white !important; }
+    header .logo a img { height: 75px !important; width: auto; display: block; margin-top: -20px; }
+  }
+</style>
 
-      @media only screen and (max-width: 768px) {
-  header .logo {
-    display: inline-block !important;
-    vertical-align: middle;
-  }
-  header .logo a {
-    background-image: none !important;
-    width: auto !important;
-    height: auto !important;
-    font: normal !important;
-    color: white !important;
-  }
-  header .logo a img {
-    height: 55px !important;
-    width: auto;
-    display: block;
-    margin-top: -20px;
-
-    @media only screen and (max-width: 768px) {
-  header .logo a img {
-    height: 75px !important;
-  }
-}
-}
-}
-   </style>
+   
 
    <script src="js/modernizr.js"></script>
    <link rel="shortcut icon" href="favicon.png">
