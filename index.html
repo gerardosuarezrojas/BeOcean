@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="es"> <!--<![endif]-->
+<head>
+
+   <meta charset="utf-8">
+   <title>BeOcean — Agencia Boutique de Marketing Digital</title>
+   <meta name="description" content="BeOcean — agencia boutique de sitios web, contenido y pauta digital, con acompañamiento real de principio a fin.">
+   <meta name="author" content="BeOcean">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+
+   <!-- Josefin Sans -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300&display=swap" rel="stylesheet">
+
+   <!-- BeOcean brand overrides -->
+   <style>
+     body, h1, h2, h3, h4, h5, h6, p, a, li, input, textarea, button, label {
+       font-family: 'Josefin Sans', sans-serif !important;
+     }
+     /* Nav brand color */
+     #main-header { background: #0A2F5C; }
+     #main-header .logo a { color: #ffffff; font-weight: 700; letter-spacing: 0.06em; }
+     #nav li a { color: rgba(255,255,255,0.75); }
+     #nav li a:hover, #nav li.current a { color: #B8D4F0; }
+     /* Hero accent */
+     #hero { background: #0A2F5C; }
+     .flex-caption h1 { font-weight: 700; letter-spacing: -0.01em; }
+     .button.stroke { border-color: #B8D4F0; color: #B8D4F0; }
+     .button.stroke:hover { background: #B8D4F0; color: #0A2F5C; }
+     /* Section headings */
+     .section-head h1 { color: #0A2F5C; }
+     .section-head h1 span { color: #1B6FC8; }
+     /* Service icons */
+     .icon-part [class^="icon-"], .icon-part i { color: #1B6FC8; }
+     /* Portfolio overlay */
+     .item-wrap .overlay { background: rgba(10,47,92,0.85); }
+     /* About section */
+     .about-content h3 { color: #0A2F5C; }
+     /* Team */
+     #team { background: #F5F7FA; }
+     /* Contact button */
+     .submit { background: #1B6FC8 !important; border-color: #1B6FC8 !important; }
+     .submit:hover { background: #0A2F5C !important; border-color: #0A2F5C !important; }
+     /* Footer */
+     footer { background: #1A1A2E; }
+     footer h3 { color: #B8D4F0; }
+     footer p, footer li a { color: rgba(255,255,255,0.5); }
+     footer li a:hover { color: #ffffff; }
+     footer .copyright { color: rgba(255,255,255,0.25); }
+     footer .copyright a { color: rgba(255,255,255,0.4); }
+     /* HR accent */
+     hr { border-color: #1B6FC8; }
+     /* Go top button */
+     #go-top a { background: #1B6FC8; }
+     #go-top a:hover { background: #0A2F5C; }
+   </style>
+
+   <script src="js/modernizr.js"></script>
+   <link rel="shortcut icon" href="favicon.png">
+
+</head>
+
+<body class="homepage">
+
+   <div id="preloader">
+      <div id="status">
+         <img src="images/loader.gif" height="60" width="60" alt="">
+         <div class="loader">Cargando...</div>
+      </div>
+   </div>
+
+   <!-- Header -->
+   <header id="main-header">
+      <div class="row header-inner">
+
+         <div class="logo">
+            <a class="smoothscroll" href="#hero">BeOcean.</a>
+         </div>
+
+         <nav id="nav-wrap">
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+               <span class='menu-text'>Menú</span>
+               <span class="menu-icon"></span>
+            </a>
+            <a class="mobile-btn" href="#" title="Hide navigation">
+               <span class='menu-text'>Cerrar</span>
+               <span class="menu-icon"></span>
+            </a>
+
+            <ul id="nav" class="nav">
+               <li class="current"><a class="smoothscroll" href="#hero">Inicio.</a></li>
+               <li><a class="smoothscroll" href="#portfolio">Portafolio.</a></li>
+               <li><a class="smoothscroll" href="#services">Servicios.</a></li>
+               <li><a class="smoothscroll" href="#about">Nosotros.</a></li>
+               <li><a class="smoothscroll" href="#journal">Blog.</a></li>
+               <li><a class="smoothscroll" href="#contact">Contacto.</a></li>
+            </ul>
+         </nav>
+
+      </div>
+   </header>
+
+
+   <!-- Hero -->
+   <section id="hero">
+      <div class="row hero-content">
+         <div class="twelve columns flex-container">
+            <div id="hero-slider" class="flexslider">
+               <ul class="slides">
+
+                  <li>
+                     <div class="flex-caption">
+                        <h1>En BeOcean cada marca es única. Creamos con el alma, ejecutamos con precisión.</h1>
+                        <p><a class="button stroke smoothscroll" href="#about">Conócenos</a></p>
+                     </div>
+                  </li>
+
+                  <li>
+                     <div class="flex-caption">
+                        <h1>Más que una agencia, tu equipo digital. Acompañamos cada decisión, cada campaña, cada resultado.</h1>
+                        <p><a class="button stroke smoothscroll" href="#portfolio">Ver portafolio</a></p>
+                     </div>
+                  </li>
+
+                  <li>
+                     <div class="flex-caption">
+                        <h1>Mira algunos de <a class="smoothscroll" href="#portfolio">nuestros proyectos</a> o <a class="smoothscroll" href="#contact">escríbenos</a> para platicar cómo podemos ayudarte.</h1>
+                        <p><a class="button stroke smoothscroll" href="#contact">Hablemos</a></p>
+                     </div>
+                  </li>
+
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- Portfolio -->
+   <section id="portfolio">
+
+      <div class="row section-head">
+         <div class="twelve columns">
+            <h1>Proyectos Recientes<span>.</span></h1>
+            <hr />
+            <p>Cada proyecto es diferente. Cada solución también. Aquí algunos de los trabajos que más nos enorgullecen — resultados reales para marcas reales.
+            </p>
+         </div>
+      </div>
+
+      <div class="row items">
+         <div class="twelve columns">
+            <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="portafolio.html">
+                        <img src="images/portfolio/grizzly.jpg" alt="TMF — Sitio web">
+                        <div class="overlay"></div>
+                        <div class="portfolio-item-meta">
+                           <h5>TMF</h5>
+                           <p>Sitio web + Google Ads</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="portafolio.html">
+                        <img src="images/portfolio/hotel.jpg" alt="Becara Chairs">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Becara Chairs</h5>
+                              <p>Ecommerce + Meta Ads</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid stack item">
+                  <div class="item-wrap">
+                     <a href="portafolio.html">
+                        <img src="images/portfolio/beetle.jpg" alt="Blanco Castelar">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Blanco Castelar</h5>
+                              <p>Estrategia digital</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="portafolio.html">
+                        <img src="images/portfolio/banjo-player.jpg" alt="Proyecto BeOcean">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5><!-- Nombre cliente --></h5>
+                              <p><!-- Categoría --></p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="portafolio.html">
+                        <img src="images/portfolio/coffee.jpg" alt="Proyecto BeOcean">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5><!-- Nombre cliente --></h5>
+                              <p><!-- Categoría --></p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="portafolio.html">
+                        <img src="images/portfolio/farmerboy.jpg" alt="Proyecto BeOcean">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5><!-- Nombre cliente --></h5>
+                              <p><!-- Categoría --></p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="portafolio.html">
+                        <img src="images/portfolio/judah.jpg" alt="Proyecto BeOcean">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5><!-- Nombre cliente --></h5>
+                              <p><!-- Categoría --></p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="portafolio.html">
+                        <img src="images/portfolio/embossed-paper.jpg" alt="Proyecto BeOcean">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5><!-- Nombre cliente --></h5>
+                              <p><!-- Categoría --></p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+
+   <!-- Services -->
+   <section id="services">
+
+      <div class="row section-head">
+         <div class="twelve columns">
+            <h1>Nuestros Servicios<span>.</span></h1>
+            <hr />
+            <p>Tres pilares que construyen la presencia digital de tu negocio. Los ofrecemos por separado o como una solución completa — siempre con acompañamiento real de principio a fin.
+            </p>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="twelve columns">
+            <div class="service-list bgrid-third s-bgrid-half mob-bgrid-whole">
+
+               <div class="bgrid">
+                  <div class="icon-part">
+                     <span class="icon-graph"></span>
+                  </div>
+                  <h3>Pauta Digital.</h3>
+                  <div class="service-content">
+                     <p>Campañas en Meta y Google que generan leads y ventas reales, no solo clics. Segmentación a medida, optimización continua y reportes claros sin tecnicismos.</p>
+                  </div>
+               </div>
+
+               <div class="bgrid">
+                  <div class="icon-part">
+                     <i class="icon-film"></i>
+                  </div>
+                  <h3>Contenido.</h3>
+                  <div class="service-content">
+                     <p>Parrillas y estrategia de contenido con propósito. Para que cada publicación construya tu marca, eduque a tu audiencia y genere confianza en tu negocio.</p>
+                  </div>
+               </div>
+
+               <div class="bgrid">
+                  <div class="icon-part">
+                     <i class="icon-camera"></i>
+                  </div>
+                  <h3>Sitios Web.</h3>
+                  <div class="service-content">
+                     <p>Diseñamos y desarrollamos tu presencia digital desde cero — moderna, rápida y adaptada a la identidad de tu marca. Informativos, corporativos o ecommerce.</p>
+                  </div>
+               </div>
+
+               <div class="bgrid first">
+                  <div class="icon-part">
+                     <i class="icon-eye"></i>
+                  </div>
+                  <h3>Estrategia.</h3>
+                  <div class="service-content">
+                     <p>Diagnóstico digital, roadmap y ejecución alineada a tu negocio. Antes de invertir en pauta o contenido, definimos juntos el camino correcto.</p>
+                  </div>
+               </div>
+
+               <div class="bgrid">
+                  <div class="icon-part">
+                     <i class="icon-screen-desktop"></i>
+                  </div>
+                  <h3>Ecommerce.</h3>
+                  <div class="service-content">
+                     <p>Lanzamos tu tienda en línea con todo lo necesario: diseño, integración de pagos, catálogo de productos y campañas de adquisición desde el primer día.</p>
+                  </div>
+               </div>
+
+               <div class="bgrid">
+                  <div class="icon-part">
+                     <i class="icon-eyeglasses"></i>
+                  </div>
+                  <h3>Acompañamiento.</h3>
+                  <div class="service-content">
+                     <p>No desaparecemos después de entregar. Estamos presentes en cada etapa — respondemos rápido, resolvemos problemas y seguimos contigo hasta lograr el objetivo.</p>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+
+   <!-- About -->
+   <section id="about">
+
+      <div class="row section-head">
+         <div class="twelve columns">
+            <h1>¿Quiénes Somos<span>?</span></h1>
+            <hr />
+            <p>BeOcean es una agencia boutique de marketing digital. Trabajamos con pocas marcas a la vez porque creemos que la atención profunda genera mejores resultados que la producción masiva.
+            </p>
+         </div>
+      </div>
+
+      <div class="row about-content">
+
+         <div class="mob-whole six columns left">
+            <h3>Nuestra Filosofía.</h3>
+            <p>No somos para todos — somos para los que quieren resultados reales. En BeOcean diseñamos estrategias personalizadas y las ejecutamos con precisión. Cada marca que acompañamos recibe atención directa, comunicación transparente y un equipo que no para hasta lograr el objetivo.
+            </p>
+         </div>
+
+         <div class="mob-whole six columns right">
+            <h3>Nuestro Enfoque.</h3>
+            <p>Antes de cualquier campaña o sitio web, entendemos tu negocio. Hacemos las preguntas correctas, identificamos las oportunidades reales y construimos soluciones que tienen sentido para tu mercado, tu presupuesto y tus metas.
+            </p>
+         </div>
+
+      </div>
+
+      <div class="row about-content">
+
+         <div class="mob-whole six columns left">
+            <h3>Nuestro Proceso.</h3>
+            <p>Diagnóstico → Estrategia → Ejecución → Optimización. Un ciclo continuo donde cada decisión se basa en datos reales y en un entendimiento profundo de tu negocio y tu cliente ideal.
+            </p>
+         </div>
+
+         <div class="mob-whole six columns right">
+            <h3>Nuestra Promesa.</h3>
+            <p>Respuesta rápida, acompañamiento real y resultados medibles. No desaparecemos después de entregar. Estamos contigo en cada etapa porque tu éxito es nuestra mejor carta de presentación.
+            </p>
+         </div>
+
+      </div>
+
+
+      <!-- Team -->
+      <div id='team'>
+
+         <div class="row team section-head">
+            <div class="twelve columns">
+               <h1>El Equipo<span>.</span></h1>
+               <hr />
+               <p>Profesionales especializados en marketing digital, diseño web y estrategia de contenido. Poca gente, mucha dedicación.
+               </p>
+            </div>
+         </div>
+
+         <div class="row about-content">
+            <div class="twelve columns">
+               <div id="team-wrapper" class="bgrid-half mob-bgrid-whole group">
+
+                  <div class="bgrid member">
+                     <div class="member-header">
+                        <div class="member-pic">
+                           <img src="images/team/member01-k.jpg" alt="Director BeOcean"/>
+                        </div>
+                        <div class="member-name">
+                           <h3><!-- Tu nombre --></h3>
+                           <span>Director &amp; Estratega Digital</span>
+                        </div>
+                     </div>
+                     <p>Especialista en marketing digital con más de 65 proyectos completados en México y Estados Unidos. Apasionado por los resultados reales y el acompañamiento cercano a cada cliente.</p>
+                     <ul class="member-social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>
+                  </div>
+
+                  <div class="bgrid member">
+                     <div class="member-header">
+                        <div class="member-pic">
+                           <img src="images/team/member02-k.jpg" alt="Diseñador BeOcean"/>
+                        </div>
+                        <div class="member-name">
+                           <h3><!-- Nombre colaborador --></h3>
+                           <span><!-- Rol --></span>
+                        </div>
+                     </div>
+                     <p><!-- Descripción pendiente --></p>
+                     <ul class="member-social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>
+                  </div>
+
+                  <div class="bgrid member first">
+                     <div class="member-header">
+                        <div class="member-pic">
+                           <img src="images/team/member03-k.jpg" alt="Colaborador BeOcean"/>
+                        </div>
+                        <div class="member-name">
+                           <h3><!-- Nombre colaborador --></h3>
+                           <span><!-- Rol --></span>
+                        </div>
+                     </div>
+                     <p><!-- Descripción pendiente --></p>
+                     <ul class="member-social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>
+                  </div>
+
+                  <div class="bgrid member">
+                     <div class="member-header">
+                        <div class="member-pic">
+                           <img src="images/team/member04-k.jpg" alt="Colaborador BeOcean"/>
+                        </div>
+                        <div class="member-name">
+                           <h3><!-- Nombre colaborador --></h3>
+                           <span><!-- Rol --></span>
+                        </div>
+                     </div>
+                     <p><!-- Descripción pendiente --></p>
+                     <ul class="member-social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+
+   <!-- Journal / Blog -->
+   <section id="journal">
+
+      <div class="row section-head">
+         <div class="twelve columns">
+            <h1>Nuestro Blog<span>.</span></h1>
+            <hr />
+            <p>Tips, estrategias y casos de estudio sobre marketing digital, diseño web y pauta publicitaria. Contenido práctico para negocios que quieren crecer en digital.
+            </p>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="twelve columns">
+            <div id="blog-wrapper" class="bgrid-third s-bgrid-half mob-bgrid-whole group">
+
+               <article class="bgrid">
+                  <h5>Próximamente</h5>
+                  <h3><a href="single.html">Cómo pasamos de 4 a 30 leads semanales con Google Ads</a></h3>
+                  <p>El caso de TMF — cómo una estrategia bien ejecutada de Google Ads transformó la generación de leads de una empresa industrial en México.</p>
+               </article>
+
+               <article class="bgrid">
+                  <h5>Próximamente</h5>
+                  <h3><a href="single.html">Lanzar un ecommerce en EE.UU. desde cero: lo que aprendimos</a></h3>
+                  <p>El caso de Becara Chairs — cómo lanzamos una tienda en línea en Miami y generamos ventas desde el primer mes.</p>
+               </article>
+
+               <article class="bgrid">
+                  <h5>Próximamente</h5>
+                  <h3><a href="single.html">¿Por qué tu agencia de marketing desaparece después de vender?</a></h3>
+                  <p>El problema más común en la industria del marketing digital y por qué el acompañamiento real hace toda la diferencia.</p>
+               </article>
+
+               <article class="bgrid first">
+                  <h5>Próximamente</h5>
+                  <h3><a href="single.html">Meta Ads vs Google Ads: ¿cuál es mejor para tu negocio?</a></h3>
+                  <p>Una guía práctica para entender cuándo usar cada plataforma y cómo combinarlas para maximizar resultados.</p>
+               </article>
+
+               <article class="bgrid">
+                  <h5>Próximamente</h5>
+                  <h3><a href="single.html">Parrilla de contenido: cómo publicar con propósito y no por publicar</a></h3>
+                  <p>Cómo estructurar una estrategia de contenido que construya marca, eduque a tu audiencia y genere confianza.</p>
+               </article>
+
+               <article class="bgrid">
+                  <h5>Próximamente</h5>
+                  <h3><a href="single.html">Sitio web que convierte: los 5 elementos que no pueden faltar</a></h3>
+                  <p>Los componentes esenciales que diferencian un sitio web que genera leads de uno que solo ocupa espacio en internet.</p>
+               </article>
+
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+
+   <!-- Contact -->
+   <section id="contact">
+
+      <div class="row section-head">
+         <div class="twelve columns">
+            <h1>Hablemos<span>.</span></h1>
+            <hr />
+            <p>Sin presión ni compromisos. Cuéntanos de tu negocio y en menos de 24 horas te respondemos con ideas concretas — no con una propuesta genérica.
+            </p>
+         </div>
+      </div>
+
+      <div class="row form-section">
+         <div id="contact-form" class="twelve columns">
+
+            <form name="contactForm" id="contactForm" method="post" action="">
+               <fieldset>
+
+                  <div class="row">
+                     <div class="six columns mob-whole">
+                        <label for="contactFname">Nombre <span class="required">*</span></label>
+                        <input name="contactFname" type="text" id="contactFname" placeholder="Tu nombre" value="" />
+                     </div>
+                     <div class="six columns mob-whole">
+                        <label for="contactLname">Empresa</label>
+                        <input name="contactLname" type="text" id="contactLname" placeholder="Nombre de tu negocio" value="" />
+                     </div>
+                  </div>
+
+                  <div class="row">
+                     <div class="six columns mob-whole">
+                        <label for="contactEmail">Correo electrónico <span class="required">*</span></label>
+                        <input name="contactEmail" type="text" id="contactEmail" placeholder="tu@correo.com" value="" />
+                     </div>
+                     <div class="six columns mob-whole">
+                        <label for="contactSubject">¿En qué te podemos ayudar?</label>
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Sitio web, pauta, contenido..." value="" />
+                     </div>
+                  </div>
+
+                  <div class="row">
+                     <div class="twelve columns">
+                        <label for="contactMessage">Cuéntanos más <span class="required">*</span></label>
+                        <textarea name="contactMessage" id="contactMessage" placeholder="¿Qué quieres lograr? ¿Qué problema quieres resolver?" rows="10" cols="50"></textarea>
+                     </div>
+                  </div>
+
+                  <div>
+                     <button class="submit full-width">Enviar mensaje</button>
+                     <div id="image-loader">
+                        <img src="images/loader.gif" alt="" />
+                     </div>
+                  </div>
+
+               </fieldset>
+            </form>
+
+            <div id="message-warning"></div>
+            <div id="message-success">
+               <i class="fa fa-check"></i>¡Tu mensaje fue enviado! Te contactamos pronto.<br />
+            </div>
+
+         </div>
+      </div>
+
+   </section>
+
+
+   <!-- Footer -->
+   <footer>
+
+      <div class="row">
+
+         <div class="six columns tab-whole footer-about">
+            <h3>Sobre BeOcean</h3>
+            <p>Agencia boutique de sitios web, contenido y pauta digital. Trabajamos con pocas marcas a la vez porque creemos en la atención profunda y los resultados reales.</p>
+            <p>No somos para todos — somos para los que quieren crecer en digital con un equipo que no los abandona.</p>
+         </div>
+
+         <div class="six columns tab-whole right-cols">
+            <div class="row">
+
+               <div class="columns">
+                  <h3 class="address">Contacto</h3>
+                  <p>México &amp; Estados Unidos</p>
+                  <ul>
+                     <li><a href="mailto:hola@beocean.online">hola@beocean.online</a></li>
+                     <li><a href="https://wa.me/521XXXXXXXXXX">WhatsApp</a></li>
+                  </ul>
+               </div>
+
+               <div class="columns last">
+                  <h3 class="contact">Síguenos</h3>
+                  <ul>
+                     <li><a href="#">Facebook</a></li>
+                     <li><a href="#">Instagram</a></li>
+                     <li><a href="#">LinkedIn</a></li>
+                  </ul>
+               </div>
+
+            </div>
+         </div>
+
+         <p class="copyright">&copy; 2026 BeOcean. Todos los derechos reservados. Diseño base por <a href="http://www.styleshout.com/">Styleshout.</a></p>
+
+         <div id="go-top">
+            <a class="smoothscroll" title="Volver arriba" href="#hero"><span>Top</span><i class="fa fa-long-arrow-up"></i></a>
+         </div>
+
+      </div>
+
+   </footer>
+
+
+   <!-- Scripts -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/backstretch.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+</html>
