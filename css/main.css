@@ -1725,7 +1725,7 @@ hr {
 	max-width: 784px;
 }
 #contact h1 {
-	color: white;
+	color: #004AAD;
 }
 
 /* contact form */
@@ -1749,7 +1749,7 @@ hr {
 	margin-bottom: 42px;
 	font-size: 15px;
 	width: 100%;
-	background: #004AAD;
+	background: transparent;
 	border: 3px solid #575859;
 }
 #contact textarea {
