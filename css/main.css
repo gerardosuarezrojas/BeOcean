@@ -1772,7 +1772,7 @@ hr {
 	display: block;
 	border: 3px solid #004AAD;
 	color: #ffffff;
-	background: transparent;
+	background: #004AAD;
 }
 #contact button.submit:hover {
 	color: white;
