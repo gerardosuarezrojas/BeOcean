@@ -1042,8 +1042,11 @@ footer {
 	font-size: 13px;
 	line-height: 24px;
 	position: relative;
-	color: #3C4142;	
+	color: #ffffff;
+	background: #1A1A2E;
 }
+
+
 footer a, footer a:visited {
 	color: #0A2F5C;
 }
