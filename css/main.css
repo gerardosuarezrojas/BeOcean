@@ -1082,7 +1082,8 @@ footer ul li {
 	line-height: 24px;
 }
 footer ul li a, footer ul li a:visited {
-	color: #3C4142;
+	color: rgba(255,255,255,0.5);
+}
 }
 footer .copyright {
 	margin: 0;
