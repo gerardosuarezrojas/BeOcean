@@ -1751,6 +1751,7 @@ hr {
 	width: 100%;
 	background: transparent;
 	border: 3px solid #575859;
+	color: #1a1a2e;
 }
 #contact textarea {
 	height: 252px;
@@ -1760,6 +1761,7 @@ hr {
 #contact select:focus {
 	color: white;
 	border-color: white;
+	background: #ffffff;
 }
 #contact button.submit {
 	text-transform: uppercase;
