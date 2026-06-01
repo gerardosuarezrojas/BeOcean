@@ -860,6 +860,17 @@ header .logo a {
 	display: inline-block;
 }
 
+@media only screen and (max-width:768px) {
+	#nav-wrap {
+		right: 15px !important;
+	}
+	#nav-wrap > a {
+		width: 60px !important;
+		justify-content: center !important;
+		padding: 0 !important;
+	}
+}
+
 /* hide toggle button */
 #nav-wrap > a {
 	display: none;
