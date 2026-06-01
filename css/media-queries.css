@@ -66,7 +66,7 @@
 		text-shadow: none;
 	}
 	header .logo a img {
-		height: 55px !important;
+		height: 70px !important;
 		width: auto !important;
 		display: block !important;
 		margin: 0 !important;
@@ -104,7 +104,7 @@
 	#nav-wrap .menu-icon {
 		display: block;
 		background: #004AAD;
-		width: 26px;
+		width: 32px;
 		height: 3px;
 		position: relative;
 		margin: 0;
@@ -123,10 +123,10 @@
 		left: 0;
 	}
 	#nav-wrap .menu-icon:before {
-		bottom: 8px;
+		bottom: 10px;
 	}
 	#nav-wrap .menu-icon:after {
-		top: 8px;
+		top: 10px;
 	}
 	#nav-wrap ul#nav {
 		background: #1a1a2e;
