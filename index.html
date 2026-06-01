@@ -743,6 +743,22 @@
    <script src="js/backstretch.js"></script>
    <script src="js/waypoints.js"></script>
    <script src="js/main.js"></script>
-
+<script>
+window.addEventListener('load', function() {
+  var navWrap = document.getElementById('nav-wrap');
+  if (navWrap && window.innerWidth <= 768) {
+    navWrap.style.right = '15px';
+  }
+  var toggleBtn = document.getElementById('toggle-btn');
+  if (toggleBtn && window.innerWidth <= 768) {
+    toggleBtn.style.width = '60px';
+    toggleBtn.style.display = 'flex';
+    toggleBtn.style.alignItems = 'center';
+    toggleBtn.style.justifyContent = 'center';
+    toggleBtn.style.padding = '0';
+  }
+});
+</script>
+      
 </body>
 </html>
