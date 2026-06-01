@@ -788,7 +788,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /* g. Header Styles
 /* =================================================================== */
 header {
-	height: 72px;
+	height: 90px;
 	width: 100%;
 	position: fixed;
 	left: 0;
@@ -821,11 +821,11 @@ header .logo a {
    padding: 0;
    border: none;
    outline: none;
-   font: 0/0 a;
+   font: normal 16px/1 sans-serif;
    text-shadow: none;
    color: transparent;
-   width: 126px;
-   height: 12px;
+   width: auto;
+   height: auto;
    background-repeat: no-repeat;
    background-position: 0 0;
    background-image: url("../images/logo.png");
