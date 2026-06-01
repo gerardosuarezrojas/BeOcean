@@ -84,19 +84,19 @@
 		right: 0;
 	}
 	#nav-wrap > a {
-		background: #ffffff;
-		border: none;
-		color: white;
-		height: 90px;
-		min-width: 72px;
-		font-size: 12px;
-		text-align: center;
-		float: right;
-		padding: 0;
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	background: #ffffff;
+	border: none;
+	color: white;
+	height: 90px;
+	min-width: 72px;
+	font-size: 12px;
+	float: right;
+	padding: 0;
+	padding-right: 12px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 	}
 	#nav-wrap .menu-text {
 		display: none;
