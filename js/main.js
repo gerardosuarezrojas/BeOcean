@@ -162,7 +162,7 @@
 	      animation: 'fade',
 	      controlNav: true,
 	      directionNav: false,
-	      smoothHeight: true,
+	      smoothHeight: false,
 	      slideshowSpeed: 7000,
 	      animationSpeed: 600,
 	      randomize: false
