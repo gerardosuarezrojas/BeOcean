@@ -189,30 +189,35 @@
                  '&contactEmail=' + contactEmail + '&contactSubject=' + contactSubject + 
                  '&contactMessage=' + contactMessage;
 
-      $.ajax({
+$.ajax({
 
-	      type: "POST",
-	      url: "inc/sendEmail.php",
-	      data: data,
-	      success: function(msg) {
+      type: "POST",
+      url: "https://api.web3forms.com/submit",
+      data: $('#contactForm').serialize(),
+      dataType: "json",
+      success: function(response) {
 
-            // Message was sent
-            if (msg == 'OK') {
-               $('#image-loader').fadeOut();
-               $('#message-warning').hide();
-               $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
-            }
-            // There was an error
-            else {
-               $('#image-loader').fadeOut();
-               $('#message-warning').html(msg);
-	            $('#message-warning').fadeIn();
-            }
+         if (response.success) {
+            $('#image-loader').fadeOut();
+            $('#message-warning').hide();
+            $('#contactForm').fadeOut();
+            $('#message-success').fadeIn();   
+         }
+         else {
+            $('#image-loader').fadeOut();
+            $('#message-warning').html(response.message);
+            $('#message-warning').fadeIn();
+         }
 
-	      }
+      },
+      error: function() {
+         $('#image-loader').fadeOut();
+         $('#message-warning').html('Hubo un error. Intenta de nuevo o escríbenos por WhatsApp.');
+         $('#message-warning').fadeIn();
+      }
 
-      });
+});
+	   
       return false;
    });
 
