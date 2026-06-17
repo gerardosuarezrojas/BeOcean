@@ -1,2447 +1,477 @@
 
 <!DOCTYPE html>
-<html lang="es">
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="es"> <!--<![endif]-->
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Meta62</title>
-<link rel="manifest" href="manifest.json">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Meta62">
-<meta name="theme-color" content="#0f172a">
-<link rel="apple-touch-icon" href="icon192.png">
-<link rel="icon" type="image/png" href="icon192.png">
+
+   <meta charset="utf-8">
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KTJ2C35F');</script>
+<!-- End Google Tag Manager -->
+   <title>BeOcean — Agencia Boutique de Marketing Digital</title>
+   <meta name="description" content="BeOcean — agencia boutique de sitios web, contenido y pauta digital, con acompañamiento real de principio a fin.">
+   <meta name="author" content="BeOcean">
+   <meta property="og:title" content="BeOcean — Agencia Boutique de Marketing Digital">
+   <meta property="og:description" content="Agencia boutique de sitios web, contenido y pauta digital, con acompañamiento real de principio a fin.">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://beocean.digital">
+   <meta property="og:image" content="https://beocean.digital/images/BeO_logo.png">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="BeOcean — Agencia Boutique de Marketing Digital">
+   <meta name="twitter:description" content="Agencia boutique de sitios web, contenido y pauta digital, con acompañamiento real de principio a fin.">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+
+   <!-- Josefin Sans -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300&display=swap" rel="stylesheet">
+
+   <!-- BeOcean brand overrides -->
 <style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-tap-highlight-color:transparent}
-:root{
-  --acc:#1d4ed8;--acc2:#1e40af;
-  --bg:#fff;--bg2:#f3f4f6;--bg3:#e5e7eb;
-  --text:#111827;--text2:#374151;--muted:#6b7280;
-  --border:#d1d5db;--border2:#9ca3af;
-  --green:#16a34a;--green-bg:#dcfce7;--green-border:#86efac;
-  --blue:#1d4ed8;--blue-bg:#dbeafe;
-  --amber:#b45309;--amber-bg:#fef3c7;
-  --purple:#6d28d9;--purple-bg:#ede9fe;
-  --red:#dc2626;--red-bg:#fee2e2;
-  --r:10px;--rs:8px
-}
-@media(prefers-color-scheme:dark){:root{
-  --bg:#18181b;--bg2:#27272a;--bg3:#3f3f46;
-  --text:#f4f4f5;--text2:#d4d4d8;--muted:#a1a1aa;
-  --border:#3f3f46;--border2:#71717a;
-  --green:#4ade80;--green-bg:#14532d;--green-border:#166534;
-  --blue:#60a5fa;--blue-bg:#1e3a5f;
-  --amber:#fbbf24;--amber-bg:#451a03;
-  --purple:#a78bfa;--purple-bg:#2e1065;
-  --red:#f87171;--red-bg:#450a0a;
-  --acc:#2563eb;--acc2:#1d4ed8
-}}
-body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column;max-width:480px;margin:0 auto}
-.hidden{display:none!important}
+  body, h1, h2, h3, h4, h5, h6, p, a, li, input, textarea, button, label {
+    font-family: 'Josefin Sans', sans-serif !important;
+  }
+  #main-header { background: #ffffff; }
+  #main-header .logo a { color: #ffffff; font-weight: 700; letter-spacing: 0.06em; }
+  ul#nav li a { color: #1a1a2e !important; }
+  ul#nav li a:hover { color: #ffffff !important; background: #1B6FC8 !important; }
+  ul#nav li.current a { background: #004AAD !important; color: #ffffff !important; }
+  #hero { background: url('images/hero.jpg') no-repeat center center / cover !important; }
+  .flex-caption h1 { font-weight: 700; letter-spacing: -0.01em; }
+  .button.stroke { border-color: #B8D4F0; color: #B8D4F0; }
+  .button.stroke:hover { background: #B8D4F0; color: #0A2F5C; }
+  .section-head h1 { color: #0A2F5C; }
+  .section-head h1 span { color: #1B6FC8; }
+  .icon-part [class^="icon-"], .icon-part i { color: #1B6FC8; }
+  .item-wrap .overlay { background: rgba(10,47,92,0.85); }
+  .about-content h3 { color: #0A2F5C; }
+  #contact { background: #ffffff; }
+  #contact h1 { color: #004AAD; }
+  #contact input, #contact textarea, #contact select { background: transparent; }
+  #contact button.submit { color: #ffffff; }
+  .submit { background: #1B6FC8 !important; border-color: #1B6FC8 !important; }
+  .submit:hover { background: #0A2F5C !important; border-color: #0A2F5C !important; }
+  footer { background: #1A1A2E; }
+  footer h3 { color: #B8D4F0; }
+  footer p, footer li a { color: rgba(255,255,255,0.5); }
+  footer li a:hover { color: #ffffff; }
+  footer .copyright { color: rgba(255,255,255,0.25); }
+  footer .copyright a { color: rgba(255,255,255,0.4); }
+  hr { border-color: #1B6FC8; }
+  #go-top a { background: #1B6FC8; }
+  #go-top a:hover { background: #0A2F5C; }
+  #contact input, #contact textarea, #contact select { color: #1a1a2e !important; border-color: #a9aaab !important; }
+  #contact input:focus, #contact textarea:focus { color: #1a1a2e !important; border-color: #004AAD !important; background: #ffffff !important; }
+  #contact button.submit { color: #ffffff !important; border-color: #004AAD !important; background: #004AAD !important; }
+  #contact button.submit:hover { background: #002d6b !important; }
+  ::-webkit-input-placeholder { color: #888 !important; }
+  ::placeholder { color: #888 !important; }
+  #about { background: #F5F7FA; }
 
-/* HEADER */
-.hdr{background:var(--acc);padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:8px;position:sticky;top:0;z-index:100}
-.hdr-left .app-name{font-size:18px;font-weight:700;color:#fff;letter-spacing:-.5px}
-.hdr-left .hdr-sub{font-size:11px;color:rgba(255,255,255,.55);margin-top:1px}
-.hdr-btn{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.15);border:none;color:#fff;font-size:17px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.hdr-stats{display:flex;gap:12px;flex-shrink:0}
-.hdr-stat{text-align:right}
-.hdr-stat-val{font-size:16px;font-weight:700;color:#fff}
-.hdr-stat-lab{font-size:10px;color:rgba(255,255,255,.55);font-weight:500;text-transform:uppercase;letter-spacing:.04em}
-
-/* NAV */
-.nav-bar{background:var(--bg);border-top:.5px solid var(--border);padding:6px 0 12px;display:grid;grid-template-columns:repeat(5,1fr);position:sticky;bottom:0;z-index:100}
-.nav-item{display:flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;padding:4px 0;border:none;background:none}
-.nav-icon{font-size:20px;color:var(--muted)}
-.nav-icon.active{color:#1d4ed8}
-.nav-lbl{font-size:10px;color:var(--muted);font-weight:500}
-.nav-lbl.active{color:#1d4ed8;font-weight:700}
-@media(prefers-color-scheme:dark){.nav-icon.active{color:#60a5fa}.nav-lbl.active{color:#60a5fa}}
-
-
-/* SECTIONS */
-.section{display:none;flex:1;overflow-y:auto;padding:16px;padding-bottom:80px}
-.section.active{display:block}
-.sec-label{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
-
-/* CARDS */
-.card{background:var(--bg2);border:.5px solid var(--border);border-radius:var(--r);padding:14px;margin-bottom:12px}
-.card-hdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-.card-title{font-size:14px;font-weight:500;color:var(--text)}
-.card-acc{font-size:13px;font-weight:700;color:var(--green)}
-
-/* PROGRESS */
-.prog-track{height:8px;background:var(--border);border-radius:99px;overflow:hidden;margin:8px 0}
-.prog-fill{height:100%;border-radius:99px;transition:width .3s}
-.prog-labels{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
-.prog-labels .current{font-weight:700;color:var(--text)}
-
-/* KCAL CARD */
-.kcal-card{background:var(--green-bg);border:.5px solid var(--green-border);border-radius:var(--r);padding:12px 14px;margin-bottom:12px}
-.kcal-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
-.kcal-num{font-size:24px;font-weight:700;color:var(--green)}
-.kcal-sub{font-size:12px;color:var(--green);opacity:.8;margin-top:2px}
-.kcal-pct{font-size:13px;font-weight:700;color:var(--green);text-align:right}
-.kcal-track{height:8px;background:rgba(22,163,74,.2);border-radius:99px;overflow:hidden}
-.kcal-fill{height:100%;background:var(--green);border-radius:99px;transition:width .3s}
-
-/* MACROS */
-.macros-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
-.macro-card{background:var(--bg2);border:.5px solid var(--border);border-radius:var(--rs);padding:10px;text-align:center}
-.macro-val{font-size:16px;font-weight:700}
-.macro-lab{font-size:10px;color:var(--muted);font-weight:500;margin-top:2px;text-transform:uppercase;letter-spacing:.04em}
-
-/* MEAL ROWS */
-.meal-row{display:flex;align-items:center;justify-content:space-between;padding:9px 10px;background:var(--bg);border-radius:var(--rs);border:.5px solid var(--border);margin-bottom:6px}
-.meal-left{display:flex;align-items:center;gap:8px;flex:1;min-width:0}
-.meal-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:99px;white-space:nowrap;flex-shrink:0}
-.mb-d{background:var(--blue-bg);color:var(--blue)}
-.mb-c{background:var(--green-bg);color:var(--green)}
-.mb-ce{background:var(--amber-bg);color:var(--amber)}
-.mb-s{background:var(--purple-bg);color:var(--purple)}
-.meal-name{font-size:12px;color:var(--text);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.meal-right{display:flex;flex-direction:column;align-items:flex-end;gap:2px;flex-shrink:0;margin-left:8px}
-.meal-kcal{font-size:11px;color:var(--muted);font-weight:500}
-.stars{display:flex;gap:1px;cursor:pointer}
-.star{font-size:14px;color:#f59e0b;cursor:pointer}
-.star-e{font-size:14px;color:var(--border);cursor:pointer}
-.meal-empty{opacity:.4}
-
-/* SEMANA */
-.week-recipe-picker{margin-bottom:16px}
-.time-section{margin-bottom:20px}
-.time-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
-.time-title{font-size:14px;font-weight:700;color:var(--text)}
-.time-count{font-size:12px;color:var(--muted)}
-.recipe-search{width:100%;padding:8px 12px;border:.5px solid var(--border);border-radius:var(--rs);font-size:13px;color:var(--text);background:var(--bg2);margin-bottom:8px}
-.recipe-list{display:flex;flex-direction:column;gap:6px;max-height:300px;overflow-y:auto}
-.recipe-item{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;background:var(--bg);border:.5px solid var(--border);border-radius:var(--rs);transition:border-color .15s}
-.recipe-item-left{flex:1;min-width:0}
-.recipe-item-name{font-size:13px;font-weight:500;color:var(--text)}
-.recipe-item-kcal{font-size:11px;color:var(--muted);margin-top:1px}
-.recipe-item-stars{font-size:12px;color:#f59e0b}
-.day-chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
-.day-chip{padding:4px 10px;border-radius:99px;font-size:12px;font-weight:600;border:1.5px solid var(--border2);color:var(--text2);cursor:pointer;background:var(--bg2);transition:all .15s}
-.day-chip.active{background:var(--acc);color:#fff;border-color:var(--acc)}
-.day-chip.disabled{opacity:.35;cursor:not-allowed}
-.week-summary{background:var(--bg2);border:.5px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:16px}
-.week-day-row{display:grid;grid-template-columns:40px 1fr 1fr 1fr 1fr;gap:4px;padding:8px 10px;border-bottom:.5px solid var(--border);font-size:11px;align-items:center}
-.week-day-row:last-child{border-bottom:none}
-.week-day-row.header{background:#1d4ed8;color:#fff!important;font-weight:700;font-size:10px;text-transform:uppercase}
-.week-day-row.header *{color:#fff!important}
-.wdr-day{font-weight:700;color:var(--text);font-size:12px}
-.wdr-meal{color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:10px}
-.wdr-meal.set{color:var(--text);font-weight:500}
-.week-kcal-badge{font-size:10px;font-weight:700;color:var(--green);background:var(--green-bg);padding:2px 6px;border-radius:99px}
-
-/* RECETAS */
-.rec-filter-bar{display:flex;gap:6px;margin-bottom:14px;overflow-x:auto;padding-bottom:4px}
-.rec-filter-btn{padding:6px 14px;border-radius:99px;font-size:12px;font-weight:600;border:1.5px solid var(--border2);color:var(--text2);background:var(--bg2);cursor:pointer;white-space:nowrap;flex-shrink:0}
-.rec-filter-btn.active{background:var(--acc);color:#fff;border-color:var(--acc)}
-.rec-card{background:var(--bg);border:.5px solid var(--border);border-radius:var(--r);margin-bottom:10px;overflow:hidden}
-.rec-card-hdr{background:var(--bg2);padding:12px 14px;display:flex;align-items:center;justify-content:space-between;cursor:pointer}
-.rec-card-left{display:flex;align-items:center;gap:8px;flex:1;min-width:0}
-.rec-card-name{font-size:13px;font-weight:600;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.rec-card-kcal{font-size:11px;color:var(--muted);margin-top:1px}
-.rec-card-chevron{font-size:16px;color:var(--muted);flex-shrink:0;transition:transform .2s}
-.rec-card-chevron.open{transform:rotate(180deg)}
-.rec-card-body{display:none;padding:14px}
-.rec-card-body.open{display:block}
-.rec-macros{display:flex;gap:6px;margin-bottom:12px}
-.rec-macro{flex:1;text-align:center;background:var(--bg2);border:.5px solid var(--border);border-radius:var(--rs);padding:6px 2px}
-.rec-macro-val{font-size:13px;font-weight:700}
-.rec-macro-lab{font-size:10px;color:var(--muted);font-weight:500;margin-top:1px}
-.rec-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.rec-sec-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px;padding-bottom:4px;border-bottom:1px solid var(--border)}
-.ing-row{display:flex;justify-content:space-between;padding:4px 0;border-bottom:.5px solid var(--bg3);font-size:12px}
-.ing-row:last-child{border-bottom:none}
-.step-row{display:flex;gap:7px;margin-bottom:6px;font-size:12px;line-height:1.5}
-.step-n{min-width:18px;height:18px;border-radius:50%;background:#1d4ed8;color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-.rec-stars-row{display:flex;align-items:center;gap:8px;margin-bottom:12px}
-.rec-stars-label{font-size:12px;color:var(--muted)}
-
-/* SÚPER */
-.super-filter-bar{display:flex;gap:6px;margin-bottom:12px}
-.super-filter-btn{padding:6px 12px;border-radius:99px;font-size:12px;font-weight:600;border:1.5px solid var(--border2);color:var(--text2);background:var(--bg2);cursor:pointer}
-.super-filter-btn.active{background:var(--acc);color:#fff;border-color:var(--acc)}
-.super-total-box{background:var(--green-bg);border:.5px solid var(--green-border);border-radius:var(--r);padding:12px 16px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
-.super-total-num{font-size:24px;font-weight:700;color:var(--green)}
-.super-total-lab{font-size:11px;color:var(--green);opacity:.8;margin-top:2px}
-.super-actions{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
-.btn{padding:9px 14px;border-radius:var(--rs);font-size:13px;font-weight:700;cursor:pointer;border:1.5px solid var(--border2);background:var(--bg2);color:var(--text);transition:all .15s}
-.btn-primary{background:var(--acc);color:#fff;border-color:var(--acc)}
-.btn-danger{background:var(--red-bg);color:var(--red);border-color:var(--red)}
-.super-cat{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding:8px 0 4px;border-bottom:.5px solid var(--border);margin-bottom:4px}
-.super-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:.5px solid var(--bg3)}
-.super-row:last-child{border-bottom:none}
-.super-check{width:20px;height:20px;border-radius:4px;border:2px solid var(--border2);cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .15s}
-.super-check.checked{background:var(--green);border-color:var(--green)}
-.super-check-icon{font-size:12px;color:#fff;display:none}
-.super-check.checked .super-check-icon{display:block}
-.super-item-info{flex:1;min-width:0}
-.super-item-name{font-size:13px;font-weight:500;color:var(--text)}
-.super-item-unit{font-size:11px;color:var(--muted)}
-.super-item-price{font-size:13px;font-weight:700;color:var(--green);text-align:right;white-space:nowrap}
-.super-item-bought{opacity:.4;text-decoration:line-through}
-.price-edit-panel{background:var(--bg2);border:.5px solid var(--border);border-radius:var(--rs);padding:10px;margin-top:6px;display:none}
-.price-edit-panel.open{display:block}
-.price-edit-row{display:flex;gap:8px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
-.price-input{padding:6px 10px;border:.5px solid var(--border);border-radius:var(--rs);font-size:13px;color:var(--text);background:var(--bg);width:90px}
-.store-chips{display:flex;gap:4px;flex-wrap:wrap}
-.store-chip{padding:4px 8px;border-radius:99px;font-size:11px;font-weight:600;border:1px solid var(--border2);color:var(--text2);cursor:pointer;background:var(--bg2)}
-.store-chip.active{background:var(--acc);color:#fff;border-color:var(--acc)}
-.super-grand{background:#1d4ed8;border-radius:var(--r);padding:14px 16px;display:flex;align-items:center;justify-content:space-between;margin-top:16px}
-.super-grand-label{font-size:12px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.05em}
-.super-grand-num{font-size:28px;font-weight:700;color:#fff}
-
-/* REPORTE */
-.report-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:.5px solid var(--border)}
-.report-row:last-child{border-bottom:none}
-.report-date{font-size:13px;font-weight:500;color:var(--text)}
-.report-amount{font-size:14px;font-weight:700;color:var(--green)}
-
-/* CONFIG */
-.config-section{margin-bottom:20px}
-.config-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:12px;padding-bottom:8px;border-bottom:.5px solid var(--border)}
-.config-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:.5px solid var(--bg3)}
-.config-row:last-child{border-bottom:none}
-.config-label{font-size:13px;color:var(--text2)}
-.config-input{padding:6px 10px;border:.5px solid var(--border);border-radius:var(--rs);font-size:13px;color:var(--text);background:var(--bg2);width:100px;text-align:right}
-.config-result{background:var(--green-bg);border:.5px solid var(--green-border);border-radius:var(--r);padding:12px;margin-top:12px}
-.config-result-row{display:flex;justify-content:space-between;padding:4px 0;font-size:13px}
-.config-result-label{color:var(--muted)}
-.config-result-val{font-weight:700;color:var(--green)}
-.config-save-btn{width:100%;padding:12px;background:#1d4ed8;color:#fff!important;border:none;border-radius:var(--rs);font-size:14px;font-weight:700;cursor:pointer;margin-top:12px}
-
-/* WEIGHT MODAL */
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;display:flex;align-items:center;justify-content:center;padding:20px}
-.modal{background:var(--bg);border-radius:var(--r);padding:24px;width:100%;max-width:340px}
-.modal-title{font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px}
-.modal-sub{font-size:13px;color:var(--muted);margin-bottom:20px}
-.modal-input{width:100%;padding:12px;border:2px solid var(--border);border-radius:var(--rs);font-size:18px;text-align:center;color:var(--text);background:var(--bg2);margin-bottom:16px}
-.modal-input:focus{outline:none;border-color:var(--acc)}
-.modal-btns{display:flex;gap:8px}
-.modal-btn{flex:1;padding:12px;border-radius:var(--rs);font-size:14px;font-weight:700;cursor:pointer;border:1.5px solid var(--border)}
-.modal-btn-primary{background:#1d4ed8;color:#fff!important;border-color:#1d4ed8}
-.modal-btn-cancel{background:var(--bg2);color:var(--text2)}
-
-/* TOAST */
-.toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#1d4ed8;color:#fff;padding:10px 20px;border-radius:99px;font-size:13px;font-weight:600;z-index:300;opacity:0;transition:opacity .3s;pointer-events:none;white-space:nowrap}
-.toast.show{opacity:1}
-
-.extra-food-row{display:flex;align-items:center;justify-content:space-between;padding:9px 10px;background:var(--bg);border-radius:var(--rs);border:.5px solid var(--border);margin-bottom:6px}
-.extra-food-left{display:flex;align-items:center;gap:8px;flex:1;min-width:0}
-.mb-extra{background:#f3f4f6;color:#374151;font-size:10px;font-weight:700;padding:2px 7px;border-radius:99px;white-space:nowrap;flex-shrink:0}
-.food-search-input{width:100%;padding:12px 14px;border:2px solid var(--border);border-radius:var(--rs);font-size:15px;color:var(--text);background:var(--bg2);outline:none;transition:border-color .2s}
-.food-search-input:focus{border-color:var(--acc)}
-.food-suggestions{max-height:220px;overflow-y:auto;border:.5px solid var(--border);border-radius:var(--rs);background:var(--bg);margin-top:4px}
-.food-suggestion-item{padding:10px 14px;cursor:pointer;border-bottom:.5px solid var(--bg3);font-size:13px;color:var(--text);display:flex;justify-content:space-between;align-items:center}
-.food-suggestion-item:last-child{border-bottom:none}
-.food-suggestion-item:hover,.food-suggestion-item.selected{background:var(--blue-bg)}
-.food-suggestion-kcal{font-size:11px;color:var(--muted);font-weight:500}
-.add-btn-row{width:100%;padding:13px;background:#1d4ed8;color:#fff;border:none;border-radius:var(--rs);font-size:14px;font-weight:700;cursor:pointer;margin-top:4px;display:flex;align-items:center;justify-content:center;gap:8px}
-
+  /* Mobile portfolio touch */
+  @media only screen and (max-width: 768px) {
+    .item.touched .overlay { opacity: 1 !important; }
+    .item.touched .portfolio-item-meta { opacity: 1 !important; }
+    .item.touched .item-wrap img { transform: scale(1.05); }
+    .item .portfolio-item-meta h5 { margin-bottom: 12px; line-height: 1.3; display: block; }
+    .item .portfolio-item-meta p { font-size: 12px; line-height: 1.5; }
+  }
 </style>
+
+   <script src="js/modernizr.js"></script>
+   <link rel="shortcut icon" href="favicon.png">
+
 </head>
-<body>
 
-<!-- HEADER + STATS -->
-<div class="hdr">
-  <div class="hdr-left">
-    <div class="app-name">Meta62</div>
-    <div class="hdr-sub" id="hdr-date"></div>
-  </div>
-  <div class="hdr-stats">
-    <div class="hdr-stat">
-      <div class="hdr-stat-val" id="stat-kcal">1,600</div>
-      <div class="hdr-stat-lab">kcal/día</div>
-    </div>
-    <div class="hdr-stat">
-      <div class="hdr-stat-val" id="stat-super">$0</div>
-      <div class="hdr-stat-lab">súper sem.</div>
-    </div>
-  </div>
-  <button class="hdr-btn" onclick="showSection('config')" aria-label="Configuración">⚙️</button>
-</div>
+<body class="homepage">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTJ2C35F"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-<!-- SECTIONS -->
-<div id="s-hoy" class="section active">
-  <!-- Progreso -->
-  <div class="sec-label">Mi progreso</div>
-  <div class="card" style="margin-bottom:12px">
-    <div class="card-hdr">
-      <div class="card-title">Progreso</div>
-      <div class="card-acc" id="prog-pct">0%</div>
-    </div>
-    <div class="prog-track"><div class="prog-fill" id="prog-fill" style="background:var(--green);width:0%"></div></div>
-    <div class="prog-labels">
-      <span id="prog-start">— kg</span>
-      <span class="current" id="prog-current">— kg (hoy)</span>
-      <span>62 kg</span>
-    </div>
-  </div>
-
-  <!-- Kcal -->
-  <div class="sec-label">Calorías del día</div>
-  <div class="kcal-card">
-    <div class="kcal-top">
-      <div>
-        <div class="kcal-num" id="hoy-kcal-num">0 kcal</div>
-        <div class="kcal-sub" id="hoy-kcal-rest">1,600 restantes</div>
+   <div id="preloader">
+      <div id="status">
+         <img src="images/loader.gif" height="60" width="60" alt="">
+         <div class="loader">Cargando...</div>
       </div>
-      <div>
-        <div class="kcal-pct" id="hoy-kcal-pct">0%</div>
-        <div style="font-size:11px;color:var(--green);opacity:.7">de 1,600</div>
+   </div>
+
+   <header id="main-header">
+      <div class="row header-inner">
+         <div class="logo" style="background:none;">
+            <a class="smoothscroll" href="#hero" style="background-image:none; width:auto; height:auto; font:normal; color:white; text-shadow:none;">
+               <img src="images/BeO_logo.png" alt="BeOcean" style="height:55px; width:auto; display:block;">
+            </a>
+         </div>
+         <nav id="nav-wrap">
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation"><span class='menu-text'>Menú</span><span class="menu-icon"></span></a>
+            <a class="mobile-btn" href="#" title="Hide navigation"><span class='menu-text'>Cerrar</span><span class="menu-icon"></span></a>
+            <ul id="nav" class="nav">
+               <li class="current"><a class="smoothscroll" href="#hero">Inicio.</a></li>
+               <li><a class="smoothscroll" href="#portfolio">Portafolio.</a></li>
+               <li><a class="smoothscroll" href="#services">Servicios.</a></li>
+               <li><a class="smoothscroll" href="#about">Nosotros.</a></li>
+               <li><a class="smoothscroll" href="#contact">Contacto.</a></li>
+            </ul>
+         </nav>
       </div>
-    </div>
-    <div class="kcal-track"><div class="kcal-fill" id="hoy-kcal-fill" style="width:0%"></div></div>
-  </div>
+   </header>
 
-  <!-- Macros -->
-  <div class="sec-label">Macros del día</div>
-  <div class="macros-grid">
-    <div class="macro-card"><div class="macro-val" style="color:var(--blue)" id="hoy-p">0g</div><div class="macro-lab">Proteína</div></div>
-    <div class="macro-card"><div class="macro-val" style="color:var(--amber)" id="hoy-c">0g</div><div class="macro-lab">Carbos</div></div>
-    <div class="macro-card"><div class="macro-val" style="color:var(--purple)" id="hoy-g">0g</div><div class="macro-lab">Grasa</div></div>
-  </div>
-
-  <!-- Menú del día -->
-  <div class="sec-label">Menú de hoy</div>
-  <div id="hoy-menu"></div>
-  <div id="extra-foods-list"></div>
-  <button onclick="openAddFoodModal()" style="width:100%;padding:12px;background:var(--bg2);color:var(--text2);border:1.5px dashed var(--border2);border-radius:var(--rs);font-size:13px;font-weight:700;cursor:pointer;margin-top:8px;display:flex;align-items:center;justify-content:center;gap:6px">
-    ＋ Agregar alimento
-  </button>
-
-</div>
-
-<div id="s-semana" class="section">
-  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:6px">
-    <button class="btn" id="week-prev-btn" onclick="changeWeekView(0)" style="padding:8px 12px;font-size:13px;flex:1">Esta semana</button>
-    <button class="btn" id="week-next-btn" onclick="changeWeekView(1)" style="padding:8px 12px;font-size:13px;flex:1">Próxima semana</button>
-  </div>
-  <div class="sec-label">Resumen</div>
-  <div class="week-summary" id="week-summary"></div>
-  <div class="sec-label">Planear comidas</div>
-  <div class="rec-filter-bar" id="planner-filters" style="margin-bottom:10px">
-    <button class="rec-filter-btn active" onclick="setPlannerFilter('desayuno',this)">1er alimento</button>
-    <button class="rec-filter-btn" onclick="setPlannerFilter('comida',this)">Comida</button>
-    <button class="rec-filter-btn" onclick="setPlannerFilter('cena',this)">Cena</button>
-    <button class="rec-filter-btn" onclick="setPlannerFilter('snack',this)">Snacks</button>
-  </div>
-  <div id="week-planner"></div>
-</div>
-
-<div id="s-recetas" class="section">
-  <div class="rec-filter-bar" id="rec-filters"></div>
-  <div id="rec-list"></div>
-</div>
-
-<div id="s-super" class="section">
-  <div class="super-filter-bar">
-    <button class="super-filter-btn active" onclick="setSuperFilter('current',this)">Esta semana</button>
-    <button class="super-filter-btn" onclick="setSuperFilter('next',this)">Próxima semana</button>
-  </div>
-  <div class="super-total-box">
-    <div>
-      <div class="super-total-num" id="super-est-total">$0</div>
-      <div class="super-total-lab">total estimado</div>
-    </div>
-    <div style="text-align:right">
-      <div style="font-size:12px;color:var(--green);font-weight:700" id="super-gastado-label">$0 gastado</div>
-      <div style="font-size:11px;color:var(--green);opacity:.7">esta semana</div>
-    </div>
-  </div>
-  <div class="super-actions">
-    <button class="btn" onclick="openPriceEditor()">✏️ Editar precios</button>
-    <button class="btn btn-primary" onclick="superComprado()">✅ Súper comprado</button>
-    <button class="btn" onclick="showReporte()">📊 Reporte</button>
-  </div>
-  <div id="super-list"></div>
-  <div class="super-grand" id="super-grand" style="display:none">
-    <div class="super-grand-label">Total del súper</div>
-    <div class="super-grand-num" id="super-grand-num">$0</div>
-  </div>
-</div>
-
-<div id="s-config" class="section">
-  <div class="config-section">
-    <div class="config-title">Mis datos</div>
-    <div class="config-row"><span class="config-label">Nombre</span><input class="config-input" id="cfg-nombre" placeholder="Jerry" style="width:140px"></div>
-    <div class="config-row"><span class="config-label">Edad</span><input class="config-input" id="cfg-edad" type="number" placeholder="43"></div>
-    <div class="config-row"><span class="config-label">Estatura (m)</span><input class="config-input" id="cfg-estatura" type="number" step="0.01" placeholder="1.67"></div>
-    <div class="config-row"><span class="config-label">Peso actual (kg)</span><input class="config-input" id="cfg-peso" type="number" step="0.1" placeholder="76"></div>
-    <div class="config-row"><span class="config-label">Peso meta (kg)</span><input class="config-input" id="cfg-meta" type="number" step="0.1" placeholder="62"></div>
-    <div class="config-row">
-      <span class="config-label">Actividad</span>
-      <select class="config-input" id="cfg-actividad">
-        <option value="1.2">Sedentario</option>
-        <option value="1.375" selected>Ligero</option>
-        <option value="1.55">Moderado</option>
-        <option value="1.725">Activo</option>
-      </select>
-    </div>
-  </div>
-  <div class="config-result" id="cfg-result">
-    <div class="config-result-row"><span class="config-result-label">TMB (Tasa Metabólica Basal)</span><span class="config-result-val" id="cfg-tmb">—</span></div>
-    <div class="config-result-row"><span class="config-result-label">TDEE (Gasto Energético Total)</span><span class="config-result-val" id="cfg-tdee">—</span></div>
-    <div class="config-result-row"><span class="config-result-label">Déficit/día</span><span class="config-result-val" id="cfg-deficit">—</span></div>
-    <div class="config-result-row"><span class="config-result-label">Tiempo estimado</span><span class="config-result-val" id="cfg-tiempo">—</span></div>
-  </div>
-  <div class="config-section" style="margin-top:16px">
-    <div class="config-title">Objetivos de macros</div>
-    <div class="config-row"><span class="config-label">Proteína (g)</span><input class="config-input" id="cfg-prot" type="number" placeholder="120"></div>
-    <div class="config-row"><span class="config-label">Carbohidratos (g)</span><input class="config-input" id="cfg-carb" type="number" placeholder="160"></div>
-    <div class="config-row"><span class="config-label">Grasas (g)</span><input class="config-input" id="cfg-grasa" type="number" placeholder="53"></div>
-  </div>
-  <div class="config-section">
-    <div class="config-title">Historial de peso</div>
-    <div id="peso-historia"></div>
-    <button class="btn" style="width:100%;margin-top:8px" onclick="showWeightModal()">+ Registrar peso</button>
-  </div>
-  <button class="config-save-btn" onclick="saveConfig()">Guardar configuración</button>
-<button onclick="resetAll()" style="width:100%;padding:12px;background:var(--red-bg);color:var(--red);border:1.5px solid var(--red);border-radius:var(--rs);font-size:14px;font-weight:700;cursor:pointer;margin-top:8px">🗑 Borrar toda la memoria</button>
-</div>
-
-<!-- NAV BAR -->
-<div class="nav-bar">
-  <button class="nav-item" onclick="showSection('hoy')">
-    <span class="nav-icon active" id="nav-hoy">🏠</span>
-    <span class="nav-lbl active" id="navl-hoy">Hoy</span>
-  </button>
-  <button class="nav-item" onclick="showSection('semana')">
-    <span class="nav-icon" id="nav-semana">📅</span>
-    <span class="nav-lbl" id="navl-semana">Semana</span>
-  </button>
-  <button class="nav-item" onclick="showSection('recetas')">
-    <span class="nav-icon" id="nav-recetas">📖</span>
-    <span class="nav-lbl" id="navl-recetas">Recetas</span>
-  </button>
-  <button class="nav-item" onclick="showSection('super')">
-    <span class="nav-icon" id="nav-super">🛒</span>
-    <span class="nav-lbl" id="navl-super">Súper</span>
-  </button>
-  <button class="nav-item" onclick="showSection('config')">
-    <span class="nav-icon" id="nav-config">⚙️</span>
-    <span class="nav-lbl" id="navl-config">Config.</span>
-  </button>
-</div>
-
-<!-- WEIGHT MODAL -->
-<div class="modal-overlay hidden" id="weight-modal">
-  <div class="modal">
-    <div class="modal-title">🎯 Registrar peso</div>
-    <div class="modal-sub">¿Cuánto pesas hoy?</div>
-    <input class="modal-input" id="weight-input" type="number" step="0.1" placeholder="70.5">
-    <div class="modal-btns">
-      <button class="modal-btn modal-btn-cancel" onclick="closeWeightModal()">Cancelar</button>
-      <button class="modal-btn modal-btn-primary" onclick="saveWeight()">Guardar</button>
-    </div>
-  </div>
-</div>
-
-<!-- RECIPE MODAL -->
-<div class="modal-overlay hidden" id="recipe-modal" onclick="closeRecipeModal(event)">
-  <div class="modal" style="max-height:85vh;overflow-y:auto;padding:20px" id="recipe-modal-content">
-  </div>
-</div>
-
-<!-- TOAST -->
-<div class="toast" id="toast"></div>
-
-<script>
-// ═══════════════════════════════════════════
-// DATA — 80 RECIPES WITH CORRECT MACROS
-// ═══════════════════════════════════════════
-const MEALS = {
-  desayuno: {
-    label:'1er alimento', badge:'mb-d', target:420,
-    options:[
-      {name:'Bowl de atún con papa',kcal:427,p:31,c:37,g:18,ing:[['Atún en agua','90g (lata)'],['Papa hervida','150g'],['Jitomate','80g'],['Pepino','60g'],['Aguacate','25g']],steps:['Cuece papas en batch el domingo.','Mezcla atún con papa, jitomate y pepino.','Añade aguacate, exprime limón y sazona.']},
-      {name:'Wrap de pollo con aguacate',kcal:400,p:34,c:36,g:14,ing:[['Pechuga de pollo','100g deshebrada'],['Tortilla integral','60g (1 pieza)'],['Aguacate','40g'],['Espinaca','30g'],['Jitomate','60g']],steps:['Cocina pollo en batch y deshebra.','Calienta tortilla 30 seg.','Arma: espinaca → pollo → jitomate → aguacate.']},
-      {name:'Onigiri de atún',kcal:413,p:32,c:44,g:11,ing:[['Arroz cocido','150g'],['Atún en agua','90g'],['Mayonesa light','8g (1 cdta)'],['Alga nori','3g (1 hoja)'],['Pepino','50g'],['Salsa soya','10g']],steps:['Mezcla atún con mayonesa.','Forma triángulos de arroz rellenos. Envuelve con nori.','Sirve con pepino y soya.']},
-      {name:'Papa rellena de atún',kcal:426,p:30,c:42,g:15,ing:[['Papa hervida','180g (1 grande)'],['Atún en agua','90g'],['Jitomate','60g'],['Cebolla','30g']],steps:['Hornea la papa entera 45 min a 200°C.','Mezcla atún con jitomate, cebolla y limón.','Abre la papa y rellena con la mezcla.']},
-      {name:'Quesadilla de pollo',kcal:396,p:38,c:34,g:12,ing:[['Tortilla integral','60g (1 pieza)'],['Pechuga de pollo','100g deshebrada'],['Queso panela','35g'],['Espinaca','30g'],['Jitomate','50g']],steps:['Calienta tortilla en sartén.','Agrega pollo, queso, espinaca y jitomate.','Dobla y calienta hasta dorar.']},
-      {name:'Sopes de atún',kcal:425,p:33,c:46,g:13,ing:[['Masa para sopes','90g (3 piezas)'],['Atún en agua','90g'],['Jitomate','60g'],['Cebolla','20g'],['Aguacate','20g']],steps:['Forma 3 sopes con masa y cuece en comal.','Mezcla atún con jitomate, cebolla y limón.','Monta el atún sobre los sopes con aguacate.']},
-      {name:'Bowl de pollo japonés',kcal:431,p:37,c:48,g:10,ing:[['Arroz cocido','150g'],['Pechuga de pollo','120g deshebrada'],['Pepino','50g'],['Zanahoria rallada','40g'],['Salsa soya','10g']],steps:['Toma pollo y arroz del batch semanal.','Arma el bowl con arroz de base.','Coloca pollo, pepino y zanahoria. Adereza con soya.']},
-      {name:'Huevos revueltos con papa',kcal:432,p:22,c:31,g:24,ing:[['Huevo','150g (3 piezas)'],['Papa hervida','120g'],['Jitomate','60g'],['Cebolla','30g'],['Aceite de oliva','5g']],steps:['Cuece papa en cubos en agua 10 min.','Acitrona cebolla, añade papa y jitomate.','Añade huevos batidos y revuelve hasta cuajar.']},
-      {name:'Tostadas de pollo',kcal:429,p:34,c:23,g:23,ing:[['Tostadas horneadas','45g (3 piezas)'],['Pechuga de pollo','110g deshebrada'],['Aguacate','30g'],['Jitomate','60g']],steps:['Toma pollo deshebrado del batch.','Unta aguacate en cada tostada.','Coloca pollo y jitomate. Exprime limón.']},
-      {name:'Omelette de atún',kcal:435,p:44,c:5,g:26,ing:[['Huevo','150g (3 piezas)'],['Atún en agua','80g'],['Espinaca','40g'],['Jitomate','50g'],['Aceite de oliva','5g']],steps:['Bate los huevos con sal.','Vierte en sartén con aceite caliente.','Añade atún, espinaca y jitomate. Dobla el omelette.']},
-      {name:'Tacos de pollo',kcal:404,p:35,c:44,g:11,ing:[['Tortilla de maíz','90g (3 piezas)'],['Pechuga de pollo','110g deshebrada'],['Cebolla','20g'],['Jitomate','40g']],steps:['Calienta tortillas en comal.','Coloca pollo deshebrado en cada tortilla.','Añade cebolla, salsa y limón.']},
-      {name:'Ensalada de atún con papa',kcal:423,p:30,c:34,g:19,ing:[['Atún en agua','90g'],['Papa hervida','140g'],['Pepino','60g'],['Jitomate','60g'],['Cebolla','20g'],['Aceite de oliva','5g']],steps:['Toma papa cocida del batch.','Mezcla todos los ingredientes en tazón.','Adereza con aceite, limón y sazona.']},
-      {name:'Chilaquiles de pollo',kcal:429,p:35,c:22,g:22,ing:[['Tostadas horneadas','40g'],['Pechuga de pollo','100g deshebrada'],['Salsa verde','80g'],['Queso panela','30g'],['Crema light','20g']],steps:['Calienta salsa verde en sartén.','Añade tostadas para que absorban la salsa.','Sirve con pollo, queso, y crema.']},
-      {name:'Burrito de huevo',kcal:442,p:29,c:46,g:15,ing:[['Tortilla integral','55g (1 pieza)'],['Huevo','150g (3 piezas)'],['Frijoles cocidos','60g'],['Jitomate','50g'],['Cebolla','20g']],steps:['Revuelve huevos con jitomate, cebolla.','Calienta tortilla 30 seg.','Unta frijoles, agrega huevo y enrolla.']},
-      {name:'Bowl de carne con papa',kcal:427,p:22,c:32,g:25,ing:[['Carne molida','100g'],['Papa hervida','130g'],['Jitomate','60g'],['Cebolla','30g'],['Aceite de oliva','5g']],steps:['Dora carne molida con ajo y cebolla.','Añade jitomate y papa cocida. Cocina 5 min.','Sazona con sal, pimienta y comino.']},
-      {name:'Wrap de atún mediterráneo',kcal:400,p:35,c:32,g:14,ing:[['Tortilla integral','55g (1 pieza)'],['Atún en agua','100g'],['Pepino','60g'],['Jitomate','60g'],['Cebolla','20g'],['Aceite de oliva','5g']],steps:['Mezcla atún con pepino, jitomate y cebolla.','Adereza con aceite y limón.','Coloca en tortilla y enrolla.']},
-      {name:'Enfrijoladas de pollo',kcal:432,p:37,c:46,g:12,ing:[['Tortilla de maíz','60g (2 piezas)'],['Pechuga de pollo','90g deshebrada'],['Frijoles cocidos','70g'],['Queso panela','25g'],['Cebolla','20g']],steps:['Licúa frijoles con agua hasta salsa.','Calienta salsa y pasa tortillas por ella.','Rellena con pollo y sirve con queso.']},
-      {name:'Huevos a la mexicana',kcal:414,p:23,c:33,g:21,ing:[['Huevo','150g (3 piezas)'],['Jitomate','70g'],['Cebolla','30g'],['Tortilla de maíz','60g (2 piezas)'],['Aceite de oliva','5g']],steps:['Acitrona cebolla y jitomate.','Añade huevos batidos y revuelve hasta cuajar.','Sirve con tortillas calientes.']},
-      {name:'Bowl de camarón con arroz',kcal:403,p:40,c:50,g:3,ing:[['Camarón','200g'],['Arroz cocido','150g'],['Pepino','50g'],['Zanahoria rallada','40g'],['Salsa soya','10g']],steps:['Saltea camarón con ajo y limón hasta rosado.','Arma bowl con arroz de base.','Coloca camarón y verduras. Adereza con soya.']},
-      {name:'Molletes de frijol',kcal:430,p:23,c:70,g:7,ing:[['Pan telera','90g (½ pieza)'],['Frijoles cocidos','75g'],['Queso panela','40g'],['Jitomate','50g'],['Cebolla','20g']],steps:['Tuesta el pan en horno o comal.','Unta frijoles calientes sobre el pan.','Añade queso y jitomate. Gratina si gustas.']},
-    ]
-  },
-  comida: {
-    label:'Comida', badge:'mb-c', target:680,
-    options:[
-      {name:'Pollo a la mexicana con papa',kcal:702,p:51,c:52,g:34,ing:[['Pechuga de pollo','170g'],['Papa hervida','200g'],['Jitomate','80g'],['Cebolla','40g'],['Aguacate','50g'],['Aceite de oliva','5g']],steps:['Cuece papas 15 min en agua con sal.','Acitrona ajo y cebolla, añade pollo hasta dorar.','Agrega jitomate y papa. Sirve con aguacate.']},
-      {name:'Pasta con atún',kcal:678,p:54,c:64,g:22,ing:[['Pasta cocida','195g'],['Atún en agua','140g'],['Jitomate','80g'],['Espinaca','40g'],['Aceite de oliva','8g']],steps:['Cuece pasta al dente.','Acitrona ajo en aceite, añade jitomate 3 min.','Agrega atún, espinaca y pasta. Sazona.']},
-      {name:'Bowl teriyaki de pollo',kcal:661,p:56,c:60,g:23,ing:[['Pechuga de pollo','180g'],['Arroz cocido','150g'],['Brócoli','80g'],['Zanahoria rallada','50g'],['Salsa soya','15g'],['Miel','10g'],['Aceite de oliva','8g']],steps:['Mezcla soya, miel y ajo para salsa teriyaki.','Saltea pollo, añade salsa 2 min hasta glasear.','Arma bowl: arroz → verduras → pollo.']},
-      {name:'Caldo de res con verduras',kcal:681,p:41,c:57,g:34,ing:[['Res en trozos','180g'],['Papa hervida','200g'],['Zanahoria','80g'],['Calabaza','80g'],['Cebolla','40g'],['Caldo','200ml']],steps:['Pon la res a hervir con ajo y cebolla 40 min.','Agrega papa, zanahoria y calabaza. Cocina 20 min.','Sazona y sirve con cilantro y limón.']},
-      {name:'Tacos de camarón',kcal:684,p:54,c:68,g:24,ing:[['Camarón','250g'],['Tortilla de maíz','120g (4 piezas)'],['Aguacate','80g'],['Repollo','60g'],['Jitomate','80g'],['Aceite de oliva','5g']],steps:['Saltea camarón con ajo, limón y chile.','Calienta tortillas en comal.','Arma tacos con camarón, repollo, jitomate y aguacate.']},
-      {name:'Arroz con pollo',kcal:692,p:57,c:63,g:23,ing:[['Pechuga de pollo','190g'],['Arroz cocido','200g'],['Jitomate','80g'],['Cebolla','40g'],['Aceite de oliva','8g']],steps:['Dora pollo en olla con aceite.','Añade arroz y sofríe 2 min. Agrega jitomate licuado.','Vierte caldo, tapa y cocina 20 min a fuego bajo.']},
-      {name:'Picadillo de res con papa',kcal:664,p:36,c:53,g:36,ing:[['Carne molida','160g'],['Papa hervida','200g'],['Jitomate','80g'],['Cebolla','40g'],['Zanahoria','60g'],['Aceite de oliva','5g']],steps:['Dora carne molida con cebolla y ajo.','Añade jitomate, papa y zanahoria.','Cocina 15 min hasta que papa esté suave.']},
-      {name:'Sopa de pasta con pollo',kcal:685,p:57,c:63,g:23,ing:[['Pechuga de pollo','170g'],['Pasta cocida','180g'],['Jitomate','100g'],['Cebolla','40g'],['Aceite de oliva','8g']],steps:['Licúa jitomate con cebolla y ajo.','Sofríe pasta en aceite hasta dorar.','Vierte caldo y pollo en trozos. Cocina 15 min.']},
-      {name:'Atún empanizado con papa',kcal:688,p:53,c:52,g:29,ing:[['Atún en filete','130g'],['Pan integral','35g'],['Huevo','50g (1 pieza)'],['Papa hervida','170g'],['Espinaca','60g'],['Aceite de oliva','5g']],steps:['Pasa filete de atún por huevo y pan molido.','Fríe o hornea hasta dorar.','Sirve con ensalada de papa y espinaca.']},
-      {name:'Enchiladas de pollo',kcal:687,p:59,c:61,g:24,ing:[['Pechuga de pollo','170g deshebrada'],['Tortilla de maíz','120g (4 piezas)'],['Salsa roja','80g'],['Queso panela','40g'],['Crema light','30g']],steps:['Pasa tortillas por salsa roja caliente.','Rellena con pollo deshebrado y enrolla.','Sirve con queso, cebolla y crema.']},
-      {name:'Camarones a la mexicana',kcal:699,p:58,c:63,g:22,ing:[['Camarón','300g'],['Arroz cocido','180g'],['Jitomate','80g'],['Cebolla','40g'],['Aceite de oliva','13g']],steps:['Cuece el arroz por separado.','Saltea camarón con jitomate, cebolla y chile.','Sirve camarones sobre el arroz.']},
-      {name:'Milanesa de res con papa',kcal:666,p:37,c:44,g:40,ing:[['Res en milanesa','170g'],['Papa hervida','190g'],['Lechuga','60g'],['Jitomate','80g'],['Aceite de oliva','8g']],steps:['Hornea papa en gajos con ajo y aceite 25 min.','Sazona milanesa y cocina en sartén.','Sirve con ensalada de lechuga.']},
-      {name:'Pozole de pollo',kcal:656,p:63,c:59,g:24,ing:[['Pechuga de pollo','200g deshebrada'],['Maíz pozolero','280g'],['Lechuga','40g'],['Cebolla','30g'],['Aguacate','30g']],steps:['Calienta caldo con maíz pozolero 15 min.','Añade pollo deshebrado y sazona.','Sirve con lechuga, cebolla y orégano.']},
-      {name:'Chiles rellenos de res',kcal:679,p:36,c:68,g:30,ing:[['Carne molida','150g'],['Chile poblano','100g (1 pieza)'],['Jitomate','80g'],['Cebolla','40g'],['Arroz cocido','180g'],['Aceite de oliva','8g']],steps:['Asa chile, pélalo y ábrelo por un lado.','Dora carne con jitomate y cebolla.','Rellena chile y sirve sobre arroz.']},
-      {name:'Tinga de pollo con arroz',kcal:690,p:55,c:66,g:23,ing:[['Pechuga de pollo','180g deshebrada'],['Chipotle','20g'],['Jitomate','100g'],['Cebolla','50g'],['Arroz cocido','200g'],['Aceite de oliva','8g']],steps:['Licúa jitomate con chipotle y cebolla.','Sofríe pollo deshebrado y añade la salsa.','Cocina 10 min. Sirve sobre arroz.']},
-      {name:'Lentejas con chorizo',kcal:668,p:43,c:75,g:23,ing:[['Lentejas cocidas','300g'],['Chorizo de pavo','120g'],['Jitomate','80g'],['Cebolla','40g'],['Zanahoria','60g'],['Aceite de oliva','10g']],steps:['Sofríe chorizo con cebolla y jitomate.','Añade lentejas lavadas, zanahoria y agua.','Cocina 25 min hasta que estén suaves.']},
-      {name:'Hamburguesa de res sin pan',kcal:660,p:43,c:45,g:36,ing:[['Carne molida','200g'],['Papa hervida','190g (en gajos)'],['Lechuga','40g'],['Jitomate','80g'],['Cebolla','20g']],steps:['Hornea papa en gajos 25 min.','Forma y cocina la hamburguesa en sartén.','Sirve sobre lechuga con jitomate y cebolla.']},
-      {name:'Pollo en salsa verde',kcal:662,p:53,c:51,g:28,ing:[['Pechuga de pollo','180g'],['Salsa verde','80g'],['Papa hervida','210g'],['Cebolla','40g'],['Aceite de oliva','5g']],steps:['Cuece papa en cubos 10 min.','Sofríe cebolla, añade salsa verde y pollo.','Agrega papa y cocina 10 min. Sirve con cilantro.']},
-      {name:'Camarones al ajillo',kcal:679,p:58,c:60,g:21,ing:[['Camarón','300g'],['Arroz cocido','200g'],['Mantequilla light','12g'],['Aceite de oliva','7g']],steps:['Cuece arroz por separado.','Saltea ajo en mantequilla, añade camarón y limón.','Cocina 3 min. Sirve sobre arroz con perejil.']},
-      {name:'Estofado de res',kcal:661,p:38,c:50,g:37,ing:[['Res en trozos','170g'],['Papa hervida','170g'],['Zanahoria','80g'],['Cebolla','40g'],['Jitomate','80g'],['Caldo','100ml'],['Aceite de oliva','5g']],steps:['Dora res en olla con aceite.','Añade verduras, jitomate y caldo.','Cocina a fuego bajo 35 min hasta que la carne esté suave.']},
-    ]
-  },
-  cena: {
-    label:'Cena', badge:'mb-ce', target:400,
-    options:[
-      {name:'Ensalada de pollo con papa',kcal:402,p:34,c:28,g:18,ing:[['Pechuga de pollo','110g'],['Papa hervida','110g'],['Espinaca','60g'],['Jitomate','80g'],['Aceite de oliva','5g']],steps:['Toma pollo y papa del toper del refri.','Arma sobre cama de espinaca con jitomate.','Adereza con aceite, limón y sazona.']},
-      {name:'Tostadas de atún',kcal:406,p:31,c:23,g:21,ing:[['Tostadas horneadas','38g (3 piezas)'],['Atún en agua','90g'],['Aguacate','35g'],['Jitomate','80g'],['Cebolla','20g']],steps:['Mezcla atún con jitomate, cebolla y limón.','Unta aguacate en cada tostada.','Coloca mezcla de atún encima.']},
-      {name:'Sopa de pollo con verduras',kcal:421,p:36,c:36,g:15,ing:[['Pechuga de pollo','120g'],['Papa hervida','130g'],['Zanahoria','60g'],['Calabaza','60g'],['Caldo','200ml']],steps:['Sofríe cebolla y ajo. Añade caldo y pollo.','Agrega papa, zanahoria y calabaza. Cocina 20 min.','Deshebra pollo, regresa a olla. Añade cilantro.']},
-      {name:'Ensalada pollo con arúgula',kcal:376,p:30,c:27,g:17,ing:[['Pechuga de pollo','100g'],['Arúgula','50g'],['Fresas','60g'],['Papa hervida','100g'],['Aceite de oliva','5g']],steps:['Cocina pollo a la plancha y rebana.','Arma ensalada con arúgula, fresas y papa.','Coloca pollo encima. Adereza con aceite y balsámico.']},
-      {name:'Sopa de camarón',kcal:383,p:40,c:36,g:9,ing:[['Camarón','200g'],['Calabaza','100g'],['Zanahoria','80g'],['Jitomate','80g'],['Caldo','200ml'],['Arroz cocido','60g'],['Aceite de oliva','5g']],steps:['Sofríe cebolla y jitomate.','Añade caldo, zanahoria y calabaza. Cocina 10 min.','Agrega camarón y arroz. Cocina 5 min más.']},
-      {name:'Ensalada de atún con mango',kcal:422,p:38,c:26,g:19,ing:[['Atún en agua','120g'],['Espinaca','60g'],['Mango','130g'],['Cebolla','20g'],['Aguacate','25g'],['Aceite de oliva','5g']],steps:['Escurre atún y separa en trozos.','Arma ensalada con espinaca, mango y cebolla.','Coloca atún encima. Adereza con aceite y balsámico.']},
-      {name:'Quesadillas de pollo light',kcal:391,p:39,c:29,g:14,ing:[['Tortilla de maíz','60g (2 piezas)'],['Pechuga de pollo','110g deshebrada'],['Queso panela','35g'],['Espinaca','30g']],steps:['Calienta tortilla en comal.','Agrega pollo, queso y espinaca.','Dobla y calienta hasta que queso derrita.']},
-      {name:'Caldo tlalpeño',kcal:389,p:43,c:25,g:14,ing:[['Pechuga de pollo','140g'],['Chipotle','10g'],['Brócoli','60g'],['Zanahoria','50g'],['Ejotes','50g'],['Caldo','200ml']],steps:['Calienta caldo con chipotle.','Añade zanahoria, ejotes y pollo.','Cocina 15 min. Sirve con limón y cilantro.']},
-      {name:'Ensalada de camarón con naranja',kcal:421,p:39,c:19,g:22,ing:[['Camarón','190g'],['Lechuga','60g'],['Naranja','80g'],['Aguacate','60g'],['Aceite de oliva','5g'],['Queso panela','20g']],steps:['Cocina camarón a la plancha con ajo.','Arma ensalada con lechuga, naranja y aguacate.','Coloca camarón encima. Adereza con aceite.']},
-      {name:'Tacos dorados de pollo',kcal:386,p:37,c:32,g:13,ing:[['Pechuga de pollo','120g deshebrada'],['Tortilla de maíz','60g (2 piezas)'],['Lechuga','40g'],['Jitomate','80g'],['Crema light','25g']],steps:['Rellena tortillas con pollo y dobla.','Hornea a 200°C 15 min hasta dorar.','Sirve con lechuga, jitomate y crema.']},
-      {name:'Crema de calabaza con pollo',kcal:382,p:37,c:17,g:20,ing:[['Calabaza','250g'],['Pechuga de pollo','120g'],['Cebolla','40g'],['Queso panela','20g'],['Aceite de oliva','8g']],steps:['Cuece calabaza con cebolla en caldo.','Licúa hasta obtener crema. Sazona.','Sirve con pollo a la plancha encima.']},
-      {name:'Ensalada de res con pera',kcal:423,p:23,c:34,g:24,ing:[['Res en tiras','100g'],['Espinaca','50g'],['Pera','80g'],['Papa hervida','100g'],['Aceite de oliva','5g']],steps:['Cocina res en tiras a la plancha.','Arma ensalada con espinaca, pera y papa.','Coloca res encima. Adereza con aceite y balsámico.']},
-      {name:'Huevos pochados con papa',kcal:419,p:21,c:32,g:24,ing:[['Huevo','130g (2 piezas)'],['Espinaca','60g'],['Papa hervida','140g'],['Aceite de oliva','5g']],steps:['Cuece papa en cubos 10 min.','Saltea espinaca con ajo y aceite.','Pocha huevos 3 min y sirve sobre espinaca y papa.']},
-      {name:'Ensalada de pollo con durazno',kcal:395,p:40,c:18,g:19,ing:[['Pechuga de pollo','140g'],['Espinaca','60g'],['Durazno','150g'],['Pepino','60g'],['Aceite de oliva','8g']],steps:['Cocina pollo a la plancha y rebana.','Arma ensalada con espinaca, durazno y pepino.','Coloca pollo encima. Adereza con aceite y balsámico.']},
-      {name:'Carne molida con calabaza',kcal:425,p:31,c:14,g:29,ing:[['Carne molida','150g'],['Calabaza','140g'],['Jitomate','80g'],['Cebolla','40g'],['Aceite de oliva','8g']],steps:['Dora carne molida con ajo y cebolla.','Añade jitomate y calabaza en cubos.','Cocina 10 min hasta que calabaza esté suave.']},
-      {name:'Atún sellado con arúgula',kcal:380,p:41,c:9,g:20,ing:[['Atún fresco','130g'],['Arúgula','80g'],['Jitomate','60g'],['Pepino','60g'],['Aguacate','25g'],['Aceite de oliva','5g']],steps:['Sella filete de atún en sartén muy caliente 1 min por lado.','Arma ensalada con arúgula, jitomate y pepino.','Rebana atún y coloca sobre ensalada.']},
-      {name:'Caldo de res con verduras',kcal:415,p:28,c:30,g:22,ing:[['Res en trozos','120g'],['Papa hervida','110g'],['Zanahoria','60g'],['Brócoli','60g'],['Caldo','200ml']],steps:['Hierve res con cebolla y ajo 30 min.','Añade papa, zanahoria y brócoli. Cocina 20 min.','Sirve con cilantro y limón.']},
-      {name:'Pollo al limón con brócoli',kcal:414,p:40,c:25,g:19,ing:[['Pechuga de pollo','130g'],['Brócoli','150g'],['Papa hervida','80g'],['Aceite de oliva','5g']],steps:['Cuece brócoli al vapor 5 min.','Cocina pollo en sartén con ajo y limón.','Sirve pollo con brócoli y papa.']},
-      {name:'Ensalada de atún con manzana',kcal:397,p:38,c:20,g:19,ing:[['Atún en agua','120g'],['Arúgula','60g'],['Manzana','100g'],['Cebolla','20g'],['Aguacate','25g'],['Aceite de oliva','5g']],steps:['Escurre atún y separa en trozos.','Arma ensalada con arúgula, manzana y cebolla.','Coloca atún encima. Adereza con aceite y balsámico.']},
-      {name:'Camarones al limón',kcal:383,p:40,c:25,g:14,ing:[['Camarón','200g'],['Espárragos','150g'],['Papa hervida','80g'],['Aceite de oliva','8g']],steps:['Saltea espárragos con ajo y aceite 3 min.','Añade camarón y limón. Cocina 3 min más.','Sirve con papa y limón extra.']},
-    ]
-  },
-  snack: {
-    label:'Snacks', badge:'mb-s', target:100,
-    options:[
-      {name:'Manzana + cacahuates',kcal:113,p:2,c:19,g:4,ing:[['Manzana','130g (1 pieza)'],['Cacahuates naturales','8g']],steps:['Come la manzana en rebanadas con los cacahuates.']},
-      {name:'Pepino + jícama + manzana',kcal:104,p:2,c:24,g:1,ing:[['Pepino','200g (1 pieza)'],['Jícama','100g'],['Manzana','80g']],steps:['Corta todo en bastones. Añade limón y tajín.']},
-      {name:'Yogurt griego',kcal:97,p:9,c:4,g:5,ing:[['Yogurt griego sin azúcar','100g']],steps:['Sirve y disfruta. Añade canela si gustas.']},
-      {name:'Palomitas naturales',kcal:121,p:4,c:21,g:5,ing:[['Maíz desgranado','110g'],['Aceite de oliva','3g']],steps:['Calienta aceite en olla. Añade maíz. Tapa hasta que deje de tronar.']},
-      {name:'Jícama con tajín',kcal:95,p:2,c:22,g:0,ing:[['Jícama','250g (bastones)']],steps:['Sirve jícama en bastones. Limón y tajín al gusto.']},
-      {name:'Huevo cocido',kcal:93,p:8,c:1,g:6,ing:[['Huevo','65g (1 pieza)']],steps:['Hierve huevo 10 min. Pela y sirve con sal y chile.']},
-      {name:'Edamames',kcal:98,p:9,c:7,g:4,ing:[['Edamames','80g']],steps:['Calienta edamames. Añade sal de mar y limón.']},
-      {name:'Smoothie de proteína',kcal:102,p:12,c:7,g:3,ing:[['Proteína en polvo','30g (1 scoop)'],['Yogurt griego','50g'],['Plátano','20g']],steps:['Mezcla proteína con café frío, yogurt y plátano en licuadora.']},
-      {name:'Mandarina',kcal:95,p:2,c:24,g:1,ing:[['Mandarina','180g (2 piezas)']],steps:['Pela y disfruta.']},
-      {name:'Fresas con tajín',kcal:96,p:2,c:23,g:1,ing:[['Fresas','300g (1 taza grande)']],steps:['Lava fresas y sirve con limón y tajín.']},
-      {name:'Atún de la lata',kcal:109,p:16,c:0,g:5,ing:[['Atún en agua','55g (½ lata)']],steps:['Abre la lata, escurre y sazona con limón y sal.']},
-      {name:'Sandía en cubos',kcal:90,p:2,c:23,g:0,ing:[['Sandía','300g']],steps:['Sirve sandía en cubos con limón y sal.']},
-      {name:'Manzana con canela',kcal:94,p:1,c:25,g:0,ing:[['Manzana','180g (1 grande)']],steps:['Rebana manzana. Añade canela al gusto.']},
-      {name:'Zanahoria con limón',kcal:98,p:2,c:23,g:1,ing:[['Zanahoria','240g (bastones)']],steps:['Sirve zanahoria en bastones con limón y sal.']},
-      {name:'Uvas congeladas',kcal:90,p:1,c:24,g:0,ing:[['Uvas','130g']],steps:['Lava uvas y congélalas 2 horas. Come directo del freezer.']},
-      {name:'Queso panela',kcal:96,p:8,c:2,g:6,ing:[['Queso panela','55g']],steps:['Corta queso en cubos. Añade chile y limón.']},
-      {name:'Durazno con tajín',kcal:98,p:2,c:24,g:1,ing:[['Durazno','250g (2 piezas)']],steps:['Lava y rebana. Añade tajín al gusto.']},
-      {name:'Elote en vaso light',kcal:95,p:4,c:21,g:1,ing:[['Maíz desgranado','110g cocido']],steps:['Sirve elote cocido. Añade limón, sal y chile. Sin mayo ni crema.']},
-      {name:'Pepino con chile',kcal:81,p:2,c:18,g:1,ing:[['Pepino','150g'],['Jícama','80g'],['Zanahoria','80g']],steps:['Corta todo en bastones. Añade vinagre blanco, chile y sal.']},
-      {name:'Fresas con mango',kcal:90,p:2,c:22,g:1,ing:[['Fresas','150g'],['Mango','70g']],steps:['Corta la fruta. Añade limón y tajín si gustas.']},
-    ]
-  }
-};
-
-const KEYS = ['desayuno','comida','cena','snack'];
-const DAYS = ['Lun','Mar','Mié','Jue','Vie','Sáb','Dom'];
-const DAYS_FULL = ['Lunes','Martes','Miércoles','Jueves','Viernes','Sábado','Domingo'];
-const STORES = ['Walmart','La Comer','Frutería','Costco'];
-
-// ═══════════════════════════════════════════
-// STATE
-// ═══════════════════════════════════════════
-function loadState() {
-  try { return JSON.parse(localStorage.getItem('meta62') || '{}'); } catch(e) { return {}; }
-}
-function saveState() {
-  try {
-    const toSave = Object.assign({}, state);
-    delete toSave.editingPrices;
-    delete toSave.recFilter;
-    // checkedNow is intentionally kept in saveState
-    delete toSave.currentSection;
-    delete toSave.openRecipe;
-    // Keep: weekView, checkedNow, superFilter, bought, weeks, prices, ratings, etc.
-    localStorage.setItem('meta62', JSON.stringify(toSave));
-  } catch(e) {}
-}
-
-const saved = loadState();
-
-// Auto-advance weeks: if saved weekStart is in the past by 7+ days, shift weeks
-function getWeekStart() {
-  const now = new Date();
-  const day = now.getDay();
-  const diff = (day === 0 ? -6 : 1 - day);
-  const monday = new Date(now);
-  monday.setDate(now.getDate() + diff);
-  monday.setHours(0,0,0,0);
-  return monday.toISOString().split('T')[0];
-}
-
-function autoAdvanceWeeks(s) {
-  const savedStart = s.weekStart;
-  const currentStart = getWeekStart();
-  if (!savedStart) return s;
-  const diff = Math.round((new Date(currentStart) - new Date(savedStart)) / (7*24*3600*1000));
-  if (diff >= 2) {
-    // Two weeks passed: both weeks reset
-    s.weeks = [Array.from({length:7},()=>({desayuno:null,comida:null,cena:null,snack:null})),
-               Array.from({length:7},()=>({desayuno:null,comida:null,cena:null,snack:null}))];
-    s.bought = {};
-    s.weekStart = currentStart;
-  } else if (diff === 1) {
-    // One week passed: next becomes current, reset next
-    s.weeks = [s.weeks[1] || Array.from({length:7},()=>({desayuno:null,comida:null,cena:null,snack:null})),
-               Array.from({length:7},()=>({desayuno:null,comida:null,cena:null,snack:null}))];
-    s.bought = {};
-    s.weekStart = currentStart;
-  }
-  return s;
-}
-
-let savedData = Object.assign({}, saved);
-savedData = autoAdvanceWeeks(savedData);
-
-const state = {
-  // weeks[0] = current week, weeks[1] = next week
-  weeks: savedData.weeks || [
-    Array.from({length:7}, () => ({desayuno:null,comida:null,cena:null,snack:null})),
-    Array.from({length:7}, () => ({desayuno:null,comida:null,cena:null,snack:null}))
-  ],
-  weekStart: savedData.weekStart || getWeekStart(),
-  weekView: savedData.weekView || 0,
-  ratings: savedData.ratings || {},
-  prices: savedData.prices || {},
-  checkedNow: savedData.checkedNow || {},
-  gratis: savedData.gratis || {},
-  eaten: savedData.eaten || {},
-  extraFoods: savedData.extraFoods || [],
-  bought: savedData.bought || {},
-  superHistory: savedData.superHistory || [],
-  weightHistory: savedData.weightHistory || [],
-  config: savedData.config || {nombre:'Jerry',edad:43,estatura:1.67,peso:76,meta:62,actividad:1.375,protObj:120,carbObj:160,grasaObj:53},
-  editingPrices: false,
-  superFilter: savedData.superFilter || 'current',
-  recFilter: 'all',
-  plannerFilter: 'desayuno',
-  plannerOpen: null,
-  currentSection: 'hoy',
-  openRecipe: null,
-};
-
-// ═══════════════════════════════════════════
-// NAVIGATION
-// ═══════════════════════════════════════════
-function showSection(id, btn) {
-  state.currentSection = id;
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.getElementById('s-' + id).classList.add('active');
-  KEYS.concat(['hoy','semana','recetas','super','config']).forEach(k => {
-    const ico = document.getElementById('nav-' + k);
-    const lbl = document.getElementById('navl-' + k);
-    if (ico) ico.classList.remove('active');
-    if (lbl) lbl.classList.remove('active');
-  });
-  const ico = document.getElementById('nav-' + id);
-  const lbl = document.getElementById('navl-' + id);
-  if (ico) ico.classList.add('active');
-  if (lbl) lbl.classList.add('active');
-
-  if (id === 'hoy') renderHoy();
-  if (id === 'semana') renderSemana();
-  if (id === 'recetas') renderRecetas();
-  if (id === 'super') renderSuper();
-  if (id === 'config') renderConfig();
-}
-
-// ═══════════════════════════════════════════
-// HOY
-// ═══════════════════════════════════════════
-function getTodayIdx() {
-  const d = new Date().getDay();
-  return d === 0 ? 6 : d - 1;
-}
-
-
-// Calculate approximate cost of a recipe based on ingredient prices
-function calcRecipeCost(opt) {
-  if (!state.prices || !opt.ing) return null;
-  let total = 0;
-  let hasAnyPrice = false;
-  opt.ing.forEach(([name, qtyStr]) => {
-    const p = state.prices[name];
-    if (!p || p.price === 0) return;
-    const grams = parseGrams(qtyStr);
-    if (grams === null || grams === 0) return;
-    const ppg = getPricePerGram(name, p.price);
-    if (ppg > 0) {
-      total += ppg * grams;
-      hasAnyPrice = true;
-    }
-  });
-  return hasAnyPrice && total > 0 ? Math.round(total) : null;
-}
-
-function parseGrams(qtyStr) {
-  if (!qtyStr) return null;
-  const s = qtyStr.toLowerCase().trim();
-  // Extract leading number
-  const num = parseFloat(s);
-  if (isNaN(num)) return null;
-  if (s.indexOf('kg') !== -1) return num * 1000;
-  if (s.indexOf(' g') !== -1 || s.endsWith('g') || s.indexOf('g ') !== -1 || s.indexOf('g(') !== -1) return num;
-  if (s.indexOf('lata') !== -1) return num * 140;
-  if (s.indexOf('ml') !== -1) return num;
-  if (s.indexOf('litro') !== -1) return num * 1000;
-  if (s.indexOf('cdta') !== -1) return num * 5;
-  if (s.indexOf('cda') !== -1) return num * 15;
-  if (s.indexOf('pieza') !== -1) return num * 60;
-  // If number found but no unit — assume grams
-  if (!isNaN(num) && num > 0) return num;
-  return null;
-}
-
-function getPricePerGram(name, price) {
-  const n = name.toLowerCase();
-  // Per kg items
-  if (/pechuga|camar|carne molida|res en|papa|jitomate|pepino|aguacate|espinaca|ar.gula|lechuga|zanahoria|br.col|calabaza|cebolla|repollo|ejote|esp.rr|manzana|fresa|mango|naranja|durazno|pera|j.cama|uva|sand.a|mandarina|pl.tano|chorizo|atún fresco|atún en filete/.test(n)) return price / 1000;
-  // Per lata
-  if (n.includes('atún en agua')) return price / 140;
-  // Huevo: $45 por 18 pzas ~60g c/u = $45/1080g
-  if (n.includes('huevo')) return price / 1080;
-  // Carbohidratos
-  if (n.includes('arroz')) return price / 1000;
-  if (n.includes('pasta')) return price / 500;
-  if (n.includes('tortilla de maíz')) return price / 1000;
-  if (n.includes('tortilla integral')) return price / 300;
-  if (n.includes('tostada')) return price / 200;
-  if (n.includes('pan integral')) return price / 610;
-  if (n.includes('pan telera')) return price / 80; // ~80g per piece
-  if (n.includes('frijol')) return price / 400;
-  if (n.includes('lenteja')) return price / 900;
-  if (n.includes('masa')) return price / 1000;
-  if (n.includes('maíz pozolero')) return price / 400;
-  if (n.includes('maíz desgranado')) return price / 100;
-  // Lácteos
-  if (n.includes('queso panela')) return price / 400;
-  if (n.includes('yogurt')) return price / 900;
-  if (n.includes('crema')) return price / 200;
-  if (n.includes('proteína en polvo')) return price / 30;
-  // Condimentos y otros
-  if (n.includes('aceite')) return price / 946;
-  if (n.includes('mayonesa')) return price / 625;
-  if (n.includes('mantequilla')) return price / 250;
-  if (n.includes('salsa verde') || n.includes('salsa roja') || n.includes('chipotle')) return price / 400;
-  if (n.includes('miel')) return price / 500;
-  if (n.includes('alga nori')) return price / 30;
-  if (n.includes('salsa soya')) return price / 300;
-  if (n.includes('caldo')) return price / 1000;
-  if (n.includes('edamame')) return price / 500;
-  if (n.includes('cacahuate')) return price / 200;
-  return price / 200; // default
-}
-
-function costBadge(cost) {
-  if (!cost || cost === 0) return '';
-  return `<span style="font-size:11px;font-weight:700;color:var(--amber);background:var(--amber-bg);padding:2px 7px;border-radius:99px">$${cost}</span>`;
-}
-
-function renderHoy() {
-  const todayIdx = getTodayIdx();
-  const w = state.weeks[0][todayIdx];
-  const cfg = state.config;
-
-  // Header date
-  const now = new Date();
-  const dateStr = now.toLocaleDateString('es-MX', {weekday:'long',day:'numeric',month:'long'});
-  document.getElementById('hdr-date').textContent = dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
-
-  // Kcal — only count eaten meals
-  let totalKcal = 0, totalP = 0, totalC = 0, totalG = 0;
-  const todayStr = new Date().toLocaleDateString('es-MX');
-  if (!state.eaten) state.eaten = {};
-  KEYS.forEach(k => {
-    const idx = w[k];
-    if (idx === null) return;
-    const rKey = `${k}-${idx}`;
-    if (state.eaten[rKey] !== todayStr) return; // only count if marked eaten today
-    const opt = MEALS[k].options[idx];
-    const mult = k === 'snack' ? 2 : 1;
-    totalKcal += opt.kcal * mult;
-    totalP += opt.p * mult;
-    totalC += opt.c * mult;
-    totalG += opt.g * mult;
-  });
-  const target = 1600;
-  const pct = Math.min(100, Math.round(totalKcal / target * 100));
-  document.getElementById('hoy-kcal-num').textContent = totalKcal.toLocaleString() + ' kcal';
-  document.getElementById('hoy-kcal-rest').textContent = Math.max(0, target - totalKcal).toLocaleString() + ' restantes';
-  document.getElementById('hoy-kcal-pct').textContent = pct + '%';
-  document.getElementById('hoy-kcal-fill').style.width = pct + '%';
-  document.getElementById('hoy-p').textContent = Math.round(totalP) + 'g';
-  document.getElementById('hoy-c').textContent = Math.round(totalC) + 'g';
-  document.getElementById('hoy-g').textContent = Math.round(totalG) + 'g';
-
-  // Progress
-  renderProgress();
-
-  // Menú del día
-  const menu = document.getElementById('hoy-menu');
-  const labels = {desayuno:'1er alimento',comida:'Comida',cena:'Cena',snack:'Snacks'};
-  const badges = {desayuno:'mb-d',comida:'mb-c',cena:'mb-ce',snack:'mb-s'};
-  menu.innerHTML = KEYS.map(mealKey => {
-    const mealIdx = w[mealKey];
-    const isSet = mealIdx !== null && mealIdx !== undefined;
-    const opt = isSet ? MEALS[mealKey].options[mealIdx] : null;
-    const rKey = mealKey + '-' + mealIdx;
-    const rating = isSet ? (state.ratings[rKey] || 0) : 0;
-    const eaten = isSet && state.eaten && state.eaten[rKey] === new Date().toLocaleDateString('es-MX');
-    const starsHtml = isSet ? [1,2,3,4,5].map(s =>
-      `<span class="${s <= rating ? 'star' : 'star-e'}" onclick="rateHoy('${mealKey}',${mealIdx},${s})">★</span>`
-    ).join('') : '';
-    const cost = isSet ? calcRecipeCost(opt) : null;
-    const eatLabel = eaten ? '✅' : '🍽';
-    return `<div class="meal-row${isSet ? '' : ' meal-empty'}" ${isSet ? `onclick="openRecipeModal('${mealKey}',${mealIdx})"` : ''} style="${isSet?'cursor:pointer':''}">
-      <div class="meal-left">
-        <span class="meal-badge ${badges[mealKey]}">${labels[mealKey]}</span>
-        <span class="meal-name">${isSet ? opt.name : 'Sin planear'}</span>
-      </div>
-      <div class="meal-right">
-        <span class="meal-kcal">${isSet ? (mealKey==='snack'?opt.kcal+'×2':opt.kcal)+' kcal' : '—'}</span>
-        ${cost ? `<span style="font-size:10px;font-weight:700;color:var(--amber)">$${cost}</span>` : ''}
-        <div class="stars" onclick="event.stopPropagation()">${starsHtml}</div>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-function rateHoy(k, idx, stars) {
-  state.ratings[`${k}-${idx}`] = stars;
-  saveState();
-  renderHoy();
-}
-
-function renderProgress() {
-  const cfg = state.config;
-  const wh = state.weightHistory;
-  const startKg = parseFloat(cfg.peso) || 76;
-  const targetKg = 62;
-  const currentKg = wh.length > 0 ? wh[wh.length-1].kg : startKg;
-  const total = startKg - targetKg;
-  const done = startKg - currentKg;
-  const pct = total > 0 ? Math.min(100, Math.round(done / total * 100)) : 0;
-
-  document.getElementById('prog-pct').textContent = pct + '%';
-  document.getElementById('prog-fill').style.width = pct + '%';
-  document.getElementById('prog-start').textContent = startKg + ' kg';
-  document.getElementById('prog-current').textContent = currentKg.toFixed(1) + ' kg (hoy)';
-}
-
-// ═══════════════════════════════════════════
-// SEMANA
-// ═══════════════════════════════════════════
-function renderSemana() {
-  renderWeekSummary();
-  renderWeekPlanner();
-}
-
-function shortName(n){
-  const m={
-    'Bowl de atún con papa':'Bowl atún papa',
-    'Wrap de pollo con aguacate':'Wrap pollo',
-    'Onigiri de atún':'Onigiri atún',
-    'Papa rellena de atún':'Papa c/atún',
-    'Quesadilla de pollo':'Quesadilla pollo',
-    'Sopes de atún':'Sopes atún',
-    'Bowl de pollo japonés':'Bowl pollo',
-    'Huevos revueltos con papa':'Huevos c/papa',
-    'Tostadas de pollo':'Tostadas pollo',
-    'Omelette de atún':'Omelette atún',
-    'Tacos de pollo':'Tacos pollo',
-    'Ensalada de atún con papa':'Ensalada atún',
-    'Chilaquiles de pollo':'Chilaquiles',
-    'Burrito de huevo':'Burrito huevo',
-    'Bowl de carne con papa':'Bowl carne',
-    'Wrap de atún mediterráneo':'Wrap atún',
-    'Enfrijoladas de pollo':'Enfrijoladas',
-    'Huevos a la mexicana':'Huevos mex.',
-    'Bowl de camarón con arroz':'Bowl camarón',
-    'Molletes de frijol':'Molletes',
-    'Pollo a la mexicana con papa':'Pollo mex.',
-    'Pasta con atún':'Pasta c/atún',
-    'Bowl teriyaki de pollo':'Bowl teriyaki',
-    'Caldo de res con verduras':'Caldo res',
-    'Tacos de camarón':'Tacos camarón',
-    'Arroz con pollo':'Arroz pollo',
-    'Picadillo de res con papa':'Picadillo res',
-    'Sopa de pasta con pollo':'Sopa pasta',
-    'Atún empanizado con papa':'Atún empaniz.',
-    'Enchiladas de pollo':'Enchiladas',
-    'Camarones a la mexicana':'Camarones mex.',
-    'Milanesa de res con papa':'Milanesa res',
-    'Pozole de pollo':'Pozole pollo',
-    'Chiles rellenos de res':'Chiles rellenos',
-    'Tinga de pollo con arroz':'Tinga pollo',
-    'Lentejas con chorizo':'Lentejas chorizo',
-    'Hamburguesa de res sin pan':'Hamburguesa',
-    'Pollo en salsa verde':'Pollo s.verde',
-    'Camarones al ajillo':'Camarones ajillo',
-    'Estofado de res':'Estofado res',
-    'Ensalada de pollo con papa':'Ensalada pollo',
-    'Tostadas de atún':'Tostadas atún',
-    'Sopa de pollo con verduras':'Sopa pollo',
-    'Ensalada pollo con arúgula':'Ensalada arúgula',
-    'Sopa de camarón':'Sopa camarón',
-    'Ensalada de atún con mango':'Ensalada mango',
-    'Quesadillas de pollo light':'Quesadillas',
-    'Caldo de pollo tlalpeño':'Caldo tlalpeño',
-    'Ensalada de camarón con naranja':'Ensalada camarón',
-    'Tacos dorados de pollo':'Tacos dorados',
-    'Crema de calabaza con pollo':'Crema calabaza',
-    'Ensalada de res con pera':'Ensalada res',
-    'Huevos pochados con papa':'Huevos pochados',
-    'Ensalada de pollo con durazno':'Ensalada durazno',
-    'Carne molida con calabaza':'Carne calabaza',
-    'Atún sellado con arúgula':'Atún sellado',
-    'Caldo de res con verduras':'Caldo res',
-    'Pollo al limón con brócoli':'Pollo limón',
-    'Ensalada de atún con manzana':'Ensalada manzana',
-    'Camarones al limón':'Camarones limón',
-    'Manzana + cacahuates':'Manzana+cacah.',
-    'Pepino + jícama + manzana':'Pepino+jícama',
-    'Yogurt griego':'Yogurt griego',
-    'Palomitas naturales':'Palomitas',
-    'Jícama con tajín':'Jícama tajín',
-    'Huevo cocido':'Huevo cocido',
-    'Edamames':'Edamames',
-    'Smoothie de proteína':'Smoothie prot.',
-    'Mandarina':'Mandarina',
-    'Fresas con tajín':'Fresas tajín',
-    'Atún de la lata':'Atún lata',
-    'Sandía en cubos':'Sandía',
-    'Manzana con canela':'Manzana canela',
-    'Zanahoria con limón':'Zanahoria',
-    'Uvas congeladas':'Uvas',
-    'Queso panela':'Queso panela',
-    'Durazno con tajín':'Durazno',
-    'Elote en vaso light':'Elote',
-    'Pepino con chile':'Pepino chile',
-    'Fresas con mango':'Fresas mango',
-  };
-  return m[n]||n.split(' ').slice(0,3).join(' ');
-}
-
-function renderWeekSummary() {
-  const el = document.getElementById('week-summary');
-  const wi = state.weekView;
-  // Highlight active week button
-  const prevBtn = document.getElementById('week-prev-btn');
-  const nextBtn = document.getElementById('week-next-btn');
-  if (prevBtn && nextBtn) {
-    prevBtn.style.background = wi === 0 ? '#1d4ed8' : '';
-    prevBtn.style.color = wi === 0 ? '#fff' : '';
-    prevBtn.style.borderColor = wi === 0 ? '#1d4ed8' : '';
-    nextBtn.style.background = wi === 1 ? '#1d4ed8' : '';
-    nextBtn.style.color = wi === 1 ? '#fff' : '';
-    nextBtn.style.borderColor = wi === 1 ? '#1d4ed8' : '';
-  }
-  const labels = {desayuno:'D',comida:'C',cena:'Ce',snack:'S'};
-  let html = `<div class="week-day-row header">
-    <div>Día</div><div>1er Al.</div><div>Comida</div><div>Cena</div><div>Kcal</div>
-  </div>`;
-  const todayIdx = wi === 0 ? getTodayIdx() : -1;
-  DAYS.forEach((day, i) => {
-    const w = state.weeks[wi][i];
-    const kcal = KEYS.reduce((s,k) => {
-      const idx = w[k];
-      if (idx === null) return s;
-      return s + MEALS[k].options[idx].kcal * (k==='snack'?2:1);
-    }, 0);
-    const isToday = i === todayIdx;
-    const d = w.desayuno !== null ? shortName(MEALS.desayuno.options[w.desayuno].name) : '—';
-    const c = w.comida !== null ? shortName(MEALS.comida.options[w.comida].name) : '—';
-    const ce = w.cena !== null ? shortName(MEALS.cena.options[w.cena].name) : '—';
-    html += `<div class="week-day-row" style="${isToday?'background:var(--bg3)':''}">
-      <div class="wdr-day">${day}</div>
-      <div class="wdr-meal ${w.desayuno!==null?'set':''}">${d}</div>
-      <div class="wdr-meal ${w.comida!==null?'set':''}">${c}</div>
-      <div class="wdr-meal ${w.cena!==null?'set':''}">${ce}</div>
-      <div>${kcal > 0 ? '<span class="week-kcal-badge">'+kcal+'</span>' : '<span style="color:var(--muted);font-size:10px">—</span>'}</div>
-    </div>`;
-  });
-  el.innerHTML = html;
-}
-
-function renderWeekPlanner() {
-  const el = document.getElementById('week-planner');
-  const keyLabels = {desayuno:'1er alimento (420 kcal)',comida:'Comida (680 kcal)',cena:'Cena (400 kcal)',snack:'Snacks (100 kcal c/u)'};
-  const badgeColors = {desayuno:'var(--blue)',comida:'var(--green)',cena:'var(--amber)',snack:'var(--purple)'};
-  const k = state.plannerFilter || 'desayuno';
-
-  el.innerHTML = [k].map(k => {
-    const opts = MEALS[k].options;
-    const assignedDays = {};
-    DAYS.forEach((d,i) => { if (state.weeks[state.weekView][i][k] !== null) assignedDays[state.weeks[state.weekView][i][k]] = i; });
-
-    const recipeItems = opts.map((opt, idx) => {
-      const rKey = `${k}-${idx}`;
-      const rating = state.ratings[rKey] || 0;
-      const starsHtml = [1,2,3,4,5].map(s => `<span style="color:${s<=rating?'#f59e0b':'var(--border)'}">★</span>`).join('');
-      const dayChips = DAYS.map((day, di) => {
-        const assignedTo = state.weeks[state.weekView][di][k];
-        const isThisRecipe = assignedTo === idx;
-        const isOtherRecipe = assignedTo !== null && assignedTo !== idx;
-        return `<span id="chip-${k}-${idx}-${di}" class="day-chip ${isThisRecipe?'active':''} ${isOtherRecipe?'disabled':''}"
-          onclick="${isOtherRecipe ? '' : `toggleDay('${k}',${idx},${di})`}">${day}</span>`;
-      }).join('');
-
-      const isOpen = state.plannerOpen === rKey;
-      const ingHtml = isOpen ? `<div style="margin-top:10px;border-top:.5px solid var(--border);padding-top:10px">
-        <div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px">Ingredientes</div>
-        ${opt.ing.map(([n,q])=>`<div style="display:flex;justify-content:space-between;font-size:12px;padding:3px 0;border-bottom:.5px solid var(--bg3)"><span>${n}</span><span style="color:var(--muted)">${q}</span></div>`).join('')}
-        <div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:8px;margin-bottom:6px">Preparación</div>
-        ${opt.steps.map((s,i)=>`<div style="display:flex;gap:6px;font-size:12px;margin-bottom:5px;line-height:1.4"><span style="min-width:16px;height:16px;border-radius:50%;background:#1d4ed8;color:#fff;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">${i+1}</span><span>${s}</span></div>`).join('')}
-      </div>` : '';
-      return `<div class="recipe-item" style="flex-direction:column;align-items:stretch">
-        <div style="display:flex;align-items:center;justify-content:space-between;cursor:pointer" onclick="togglePlannerRecipe('${rKey}')">
-          <div class="recipe-item-left" style="flex:1">
-            <div class="recipe-item-name">${opt.name}</div>
-            <div class="recipe-item-kcal">${opt.kcal} kcal · <span class="recipe-item-stars">${starsHtml}</span></div>
-          </div>
-          <span style="font-size:16px;color:var(--muted);transition:transform .2s;transform:${isOpen?'rotate(180deg)':'rotate(0deg)'};flex-shrink:0;margin-left:8px">⌄</span>
-        </div>
-        <div class="day-chips" style="margin-top:8px">${dayChips}</div>
-        ${ingHtml}
-      </div>`;
-    }).join('');
-
-    return `<div class="time-section">
-      <div class="time-header">
-        <div class="time-title" style="color:${badgeColors[k]}">${keyLabels[k]}</div>
-      </div>
-      <div class="recipe-list">${recipeItems}</div>
-    </div>`;
-  }).join('');
-}
-
-function togglePlannerRecipe(rKey) {
-  state.plannerOpen = state.plannerOpen === rKey ? null : rKey;
-  const sec = document.getElementById('s-semana');
-  const scrollTop = sec ? sec.scrollTop : 0;
-  renderWeekPlanner();
-  if (sec) sec.scrollTop = scrollTop;
-}
-
-function setPlannerFilter(k, btn) {
-  state.plannerFilter = k;
-  document.querySelectorAll('#planner-filters .rec-filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  const sec = document.getElementById('s-semana');
-  const scrollTop = sec ? sec.scrollTop : 0;
-  renderWeekPlanner();
-  if (sec) sec.scrollTop = scrollTop;
-}
-
-function changeWeekView(idx) {
-  state.weekView = idx;
-  renderSemana();
-}
-
-function toggleDay(k, recipeIdx, dayIdx) {
-  const current = state.weeks[state.weekView][dayIdx][k];
-  if (current === recipeIdx) {
-    state.weeks[state.weekView][dayIdx][k] = null;
-  } else {
-    state.weeks[state.weekView][dayIdx][k] = recipeIdx;
-  }
-  saveState();
-  renderWeekSummary();
-  // Update ONLY the day chips without re-rendering the whole planner
-  updateDayChips(k, recipeIdx);
-  updateStatSuper();
-}
-
-function updateDayChips(changedK, changedIdx) {
-  // Update all day chips for the current filter key
-  const k = state.plannerFilter || 'desayuno';
-  const opts = MEALS[k].options;
-  opts.forEach((opt, idx) => {
-    DAYS.forEach((day, di) => {
-      const chipId = 'chip-' + k + '-' + idx + '-' + di;
-      const chip = document.getElementById(chipId);
-      if (!chip) return;
-      const assignedTo = state.weeks[state.weekView][di][k];
-      const isThisRecipe = assignedTo === idx;
-      const isOtherRecipe = assignedTo !== null && assignedTo !== idx;
-      chip.className = 'day-chip' + (isThisRecipe ? ' active' : '') + (isOtherRecipe ? ' disabled' : '');
-      chip.onclick = isOtherRecipe ? null : () => toggleDay(k, idx, di);
-    });
-  });
-}
-
-// ═══════════════════════════════════════════
-// RECETAS
-// ═══════════════════════════════════════════
-function renderRecetas() {
-  const filter = state.recFilter || 'all';
-  const filtersEl = document.getElementById('rec-filters');
-  const filterBtns = [{id:'all',label:'Todas'},{id:'desayuno',label:'1er alimento'},{id:'comida',label:'Comida'},{id:'cena',label:'Cena'},{id:'snack',label:'Snacks'}];
-  filtersEl.innerHTML = filterBtns.map(f =>
-    `<button class="rec-filter-btn ${filter===f.id?'active':''}" onclick="setRecFilter('${f.id}')">${f.label}</button>`
-  ).join('');
-
-  const list = document.getElementById('rec-list');
-  let html = '';
-  const keysToShow = filter === 'all' ? KEYS : [filter];
-  keysToShow.forEach(k => {
-    MEALS[k].options.forEach((opt, idx) => {
-      const rKey = `${k}-${idx}`;
-      const rating = state.ratings[rKey] || 0;
-      const isOpen = state.openRecipe === rKey;
-      const starsHtml = [1,2,3,4,5].map(s =>
-        `<span class="${s<=rating?'star':'star-e'}" onclick="event.stopPropagation();rateRec('${k}',${idx},${s})">★</span>`
-      ).join('');
-      html += `<div class="rec-card">
-        <div class="rec-card-hdr" onclick="toggleRec('${rKey}')">
-          <div class="rec-card-left">
-            <span class="meal-badge ${MEALS[k].badge}">${MEALS[k].label}</span>
-            <div>
-              <div class="rec-card-name">${opt.name}</div>
-              <div class="rec-card-kcal">${opt.kcal} kcal${calcRecipeCost(opt)?` · <span style="color:var(--amber);font-weight:700">$${calcRecipeCost(opt)}</span>`:''}</div>
+   <section id="hero">
+      <div class="row hero-content">
+         <div class="twelve columns flex-container">
+            <div id="hero-slider" class="flexslider">
+               <ul class="slides">
+                  <li><div class="flex-caption"><h1>En BeOcean cada marca es única. Creamos con el alma, ejecutamos con precisión.</h1><p><a class="button stroke smoothscroll" href="#about">Conócenos</a></p></div></li>
+                  <li><div class="flex-caption"><h1>Más que una agencia, tu equipo digital. Acompañamos cada decisión, cada campaña, cada resultado.</h1><p><a class="button stroke smoothscroll" href="#portfolio">Ver portafolio</a></p></div></li>
+                  <li><div class="flex-caption"><h1>Mira algunos de <a class="smoothscroll" href="#portfolio">nuestros proyectos</a> o <a class="smoothscroll" href="#contact">escríbenos</a> para platicar cómo podemos ayudarte.</h1><p><a class="button stroke smoothscroll" href="#contact">Hablemos</a></p></div></li>
+               </ul>
             </div>
-          </div>
-          <span class="rec-card-chevron ${isOpen?'open':''}">⌄</span>
-        </div>
-        <div class="rec-card-body ${isOpen?'open':''}">
-          <div class="rec-stars-row">
-            <span class="rec-stars-label">Mi calificación:</span>
-            <div class="stars">${starsHtml}</div>
-          </div>
-          <div class="rec-macros">
-            <div class="rec-macro"><div class="rec-macro-val" style="color:var(--blue)">${opt.p}g</div><div class="rec-macro-lab">Prot</div></div>
-            <div class="rec-macro"><div class="rec-macro-val" style="color:var(--amber)">${opt.c}g</div><div class="rec-macro-lab">Carb</div></div>
-            <div class="rec-macro"><div class="rec-macro-val" style="color:var(--purple)">${opt.g}g</div><div class="rec-macro-lab">Grasa</div></div>
-            <div class="rec-macro"><div class="rec-macro-val" style="color:var(--green)">${opt.kcal}</div><div class="rec-macro-lab">Kcal</div></div>
-          </div>
-          <div class="rec-cols">
-            <div>
-              <div class="rec-sec-title">Ingredientes</div>
-              ${opt.ing.map(([n,q]) => `<div class="ing-row"><span>${n}</span><span style="color:var(--muted)">${q}</span></div>`).join('')}
+         </div>
+      </div>
+   </section>
+
+   <section id="portfolio">
+      <div class="row section-head">
+         <div class="twelve columns">
+            <h1>Proyectos Recientes<span>.</span></h1>
+            <hr />
+            <p>Cada proyecto es diferente. Cada solución también. Aquí algunos de los trabajos que más nos enorgullecen — resultados reales para marcas reales.</p>
+         </div>
+      </div>
+      <div class="row items">
+         <div class="twelve columns">
+            <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="javascript:void(0)" class="portfolio-link">
+                        <img src="images/portfolio/portfolio-tmf.png" alt="TMF">
+                        <div class="overlay"></div>
+                        <div class="portfolio-item-meta">
+                           <h5>TMF — Tubos Mexicanos Flexibles</h5><br>
+                           <p>Transformamos la presencia digital del líder nacional en tubería flexible. Sitio web, micrositios por sector, landings y campañas en Google que multiplicaron sus leads por 7.</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="javascript:void(0)" class="portfolio-link">
+                        <img src="images/portfolio/portfolio-becara.png" alt="Becara Chairs">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Becara Chairs</h5><br>
+                              <p>Lanzamos una marca de muebles de diseño en el mercado americano desde cero. Ecommerce, identidad digital y campañas de adquisición en Miami con ventas desde el primer mes.</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid stack item">
+                  <div class="item-wrap">
+                     <a href="javascript:void(0)" class="portfolio-link">
+                        <img src="images/portfolio/portfolio-blanco-castelar.png" alt="Blanco Castelar">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Blanco Castelar</h5><br>
+                              <p>Definimos la estrategia digital de este restaurante de autor en Ciudad de México, posicionando su propuesta gastronómica única en el mercado digital.</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="javascript:void(0)" class="portfolio-link">
+                        <img src="images/portfolio/portfolio-mariachi.png" alt="Mariachi con Sabor a México">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Mariachi con Sabor a México</h5><br>
+                              <p>Llevamos la tradición del mariachi al mundo digital. Landing page de alto impacto y campañas en Meta para conectar con audiencias apasionadas por la cultura mexicana.</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="javascript:void(0)" class="portfolio-link">
+                        <img src="images/portfolio/portfolio-riman.png" alt="Riman">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Riman</h5><br>
+                              <p>Construimos la presencia digital completa de esta marca de bienestar. Sitio web, modelo de negocio online, estrategia de contenidos y pauta orgánica alineada a su comunidad.</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="javascript:void(0)" class="portfolio-link">
+                        <img src="images/portfolio/portfolio-tierra-suenos.png" alt="Tierra de Sueños">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Tierra de Sueños</h5><br>
+                              <p>Diseñamos y desarrollamos el sitio web de esta marca infantil junto con campañas digitales para conectar con padres y familias que buscan experiencias únicas para sus hijos.</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="javascript:void(0)" class="portfolio-link">
+                        <img src="images/portfolio/portfolio-tmflex.png" alt="TMFlex USA">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>TMFlex USA</h5><br>
+                              <p>Expandimos la marca TMF al mercado norteamericano. Sitio web en inglés y campañas digitales orientadas a distribuidores y clientes industriales en Estados Unidos.</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+                     <a href="javascript:void(0)" class="portfolio-link">
+                        <img src="images/portfolio/portfolio-work-roll.png" alt="Work and Roll">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                              <h5>Work and Roll</h5><br>
+                              <p>Desarrollamos el sitio web y las campañas digitales de este innovador espacio de coworking, atrayendo a profesionales y empresas que buscan un lugar donde trabajar diferente.</p>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
             </div>
-            <div>
-              <div class="rec-sec-title">Preparación</div>
-              ${opt.steps.map((s,i) => `<div class="step-row"><div class="step-n">${i+1}</div><div>${s}</div></div>`).join('')}
+         </div>
+      </div>
+   </section>
+
+   <section id="services">
+      <div class="row section-head">
+         <div class="twelve columns">
+            <h1>Nuestros Servicios<span>.</span></h1>
+            <hr />
+            <p>Tres pilares que construyen la presencia digital de tu negocio. Los ofrecemos por separado o como una solución completa — siempre con acompañamiento real de principio a fin.</p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="twelve columns">
+            <div class="service-list bgrid-third s-bgrid-half mob-bgrid-whole">
+               <div class="bgrid"><div class="icon-part"><span class="icon-graph"></span></div><h3>Pauta Digital.</h3><div class="service-content"><p>Campañas en Meta y Google que generan leads y ventas reales, no solo clics. Segmentación a medida, optimización continua y reportes claros sin tecnicismos.</p></div></div>
+               <div class="bgrid"><div class="icon-part"><i class="icon-film"></i></div><h3>Contenido.</h3><div class="service-content"><p>Parrillas y estrategia de contenido con propósito. Para que cada publicación construya tu marca, eduque a tu audiencia y genere confianza en tu negocio.</p></div></div>
+               <div class="bgrid"><div class="icon-part"><i class="icon-camera"></i></div><h3>Sitios Web.</h3><div class="service-content"><p>Diseñamos y desarrollamos tu presencia digital desde cero — moderna, rápida y adaptada a la identidad de tu marca. Informativos, corporativos o ecommerce.</p></div></div>
+               <div class="bgrid first"><div class="icon-part"><i class="icon-eye"></i></div><h3>Estrategia.</h3><div class="service-content"><p>Diagnóstico digital, roadmap y ejecución alineada a tu negocio. Antes de invertir en pauta o contenido, definimos juntos el camino correcto.</p></div></div>
+               <div class="bgrid"><div class="icon-part"><i class="icon-screen-desktop"></i></div><h3>Ecommerce.</h3><div class="service-content"><p>Lanzamos tu tienda en línea con todo lo necesario: diseño, integración de pagos, catálogo de productos y campañas de adquisición desde el primer día.</p></div></div>
+               <div class="bgrid"><div class="icon-part"><i class="icon-eyeglasses"></i></div><h3>Acompañamiento.</h3><div class="service-content"><p>No desaparecemos después de entregar. Estamos presentes en cada etapa — respondemos rápido, resolvemos problemas y seguimos contigo hasta lograr el objetivo.</p></div></div>
             </div>
-          </div>
-        </div>
-      </div>`;
-    });
-  });
-  list.innerHTML = html;
-}
-
-function setRecFilter(f) {
-  state.recFilter = f;
-  renderRecetas();
-}
-
-function toggleRec(rKey) {
-  state.openRecipe = state.openRecipe === rKey ? null : rKey;
-  renderRecetas();
-}
-
-function rateRec(k, idx, stars) {
-  state.ratings[`${k}-${idx}`] = stars;
-  saveState();
-  renderRecetas();
-}
-
-// ═══════════════════════════════════════════
-// SÚPER
-// ═══════════════════════════════════════════
-// Parse a quantity string to grams/units for summing
-function parseQty(qtyStr) {
-  if (!qtyStr) return null;
-  const m = qtyStr.match(/^([\d.]+)\s*(g|kg|ml|l|lata|pieza|piezas|taza|cdta|cda|hoja|manojo)/i);
-  if (!m) return null;
-  let val = parseFloat(m[1]);
-  const unit = m[2].toLowerCase();
-  if (unit === 'kg') val *= 1000;
-  if (unit === 'l') val *= 1000;
-  return {val, unit: (unit === 'kg' ? 'g' : unit === 'l' ? 'ml' : unit), raw: qtyStr};
-}
-
-function sumQtys(qtys) {
-  const parsed = qtys.map(q => parseQty(q)).filter(Boolean);
-  if (parsed.length === 0) return qtys.join(' + ');
-  const unit = parsed[0].unit;
-  if (parsed.every(p => p.unit === unit)) {
-    const total = parsed.reduce((s, p) => s + p.val, 0);
-    return Math.round(total) + ' ' + unit;
-  }
-  return qtys.join(' + ');
-}
-
-// Get ingredients for a single week index, excluding permanently bought
-function getWeekIngredients(wi) {
-  const map = {};
-  const week = state.weeks[wi];
-  for (let di = 0; di < 7; di++) {
-    KEYS.forEach(k => {
-      const idx = week[di][k];
-      if (idx === null) return;
-      MEALS[k].options[idx].ing.forEach(([name, qty]) => {
-        if (state.bought[name]) return; // skip permanently bought
-        if (!map[name]) map[name] = {qtys:[]};
-        map[name].qtys.push(qty);
-      });
-    });
-  }
-  // Also exclude items checked off for this week
-  Object.keys(state.checkedNow || {}).forEach(key => {
-    if (!state.checkedNow[key]) return;
-    const [keyWi, ...nameParts] = key.split('-');
-    if (parseInt(keyWi) === wi) {
-      const name = nameParts.join('-');
-      // Don't delete — keep but mark as checked
-    }
-  });
-  Object.keys(map).forEach(name => {
-    map[name].displayQty = sumQtys(map[name].qtys);
-  });
-  return map;
-}
-
-function getIngredients(weekIdxFilter) {
-  const wi = weekIdxFilter !== undefined ? weekIdxFilter :
-    (state.superFilter === 'next' ? 1 : 0);
-  return getWeekIngredients(wi);
-}
-
-const INGREDIENT_CATS = {
-  'Proteínas': ['Atún en agua','Atún en filete','Atún fresco','Pechuga de pollo','Camarón','Carne molida','Res en trozos','Res en milanesa','Res en tiras','Chorizo de pavo','Huevo'],
-  'Verduras y frutas': ['Papa hervida','Jitomate','Pepino','Aguacate','Espinaca','Arúgula','Lechuga','Zanahoria','Brócoli','Calabaza','Cebolla','Repollo','Ejotes','Espárragos','Manzana','Fresas','Mango','Naranja','Durazno','Pera','Jícama','Maíz desgranado','Plátano','Uvas','Sandía','Mandarina'],
-  'Carbohidratos': ['Arroz cocido','Pasta cocida','Tortilla de maíz','Tortilla integral','Tostadas horneadas','Pan integral','Pan telera','Frijoles cocidos','Lentejas cocidas','Masa para sopes','Maíz pozolero'],
-  'Lácteos y extras': ['Yogurt griego sin azúcar','Queso panela','Crema light','Proteína en polvo','Mantequilla light'],
-  'Grasas y condimentos': ['Aceite de oliva','Aguacate','Salsa verde','Salsa roja','Chipotle','Chile poblano','Miel'],
-  'Otros': ['Alga nori','Caldo','Salsa soya','Mayonesa light'],
-};
-
-function buildCatRows(ings, shown) {
-  let html = '';
-  const allNames = Object.keys(ings);
-  Object.entries(INGREDIENT_CATS).forEach(([cat, catItems]) => {
-    const matching = catItems.filter(i => ings[i]);
-    if (!matching.length) return;
-    html += `<div class="super-cat">${cat}</div>`;
-    matching.forEach(name => {
-      shown.add(name);
-      html += buildSuperRow(name, ings[name]);
-    });
-  });
-  const unc = allNames.filter(n => !shown.has(n));
-  if (unc.length) {
-    html += `<div class="super-cat">Otros</div>`;
-    unc.forEach(name => { html += buildSuperRow(name, ings[name]); });
-  }
-  return html;
-}
-
-function renderSuper() {
-  let html = '';
-  let estTotal = 0;
-
-  const wi = state.superFilter === 'next' ? 1 : 0;
-  state._renderWi = wi;
-  const ings = getWeekIngredients(wi);
-  Object.keys(ings).forEach(name => {
-    const p = state.prices[name];
-    const gKey = String(wi) + '|' + name;
-    const isGr = !!(state.gratis && state.gratis[gKey]);
-    if (p && p.price > 0 && !isGr) estTotal += p.price;
-  });
-  const shown = new Set();
-  html = buildCatRows(ings, shown);
-  state._renderWi = undefined;
-
-  document.getElementById('super-est-total').textContent = '$' + estTotal.toLocaleString();
-  document.getElementById('super-gastado-label').textContent = '$' + (state.weeklySpend||0).toLocaleString() + ' gastado';
-  document.getElementById('stat-super').textContent = '$' + estTotal.toLocaleString();
-  document.getElementById('super-grand').style.display = html ? 'flex' : 'none';
-  document.getElementById('super-grand-num').textContent = '$' + estTotal.toLocaleString();
-  document.getElementById('super-list').innerHTML = html || '<div style="text-align:center;padding:40px;color:var(--muted);font-size:13px">Planea tu semana primero para ver la lista del súper.</div>';
-}
-
-function isChecked(name, wi) {
-  if (!state.checkedNow) return false;
-  return !!state.checkedNow[String(wi) + '|' + name];
-}
-
-function buildSuperRow(name, info) {
-  const p = state.prices[name] || {price:0, store:''};
-  const wi = state._renderWi !== undefined ? state._renderWi : 0;
-  const ckKey = String(wi) + '|' + name;
-  const ck = !!(state.checkedNow && state.checkedNow[ckKey]);
-  const gratisKey = String(wi) + '|' + name;
-  const isGratis = !!(state.gratis && state.gratis[gratisKey]);
-  const priceDisplay = isGratis ? '🎁 Gratis' : (p.price > 0 ? '$' + p.price.toLocaleString() : '—');
-  const editId = 'edit-' + name.replace(/[^a-zA-Z0-9]/g,'_');
-
-  const storeChips = STORES.map(s =>
-    `<span class="store-chip ${p.store===s?'active':''}" onclick="event.stopPropagation();setStore('${name}','${s}')">${s}</span>`
-  ).join('');
-
-  const editPanel = `<div class="price-edit-panel" id="${editId}" style="display:none">
-    <div class="price-edit-row">
-      <span style="font-size:12px;color:var(--muted)">Precio $</span>
-      <input class="price-input" type="number" min="0" value="${p.price||''}" placeholder="0"
-        onclick="event.stopPropagation()"
-        oninput="event.stopPropagation();setPrice('${name}',this.value)">
-    </div>
-    <div class="store-chips" style="margin-top:6px">${storeChips}</div>
-  </div>`;
-
-  const rowClick = state.editingPrices ? `onclick="toggleEditPanel('${editId}')"` : '';
-
-  const gratisLabel = p.gratis ? '✓ Gratis' : 'Gratis';
-  const gratisStyle = p.gratis
-    ? 'border-color:var(--green);background:var(--green-bg);color:var(--green)'
-    : 'border-color:var(--border2);background:transparent;color:var(--muted)';
-
-  return `<div class="super-row" ${rowClick} style="${state.editingPrices?'cursor:pointer':''}">
-    <div class="super-check ${ck?'checked':''}" onclick="event.stopPropagation();toggleBought('${name}',${wi})">
-      <span class="super-check-icon">✓</span>
-    </div>
-    <div class="super-item-info ${ck?'super-item-bought':''}" style="flex:1">
-      <div class="super-item-name">${name}${state.editingPrices?'<span style="font-size:10px;color:var(--blue);margin-left:6px">✏️ editar</span>':''}</div>
-      <div class="super-item-unit">${info.displayQty || ''}${p.store?' · '+p.store:''}</div>
-      ${state.editingPrices ? editPanel : ''}
-    </div>
-    <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;margin-left:8px">
-      <button onclick="event.stopPropagation();markGratis('${name}',${wi})"
-        style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:99px;border:1.5px solid;cursor:pointer;white-space:nowrap;${gratisStyle}">
-        ${gratisLabel}
-      </button>
-      <div class="super-item-price">${priceDisplay}</div>
-    </div>
-  </div>`;
-}
-
-function toggleEditPanel(id) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const isOpen = el.style.display !== 'none';
-  // Close all others first
-  document.querySelectorAll('.price-edit-panel').forEach(p => p.style.display = 'none');
-  if (!isOpen) el.style.display = 'block';
-}
-
-function setPrice(name, val) {
-  const v = parseFloat(val);
-  if (!state.prices[name]) state.prices[name] = {price:0, store:''};
-  state.prices[name].price = isNaN(v) ? 0 : v;
-  saveState();
-  updateStatSuper();
-}
-
-function setStore(name, store) {
-  if (!state.prices[name]) state.prices[name] = {price:0, store:''};
-  state.prices[name].store = store;
-  saveState();
-  renderSuper();
-}
-
-function markGratis(name, wi) {
-  if (!state.gratis) state.gratis = {};
-  const key = String(wi) + '|' + name;
-  state.gratis[key] = !state.gratis[key];
-  if (!state.gratis[key]) delete state.gratis[key];
-  saveState();
-  renderSuper();
-}
-
-function toggleBought(name, weekIdx) {
-  if (!state.checkedNow) state.checkedNow = {};
-  const key = String(weekIdx) + '|' + name;
-  state.checkedNow[key] = !state.checkedNow[key];
-  if (!state.checkedNow[key]) delete state.checkedNow[key];
-  saveState();
-  renderSuper();
-}
-
-function toggleEditPrices() {
-  state.editingPrices = !state.editingPrices;
-  renderSuper();
-}
-
-function setSuperFilter(f, btn) {
-  state.superFilter = f;
-  // Don't reset checkedNow — user keeps their selections across filters
-  document.querySelectorAll('.super-filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  saveState();
-  renderSuper();
-}
-
-function superComprado() {
-  // Get all checked items across both weeks
-  const checkedKeys = Object.keys(state.checkedNow || {}).filter(k => state.checkedNow[k]);
-  if (!checkedKeys.length) { showToast('Selecciona artículos primero'); return; }
-
-  let total = 0;
-  const items = [];
-
-  checkedKeys.forEach(key => {
-    const parts = key.split('|');
-    const wi = parseInt(parts[0]);
-    const name = parts.slice(1).join('|');
-    const p = state.prices[name];
-    const gratisKey = wi + '|' + name;
-    const isGratis = !!(state.gratis && state.gratis[gratisKey]);
-    const cost = (p && p.price > 0 && !isGratis) ? p.price : 0;
-    total += cost;
-    items.push({name, price: cost, gratis: isGratis});
-    // Mark as permanently bought
-    state.bought[name] = true;
-    // Clear gratis
-    if (state.gratis) delete state.gratis[gratisKey];
-  });
-
-  // Save to history — accumulate within same week
-  const now = new Date().toLocaleDateString('es-MX');
-  if (!state.superHistory.length || state.superHistory[state.superHistory.length-1].weekStart !== state.weekStart) {
-    state.superHistory.push({weekStart: state.weekStart, date: now, total, items});
-  } else {
-    const last = state.superHistory[state.superHistory.length-1];
-    last.total += total;
-    last.items = (last.items || []).concat(items);
-    last.date = now;
-  }
-
-  // Clear checked items
-  checkedKeys.forEach(key => delete state.checkedNow[key]);
-
-  saveState();
-  showToast('✅ Compra registrada: $' + total.toLocaleString());
-  // Show reporte immediately
-  showReporte();
-}
-
-function getWeekRange(weekStartStr) {
-  if (!weekStartStr) return '—';
-  const start = new Date(weekStartStr);
-  const end = new Date(start);
-  end.setDate(start.getDate() + 6);
-  const fmt = d => d.toLocaleDateString('es-MX', {day:'numeric',month:'short'});
-  return `${fmt(start)} – ${fmt(end)}`;
-}
-
-function showReporte() {
-  const h = state.superHistory;
-  if (!h.length) { showToast('No hay compras registradas aún'); return; }
-  let html = `<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
-    <div class="sec-label" style="margin-bottom:0">Historial de compras</div>
-    <button class="btn" onclick="renderSuper()" style="padding:6px 10px;font-size:12px">← Volver</button>
-  </div>`;
-  h.slice().reverse().forEach((entry, i) => {
-    const range = getWeekRange(entry.weekStart);
-    const realIdx = h.length - 1 - i;
-    // Show entry with items inline
-    const itemsHtml = (entry.items || []).map(item =>
-      `<div style="display:flex;justify-content:space-between;padding:3px 0;font-size:12px;color:var(--text2)">
-        <span>${item.gratis ? '🎁 ' : ''}${item.name}</span>
-        <span style="font-weight:600">${item.price > 0 ? '$'+item.price.toLocaleString() : 'Gratis'}</span>
-      </div>`
-    ).join('');
-    html += `<div style="background:var(--bg2);border:.5px solid var(--border);border-radius:var(--r);padding:12px;margin-bottom:10px">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-        <div>
-          <div style="font-size:13px;font-weight:700;color:var(--text)">Semana del ${range}</div>
-          <div style="font-size:11px;color:var(--muted);margin-top:2px">${entry.date} · ${(entry.items||[]).length} artículos</div>
-        </div>
-        <div style="font-size:18px;font-weight:700;color:var(--green)">$${entry.total.toLocaleString()}</div>
+         </div>
       </div>
-      <div style="border-top:.5px solid var(--border);padding-top:8px">${itemsHtml}</div>
-    </div>`;
-  });
-  const total = h.reduce((s,e) => s+e.total, 0);
-  html += `<div style="display:flex;justify-content:space-between;padding:12px;font-weight:700;font-size:14px;background:var(--acc);color:#fff;border-radius:var(--r)"><span>Total acumulado</span><span>$${total.toLocaleString()}</span></div>`;
-  document.getElementById('super-list').innerHTML = html;
-  document.getElementById('super-grand').style.display = 'none';
-}
+   </section>
 
-function showReporteDetail(idx) {
-  const entry = state.superHistory[idx];
-  if (!entry) return;
-  const range = getWeekRange(entry.weekStart);
-  let html = `<div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">
-    <button class="btn" onclick="showReporte()" style="padding:6px 10px;font-size:12px">←</button>
-    <div>
-      <div style="font-size:14px;font-weight:700;color:var(--text)">Semana del ${range}</div>
-      <div style="font-size:12px;color:var(--muted)">${entry.date}</div>
-    </div>
-  </div>`;
-  if (entry.items && entry.items.length) {
-    entry.items.forEach(item => {
-      html += `<div class="report-row" style="padding:8px 0">
-        <div class="report-date" style="font-size:13px">${item.name}</div>
-        <div class="report-amount" style="font-size:13px">$${(item.price||0).toLocaleString()}</div>
-      </div>`;
-    });
-  }
-  html += `<div style="display:flex;justify-content:space-between;padding:12px 0;font-weight:700;font-size:14px;border-top:2px solid var(--border);margin-top:8px">
-    <span>Total</span><span style="color:var(--green)">$${entry.total.toLocaleString()}</span>
-  </div>`;
-  document.getElementById('super-list').innerHTML = html;
-}
-
-function updateStatSuper() {
-  const ings = getWeekIngredients(0);
-  let total = 0;
-  Object.keys(ings).forEach(name => {
-    const p = state.prices[name];
-    if (p && p.price > 0) total += p.price;
-  });
-  document.getElementById('stat-super').textContent = '$' + total.toLocaleString();
-}
-
-// ═══════════════════════════════════════════
-// CONFIG
-// ═══════════════════════════════════════════
-function renderConfig() {
-  const cfg = state.config;
-  document.getElementById('cfg-nombre').value = cfg.nombre || '';
-  document.getElementById('cfg-edad').value = cfg.edad || '';
-  document.getElementById('cfg-estatura').value = cfg.estatura || '';
-  document.getElementById('cfg-peso').value = cfg.peso || '';
-  document.getElementById('cfg-meta').value = cfg.meta || '';
-  document.getElementById('cfg-actividad').value = cfg.actividad || 1.375;
-  document.getElementById('cfg-prot').value = cfg.protObj || '';
-  document.getElementById('cfg-carb').value = cfg.carbObj || '';
-  document.getElementById('cfg-grasa').value = cfg.grasaObj || '';
-  calcConfig();
-  renderPesoHistoria();
-
-  // Add listeners for live calc
-  ['cfg-edad','cfg-estatura','cfg-peso','cfg-meta','cfg-actividad'].forEach(id => {
-    document.getElementById(id).addEventListener('input', calcConfig);
-  });
-}
-
-function calcConfig() {
-  const edad = parseFloat(document.getElementById('cfg-edad').value) || 0;
-  const h = parseFloat(document.getElementById('cfg-estatura').value) || 0;
-  const w = parseFloat(document.getElementById('cfg-peso').value) || 0;
-  const meta = parseFloat(document.getElementById('cfg-meta').value) || 62;
-  const act = parseFloat(document.getElementById('cfg-actividad').value) || 1.375;
-
-  if (!edad || !h || !w) return;
-  const tmb = Math.round(10*w + 6.25*h*100 - 5*edad + 5);
-  const tdee = Math.round(tmb * act);
-  const target = 1600;
-  const deficit = tdee - target;
-  const kgToLose = w - meta;
-  const weeks = kgToLose > 0 ? Math.round((kgToLose * 7700) / (deficit * 7)) : 0;
-
-  document.getElementById('cfg-tmb').textContent = tmb.toLocaleString() + ' kcal';
-  document.getElementById('cfg-tdee').textContent = tdee.toLocaleString() + ' kcal';
-  document.getElementById('cfg-deficit').textContent = deficit.toLocaleString() + ' kcal/día';
-  document.getElementById('cfg-tiempo').textContent = weeks > 0 ? `${weeks} semanas` : '—';
-}
-
-function saveConfig() {
-  state.config = {
-    nombre: document.getElementById('cfg-nombre').value,
-    edad: parseFloat(document.getElementById('cfg-edad').value) || 43,
-    estatura: parseFloat(document.getElementById('cfg-estatura').value) || 1.67,
-    peso: parseFloat(document.getElementById('cfg-peso').value) || 76,
-    meta: parseFloat(document.getElementById('cfg-meta').value) || 62,
-    actividad: parseFloat(document.getElementById('cfg-actividad').value) || 1.375,
-    protObj: parseInt(document.getElementById('cfg-prot').value) || 120,
-    carbObj: parseInt(document.getElementById('cfg-carb').value) || 160,
-    grasaObj: parseInt(document.getElementById('cfg-grasa').value) || 53,
-  };
-  saveState();
-  showToast('✅ Configuración guardada');
-  renderProgress();
-}
-
-function renderPesoHistoria() {
-  const el = document.getElementById('peso-historia');
-  const h = state.weightHistory;
-  if (!h.length) { el.innerHTML = '<div style="font-size:12px;color:var(--muted);padding:8px 0">Sin registros aún.</div>'; return; }
-  el.innerHTML = h.slice().reverse().slice(0,8).map(entry =>
-    `<div class="report-row"><div class="report-date">${entry.date}</div><div class="report-amount" style="color:var(--blue)">${entry.kg} kg</div></div>`
-  ).join('');
-}
-
-// Weight modal
-function showWeightModal() {
-  document.getElementById('weight-modal').classList.remove('hidden');
-  document.getElementById('weight-input').focus();
-}
-function closeWeightModal() {
-  document.getElementById('weight-modal').classList.add('hidden');
-}
-function saveWeight() {
-  const val = parseFloat(document.getElementById('weight-input').value);
-  if (!val || val < 30 || val > 300) { showToast('Ingresa un peso válido'); return; }
-  const date = new Date().toLocaleDateString('es-MX');
-  state.weightHistory.push({date, kg: val});
-  saveState();
-  closeWeightModal();
-  document.getElementById('weight-input').value = '';
-  renderProgress();
-  renderPesoHistoria();
-  removeFridayBanner();
-  showToast('⚖️ Peso registrado: ' + val + ' kg');
-}
-
-// ═══════════════════════════════════════════
-// UTILS
-// ═══════════════════════════════════════════
-function openRecipeModal(k, idx) {
-  const opt = MEALS[k].options[idx];
-  const rKey = `${k}-${idx}`;
-  const rating = state.ratings[rKey] || 0;
-  const todayMark = new Date().toLocaleDateString('es-MX');
-  const eaten = state.eaten && state.eaten[rKey] === todayMark;
-  const starsHtml = [1,2,3,4,5].map(s =>
-    `<span class="${s<=rating?'star':'star-e'}" onclick="rateModal('${k}',${idx},${s})">★</span>`
-  ).join('');
-  const modal = document.getElementById('recipe-modal-content');
-  const mult = k === 'snack' ? 2 : 1;
-  modal.innerHTML = `
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
-      <span class="meal-badge ${MEALS[k].badge}">${MEALS[k].label}</span>
-      <button onclick="closeRecipeModal()" style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted)">✕</button>
-    </div>
-    <div style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:4px">${opt.name}</div>
-    <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
-      <span style="font-size:13px;color:var(--muted)">${opt.kcal * mult} kcal</span>
-      ${calcRecipeCost(opt) ? `<span style="font-size:12px;font-weight:700;color:var(--amber);background:var(--amber-bg);padding:2px 8px;border-radius:99px">$${calcRecipeCost(opt)}</span>` : ''}
-    </div>
-    <div class="rec-stars-row" style="margin-bottom:12px">
-      <span class="rec-stars-label">Mi calificación:</span>
-      <div class="stars" id="modal-stars">${starsHtml}</div>
-    </div>
-    <button onclick="markEaten('${k}',${idx})" style="width:100%;padding:12px;background:${eaten?'var(--green)':'#1d4ed8'};color:#fff;border:none;border-radius:var(--rs);font-size:14px;font-weight:700;cursor:pointer;margin-bottom:14px">
-      ${eaten ? '✅ Ya lo comiste' : '🍽 Ya me lo comí'}
-    </button>
-    <div class="rec-macros" style="margin-bottom:14px">
-      <div class="rec-macro"><div class="rec-macro-val" style="color:var(--blue)">${opt.p*mult}g</div><div class="rec-macro-lab">Prot</div></div>
-      <div class="rec-macro"><div class="rec-macro-val" style="color:var(--amber)">${opt.c*mult}g</div><div class="rec-macro-lab">Carb</div></div>
-      <div class="rec-macro"><div class="rec-macro-val" style="color:var(--purple)">${opt.g*mult}g</div><div class="rec-macro-lab">Grasa</div></div>
-      <div class="rec-macro"><div class="rec-macro-val" style="color:var(--green)">${opt.kcal*mult}</div><div class="rec-macro-lab">Kcal</div></div>
-    </div>
-    <div class="rec-sec-title" style="margin-bottom:8px">Ingredientes</div>
-    ${opt.ing.map(([n,q]) => `<div class="ing-row"><span>${n}</span><span style="color:var(--muted)">${q}</span></div>`).join('')}
-    <div class="rec-sec-title" style="margin-top:14px;margin-bottom:8px">Preparación</div>
-    ${opt.steps.map((s,i) => `<div class="step-row"><div class="step-n">${i+1}</div><div>${s}</div></div>`).join('')}
-  `;
-  document.getElementById('recipe-modal').classList.remove('hidden');
-}
-
-function markEaten(k, idx) {
-  if (!state.eaten) state.eaten = {};
-  const rKey = `${k}-${idx}`;
-  const todayDate = new Date().toLocaleDateString('es-MX');
-  if (state.eaten[rKey] === todayDate) {
-    // Unmark
-    delete state.eaten[rKey];
-  } else {
-    state.eaten[rKey] = todayDate;
-  }
-  saveState();
-  openRecipeModal(k, idx);
-  renderHoy();
-}
-
-function rateModal(k, idx, stars) {
-  state.ratings[`${k}-${idx}`] = stars;
-  saveState();
-  openRecipeModal(k, idx);
-  renderHoy();
-}
-
-function closeRecipeModal(e) {
-  if (!e || e.target === document.getElementById('recipe-modal')) {
-    document.getElementById('recipe-modal').classList.add('hidden');
-  }
-}
-
-function resetAll() {
-  if (confirm('¿Seguro? Se borrará TODO — semana, súper, historial de peso, precios y configuración.')) {
-    localStorage.removeItem('meta62');
-    location.reload();
-  }
-}
-
-function showToast(msg) {
-  const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 2500);
-}
-
-// Friday weight reminder — show banner until weight logged
-function checkFridayReminder() {
-  const d = new Date().getDay();
-  if (d !== 5) return;
-  const today = new Date().toLocaleDateString('es-MX');
-  const lastEntry = state.weightHistory.length > 0 ? state.weightHistory[state.weightHistory.length-1].date : null;
-  if (lastEntry === today) return; // already logged today
-  // Show persistent banner
-  const banner = document.createElement('div');
-  banner.id = 'friday-banner';
-  banner.innerHTML = `<div style="background:#1d4ed8;color:#fff;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:600">
-    <span>⚖️ ¡Es viernes! Recuerda registrar tu peso</span>
-    <button onclick="showWeightModal()" style="background:#fff;color:#1d4ed8;border:none;border-radius:6px;padding:6px 12px;font-size:12px;font-weight:700;cursor:pointer;flex-shrink:0;margin-left:10px">Registrar</button>
-  </div>`;
-  document.body.insertBefore(banner, document.querySelector('.nav-bar'));
-}
-
-function removeFridayBanner() {
-  const b = document.getElementById('friday-banner');
-  if (b) b.remove();
-}
-
-// ═══════════════════════════════════════════
-
-// ═══════════════════════════════════════════
-// EXTRA FOOD DB
-// ═══════════════════════════════════════════
-const FOOD_DB = [
-  ['Abadejo ahumado',116,0,25.23,0.96],
-  ['Abulón al vapor',209,11.97,34.05,1.51],
-  ['Aceite de coco',892,0,0,99.06],
-  ['Aceite de girasol',884,0,0,100],
-  ['Aceite de oliva',884,0,0,100],
-  ['Aceitunas negras',105,6.06,0.88,9.54],
-  ['Aceitunas verdes',145,3.84,1.03,15.32],
-  ['Acelga cruda',19,3.74,1.8,0.2],
-  ['Aguacate',160,8.53,2,14.66],
-  ['Ajo crudo',149,33.06,6.36,0.5],
-  ['Albahaca cruda',23,2.65,3.15,0.64],
-  ['Albaricoque crudo',48,11.12,1.4,0.39],
-  ['Almendras',607,20.38,20.33,53.96],
-  ['Alubias blancas cocidas',168,30.91,10.84,0.57],
-  ['Anacardo',609,30.3,12.12,53.03],
-  ['Anchoa enlatada',210,0,28.89,9.71],
-  ['Apio crudo',16,2.97,0.69,0.17],
-  ['Arenque crudo',158,0,17.96,9.04],
-  ['Arroz blanco cocido',129,27.99,2.67,0.28],
-  ['Arroz integral',357,77,7,2],
-  ['Arroz salvaje cocido',100,21.21,3.97,0.34],
-  ['Arándanos crudos',57,14.49,0.74,0.33],
-  ['Arúgula cruda',25,3.65,2.58,0.66],
-  ['Atún en agua',108,0,23,1],
-  ['Atún enlatado con aceite',198,0,29.13,8.21],
-  ['Atún fresco crudo',109,0,24.4,0.49],
-  ['Avellanas',628,16.7,14.95,60.75],
-  ['Avena cruda',379,67.7,13.15,6.52],
-  ['Avena en hojuelas',379,67.7,13.15,6.52],
-  ['Azúcar blanca',387,99.98,0,0],
-  ['Bacalao fresco',76,0,17,1],
-  ['Banana',89,22.6,1.08,0.34],
-  ['Batata',101,23,1.2,0.3],
-  ['Berenjena cruda',25,5.88,0.98,0.18],
-  ['Berro crudo',32,5.5,2.6,0.7],
-  ['Brotes de soja crudos',30,5.94,3.04,0.18],
-  ['Brócoli crudo',34,6.64,2.82,0.37],
-  ['Burrito con carne',242,14.44,13.03,14.48],
-  ['Caballa cruda',189,0,19.08,11.91],
-  ['Cacahuates sin tostar',567,16.13,25.8,49.24],
-  ['Cacahuates tostados',599,15.26,28.03,52.5],
-  ['Calabacín',14,2.2,0.6,0.2],
-  ['Calabaza cocida',20,4.88,0.72,0.07],
-  ['Calamar crudo',92,3.08,15.58,1.38],
-  ['Caldo de pollo',6,0.44,0.64,0.21],
-  ['Camarón cocido',91,1.16,17.37,1.29],
-  ['Camote cocido',90,20.63,2,0.15],
-  ['Cangrejo de mar',124,13.28,19.5,5.1],
-  ['Caqui crudo',70,18.59,0.58,0.19],
-  ['Carne de cerdo grasa',329,0,16,30],
-  ['Carne de cerdo magra',147,0,21,7],
-  ['Carne de conejo',124,0,22,4],
-  ['Carne de cordero magra',122,0,20,3],
-  ['Carne de pavo',107,0,21.9,2.2],
-  ['Carne de pollo',167,0,20,9.7],
-  ['Carne de res filete',197,0,19,14],
-  ['Carne de res magra',123,0,20,5],
-  ['Carne de ternera magra',109,0,21,3],
-  ['Carne molida de res',197,0,19,14],
-  ['Castañas',245,52.96,3.17,2.2],
-  ['Cebada',360,84,8,2],
-  ['Cebolla',40,9,1,0],
-  ['Cebollino crudo',30,4.35,3.27,0.73],
-  ['Cereal de maíz',357,84.1,7.5,0.4],
-  ['Cerezas',50,12.18,1,0.3],
-  ['Cerveza',43,3.55,0.46,0],
-  ['Champiñones crudos',22,3.26,3.09,0.34],
-  ['Chayote',19,4.51,0.82,0.13],
-  ['Chicharrones',540,1,20,51],
-  ['Chipotle en adobo',40,7,1.5,0.5],
-  ['Chocolate con leche',550,56,6,34],
-  ['Chocolate oscuro',528,60.18,4.5,33.2],
-  ['Chorizo',455,1.86,24.1,38.27],
-  ['Chuleta de cerdo asada',211,0,27.69,10.5],
-  ['Ciruela cruda',46,11.42,0.7,0.28],
-  ['Coco fresco',354,15.23,3.33,33.49],
-  ['Col rizada cocida',28,5.59,1.88,0.4],
-  ['Coles de Bruselas crudas',43,8.95,3.38,0.3],
-  ['Coliflor cruda',25,4.97,1.92,0.28],
-  ['Conejo guisado',210,6.85,17.18,12.44],
-  ['Cordero asado',265,0,23.83,18.07],
-  ['Crema light',100,4,2,8],
-  ['Durazno crudo',39,9.54,0.91,0.25],
-  ['Dátiles',282,75.3,2.45,0.39],
-  ['Edamames',122,10.88,8.91,5.2],
-  ['Ejotes cocidos',68,13.52,4.09,0.39],
-  ['Ejotes crudos',31,6.97,1.83,0.22],
-  ['Elote crudo',86,18.7,3.27,1.35],
-  ['Elote desgranado cocido',104,19.5,3.3,0.78],
-  ['Endibias',25,3.6,1.5,0.24],
-  ['Espinacas cocidas',23,3.39,2.8,0.5],
-  ['Espinacas crudas',23,3.63,2.86,0.39],
-  ['Espárragos cocidos',18,1.91,2.93,0.42],
-  ['Espárragos crudos',20,3.88,2.2,0.12],
-  ['Faisán cocinado',238,0,32.26,12.05],
-  ['Filete de pollo a la parrilla',145,2.37,22.24,5.2],
-  ['Flan de huevo',177,29.04,5.22,4.7],
-  ['Frambuesas crudas',52,11.94,1.2,0.65],
-  ['Fresas crudas',32,7.68,0.67,0.3],
-  ['Frijoles blancos cocidos',138,24.95,9.68,0.35],
-  ['Frijoles negros cocidos',131,23.58,8.81,0.54],
-  ['Frijoles pintos cocidos',142,26.07,8.96,0.65],
-  ['Frijoles rojos cocidos',126,22.67,8.62,0.5],
-  ['Gambas cocidas',96,0,19.8,1.7],
-  ['Garbanzos cocidos',163,27.25,8.81,2.57],
-  ['Granola',355,74.9,8.6,5.4],
-  ['Guisantes verdes crudos',81,14.45,5.42,0.4],
-  ['Harina de avena',401,73,12,9],
-  ['Harina de trigo integral',318,66,13,2],
-  ['Helado',209,21,4,12],
-  ['Higos frescos',74,19.18,0.75,0.3],
-  ['Huevo duro',145,0.3,12.5,10.5],
-  ['Huevo entero crudo',143,0.72,12.56,9.51],
-  ['Huevo frito',215,0.76,13.27,17.24],
-  ['Hummus',260,19.86,8.18,17.78],
-  ['Hígado de pollo',137,1.2,22.1,4.7],
-  ['Hígado de res',132,1.6,20.5,4.8],
-  ['Jamón cocido',114,0.4,21,3],
-  ['Jamón serrano',241,0,31,13],
-  ['Jitomate crudo',18,3.89,0.88,0.2],
-  ['Jícama cruda',38,8.82,0.72,0.09],
-  ['Ketchup',131,32,0.4,0],
-  ['Kiwi crudo',61,14.66,1.14,0.52],
-  ['Kéfir',52,7.34,3.59,0.92],
-  ['Langosta hervida',91,0,18.3,2],
-  ['Leche condensada',321,54.4,7.91,8.7],
-  ['Leche de almendras endulzada',38,6.59,0.42,1.04],
-  ['Leche de almendras sin azúcar',15,0.58,0.59,1.1],
-  ['Leche de coco',230,5.54,2.29,23.84],
-  ['Leche de soja',43,4.92,2.6,1.47],
-  ['Leche desnatada',34,4.96,3.37,0.08],
-  ['Leche entera',61,4.8,3.15,3.25],
-  ['Leche evaporada entera',134,10.04,6.81,7.56],
-  ['Lechuga cruda',14,2.97,0.9,0.14],
-  ['Lechuga romana cruda',19,3.78,1.39,0.27],
-  ['Lenguado al vapor',88,0,15.61,2.43],
-  ['Lentejas cocidas',115,20.03,8.98,0.38],
-  ['Lentejas secas',310,48.7,24.8,1.2],
-  ['Lima cruda',30,10.54,0.7,0.2],
-  ['Limón crudo',29,9.32,1.1,0.3],
-  ['Macarrones',370,79,14,2],
-  ['Mandarina cruda',53,13.34,0.81,0.31],
-  ['Mango crudo',60,14.98,0.82,0.38],
-  ['Mantequilla',717,0.06,0.85,81.11],
-  ['Manzana cruda',52,13.81,0.26,0.17],
-  ['Margarina',533,0.86,0.17,59.81],
-  ['Masa para tortillas',218,44.64,5.7,2.85],
-  ['Mayonesa',680,0.57,0.96,74.85],
-  ['Maíz crudo',86,18.7,3.27,1.35],
-  ['Maíz pozolero',86,18.7,3.27,1.35],
-  ['Mejillones al vapor',171,7.35,23.7,4.46],
-  ['Melocotón crudo',39,9.54,0.91,0.25],
-  ['Melón',34,8.16,0.84,0.19],
-  ['Merluza',89,0,15.9,2.8],
-  ['Mermelada',278,68.86,0.37,0.07],
-  ['Miel',304,82.4,0.3,0],
-  ['Moras crudas',43,9.61,1.39,0.49],
-  ['Mostaza',60,5.83,3.74,3.34],
-  ['Nabo crudo',28,6.43,0.9,0.1],
-  ['Naranja',47,11.75,0.94,0.12],
-  ['Nectarina',49.7,10.2,0.9,0.1],
-  ['Nopal cocido',16,3.3,1.4,0.09],
-  ['Nueces',654,13.71,15.23,65.21],
-  ['Nueces de Brasil',659,11.74,14.32,67.1],
-  ['Nueces de macadamia',716,12.83,7.79,76.08],
-  ['Ostras crudas',51,2.72,5.71,1.71],
-  ['Pan blanco',266,49.42,8.85,3.33],
-  ['Pan de caja integral',252,42.71,12.45,3.5],
-  ['Pan integral',252,42.71,12.45,3.5],
-  ['Pan multigrano',265,43.34,13.36,4.23],
-  ['Papa asada',206,46.1,4.3,0.1],
-  ['Papa hervida',125,20.45,1.87,4.19],
-  ['Papaya cruda',43,10.82,0.47,0.26],
-  ['Pasta cocida',157,30.68,5.76,0.92],
-  ['Pato asado',189,0,25,9.8],
-  ['Pavo',107,0,21.9,2.2],
-  ['Pechuga de pollo asada',175,0.09,26.37,7.67],
-  ['Pepino crudo',12,2.16,0.59,0.16],
-  ['Pera cruda',57,15.23,0.36,0.14],
-  ['Pistachos',572,28.28,21.05,45.82],
-  ['Piña cruda',50,13.12,0.54,0.12],
-  ['Piñones',673,13.08,13.69,68.37],
-  ['Plátano crudo',89,22.84,1.09,0.33],
-  ['Pollo frito',155,5,13,9],
-  ['Pomelo crudo',32,8.08,0.63,0.1],
-  ['Pulpo hervido',69,1.4,13.4,1],
-  ['Queso azul',353,2.34,21.4,28.74],
-  ['Queso Brie',334,0.45,20.75,27.68],
-  ['Queso Cheddar',404,3.09,22.87,33.31],
-  ['Queso cottage',156,4.09,11.32,10.44],
-  ['Queso crema',350,5.52,6.15,34.44],
-  ['Queso de cabra',360,0.76,23.52,28.85],
-  ['Queso Feta',264,4.09,14.21,21.28],
-  ['Queso fresco',175,4,15,11],
-  ['Queso Gouda',357,1.67,24.98,27.69],
-  ['Queso Manchego',420,1,32,32],
-  ['Queso mozzarella',300,2.19,22.17,22.35],
-  ['Queso panela',175,4,15,11],
-  ['Queso parmesano',420,13.91,28.42,27.84],
-  ['Remolachas crudas',43,9.56,1.61,0.17],
-  ['Repollo crudo',13,2.18,1.5,0.2],
-  ['Requesón',143,3.18,10.49,9.8],
-  ['Rábano crudo',16,3.4,0.68,0.1],
-  ['Salmonete crudo',117,0,19.35,3.79],
-  ['Salmón ahumado',117,0,18.28,4.32],
-  ['Salmón crudo',127,0,20.5,4.4],
-  ['Salsa de soja',53,4.93,8.14,0.57],
-  ['Salsa roja',35,6,1,0.5],
-  ['Salsa verde',30,5,1,0.5],
-  ['Sandía cruda',30,7.55,0.61,0.15],
-  ['Sardinas cocidas',208,0,24.62,11.45],
-  ['Semillas de chía',534,28.88,18.29,42.16],
-  ['Semillas de girasol',582,24.07,19.33,49.8],
-  ['Semillas de sésamo',567,26.04,16.96,48],
-  ['Surimi',99,14.4,7.5,1],
-  ['Tapioca',359,95,0,0],
-  ['Tomates crudos',18,3.89,0.88,0.2],
-  ['Tortilla de maíz',218,44.64,5.7,2.85],
-  ['Tostadas horneadas',394,40.81,8.24,22.57],
-  ['Trucha',89,0,16,3],
-  ['Uvas',69,18.1,0.72,0.16],
-  ['Vinagre',21,0.93,0,0],
-  ['Yogurt griego natural',97,3.98,9,5],
-  ['Yogurt leche desnatada natural',56,7.68,5.73,0.18],
-  ['Yogurt leche entera natural',61,4.66,3.47,3.25],
-  ['Zanahoria cruda',41,9.58,0.93,0.24],
-  ['Zanahorias cocidas',35,8.64,0.82,0.23],
-];
-
-
-// ═══════════════════════════════════════════
-// EXTRA FOOD STATE
-// ═══════════════════════════════════════════
-// state.extraFoods = [{name, kcal, p, c, g, grams, date}]
-// state.pendingFood = {food, grams} (temp during modal)
-
-function renderExtraFoods() {
-  const todayStr = new Date().toLocaleDateString('es-MX');
-  const extras = (state.extraFoods || []).filter(e => e.date === todayStr);
-  const el = document.getElementById('extra-foods-list');
-  if (!el) return;
-  if (!extras.length) { el.innerHTML = ''; return; }
-  el.innerHTML = extras.map((e,i) => `
-    <div class="extra-food-row">
-      <div class="extra-food-left">
-        <span class="meal-badge mb-extra">Extra</span>
-        <span class="meal-name">${e.name} (${e.grams}g)</span>
+   <section id="about">
+      <div class="row section-head">
+         <div class="twelve columns">
+            <h1>¿Quiénes Somos?</h1>
+            <hr />
+            <p>BeOcean es una agencia boutique de marketing digital. Trabajamos con pocas marcas a la vez porque creemos que la atención profunda genera mejores resultados que la producción masiva.</p>
+         </div>
       </div>
-      <div class="meal-right">
-        <span class="meal-kcal">${e.kcal} kcal</span>
-        <button onclick="removeExtraFood(${i})" style="font-size:16px;background:none;border:none;cursor:pointer;color:var(--muted);padding:0;margin-top:2px">✕</button>
+      <div class="row about-content">
+         <div class="mob-whole six columns left">
+            <h3>Nuestra Filosofía.</h3>
+            <p>No somos para todos — somos para los que quieren resultados reales. En BeOcean diseñamos estrategias personalizadas y las ejecutamos con precisión. Cada marca que acompañamos recibe atención directa, comunicación transparente y un equipo que no para hasta lograr el objetivo.</p>
+         </div>
+         <div class="mob-whole six columns right">
+            <h3>Nuestro Enfoque.</h3>
+            <p>Antes de cualquier campaña o sitio web, entendemos tu negocio. Hacemos las preguntas correctas, identificamos las oportunidades reales y construimos soluciones que tienen sentido para tu mercado, tu presupuesto y tus metas.</p>
+         </div>
       </div>
-    </div>`).join('');
-}
-
-function removeExtraFood(idx) {
-  if (!state.extraFoods) return;
-  state.extraFoods.splice(idx, 1);
-  saveState();
-  renderExtraFoods();
-  renderHoy();
-}
-
-function openAddFoodModal() {
-  state._foodSearch = '';
-  state._selectedFood = null;
-  state._foodStep = 'search'; // 'search' | 'grams' | 'action'
-  document.getElementById('add-food-modal').classList.remove('hidden');
-  renderAddFoodModal();
-  setTimeout(() => {
-    const input = document.getElementById('food-search-input');
-    if (input) input.focus();
-  }, 100);
-}
-
-function closeAddFoodModal() {
-  document.getElementById('add-food-modal').classList.add('hidden');
-  state._foodSearch = '';
-  state._selectedFood = null;
-  state._foodStep = 'search';
-  state._foodGrams = null;
-}
-
-function renderAddFoodModal() {
-  const step = state._foodStep || 'search';
-  const modal = document.getElementById('add-food-modal-content');
-
-  if (step === 'search') {
-    const query = state._foodSearch || '';
-    const matches = query.length > 0
-      ? FOOD_DB.filter(f => f[0].toLowerCase().startsWith(query.toLowerCase())).slice(0, 20)
-      : [];
-    const suggestionsHtml = matches.length
-      ? matches.map(f => `<div class="food-suggestion-item" onclick="selectFood(${JSON.stringify(f[0])})">
-          <span>${f[0]}</span>
-          <span class="food-suggestion-kcal">${f[1]} kcal/100g</span>
-        </div>`).join('')
-      : (query.length > 0 ? '<div style="padding:12px 14px;font-size:12px;color:var(--muted)">Sin resultados</div>' : '');
-
-    modal.innerHTML = `
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
-        <div style="font-size:16px;font-weight:700;color:var(--text)">+ Agregar alimento</div>
-        <button onclick="closeAddFoodModal()" style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted)">✕</button>
+      <div class="row about-content">
+         <div class="mob-whole six columns left">
+            <h3>Nuestro Proceso.</h3>
+            <p>Diagnóstico → Estrategia → Ejecución → Optimización. Un ciclo continuo donde cada decisión se basa en datos reales y en un entendimiento profundo de tu negocio y tu cliente ideal.</p>
+         </div>
+         <div class="mob-whole six columns right">
+            <h3>Nuestra Promesa.</h3>
+            <p>Respuesta rápida, acompañamiento real y resultados medibles. No desaparecemos después de entregar. Estamos contigo en cada etapa porque tu éxito es nuestra mejor carta de presentación.</p>
+         </div>
       </div>
-      <input id="food-search-input" class="food-search-input" type="text" 
-        placeholder="Buscar alimento..." value="${query}"
-        oninput="updateFoodSuggestions(this.value)"
-        onkeydown="handleFoodSearchKey(event)">
-      <div class="food-suggestions" id="food-suggestions-list" style="display:${matches.length||query.length?'block':'none'}">${suggestionsHtml}</div>`;
-  }
+   </section>
 
-  else if (step === 'grams') {
-    const food = state._selectedFood;
-    modal.innerHTML = `
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
-        <div style="font-size:16px;font-weight:700;color:var(--text)">${food[0]}</div>
-        <button onclick="state._foodStep='search';renderAddFoodModal()" style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted)">←</button>
+   <section id="contact">
+      <div class="row section-head">
+         <div class="twelve columns">
+            <h1>Hablemos<span>.</span></h1>
+            <hr />
+            <p>Sin presión ni compromisos. Cuéntanos de tu negocio y en menos de 24 horas te respondemos con ideas concretas — no con una propuesta genérica.</p>
+         </div>
       </div>
-      <div style="background:var(--bg2);border:.5px solid var(--border);border-radius:var(--rs);padding:10px 14px;margin-bottom:16px;font-size:12px;color:var(--muted)">
-        Por 100g: ${food[1]} kcal · P:${food[3]}g · C:${food[2]}g · G:${food[4]}g
+      <div class="row form-section">
+         <div id="contact-form" class="twelve columns">
+            <form name="contactForm" id="contactForm" method="post" action="">
+               <fieldset>
+                  <input type="hidden" name="access_key" value="2e0c30fc-a9d3-4e1a-8344-a375e7bc1cb2">
+                  <input type="hidden" name="subject" value="Nuevo mensaje desde BeOcean.digital">
+                  <input type="hidden" name="from_name" value="Formulario BeOcean">
+                  <div class="row">
+                     <div class="six columns mob-whole">
+                        <label for="contactFname">Nombre <span class="required">*</span></label>
+                        <input name="contactFname" type="text" id="contactFname" placeholder="Tu nombre" value="" />
+                     </div>
+                     <div class="six columns mob-whole">
+                        <label for="contactLname">Empresa</label>
+                        <input name="contactLname" type="text" id="contactLname" placeholder="Nombre de tu negocio" value="" />
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="six columns mob-whole">
+                        <label for="contactEmail">Correo electrónico <span class="required">*</span></label>
+                        <input name="contactEmail" type="text" id="contactEmail" placeholder="tu@correo.com" value="" />
+                     </div>
+                     <div class="six columns mob-whole">
+                        <label for="contactSubject">¿En qué te podemos ayudar?</label>
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Sitio web, pauta, contenido..." value="" />
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="twelve columns">
+                        <label for="contactMessage">Cuéntanos más <span class="required">*</span></label>
+                        <textarea name="contactMessage" id="contactMessage" placeholder="¿Qué quieres lograr? ¿Qué problema quieres resolver?" rows="10" cols="50"></textarea>
+                     </div>
+                  </div>
+                  <div>
+                     <button class="submit full-width">Enviar mensaje</button>
+                     <div id="image-loader"><img src="images/loader.gif" alt="" /></div>
+                  </div>
+               </fieldset>
+            </form>
+            <div id="message-warning"></div>
+            <div id="message-success"><i class="fa fa-check"></i>¡Tu mensaje fue enviado! Te contactamos pronto.<br /></div>
+         </div>
       </div>
-      <div style="font-size:13px;color:var(--text2);margin-bottom:8px;font-weight:600">¿Cuántos gramos comiste?</div>
-      <input id="food-grams-input" class="food-search-input" type="number" min="1" max="2000" placeholder="ej. 150"
-        oninput="state._foodGrams=parseFloat(this.value);updateGramsPreview()">
-      <div id="grams-preview" style="text-align:center;padding:12px;background:var(--green-bg);border:.5px solid var(--green-border);border-radius:var(--rs);margin:12px 0;display:none">
-        <div style="font-size:22px;font-weight:700;color:var(--green)" id="preview-kcal">0 kcal</div>
-        <div style="font-size:11px;color:var(--green);margin-top:4px" id="preview-macros"></div>
+   </section>
+
+   <footer>
+      <div class="row">
+         <div class="six columns tab-whole footer-about">
+            <h3>Sobre BeOcean</h3>
+            <p>Agencia boutique de sitios web, contenido y pauta digital. Trabajamos con pocas marcas a la vez porque creemos en la atención profunda y los resultados reales.</p>
+            <p>No somos para todos — somos para los que quieren crecer en digital con un equipo que no los abandona.</p>
+         </div>
+         <div class="six columns tab-whole right-cols">
+            <div class="row">
+               <div class="columns">
+                  <h3 class="address">Contacto</h3>
+                  <p>México &amp; Estados Unidos</p>
+                  <ul>
+                     <li><a href="mailto:hola@beocean.online">hola@beocean.online</a></li>
+                     <li><a href="https://wa.me/525543516946">WhatsApp</a></li>
+                  </ul>
+               </div>
+               <div class="columns last">
+                  <h3 class="contact">Síguenos</h3>
+                  <ul>
+                     <li><a href="#">Facebook</a></li>
+                     <li><a href="#">Instagram</a></li>
+                     <li><a href="#">LinkedIn</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <p class="copyright">&copy; 2026 BeOcean. Todos los derechos reservados. Diseño base por <a href="http://www.styleshout.com/">Styleshout.</a></p>
+         <div id="go-top">
+            <a class="smoothscroll" title="Volver arriba" href="#hero"><span>Top</span><i class="fa fa-long-arrow-up"></i></a>
+         </div>
       </div>
-      <button class="add-btn-row" onclick="confirmGrams()" style="margin-top:8px">Continuar →</button>`;
-    setTimeout(() => { const i = document.getElementById('food-grams-input'); if(i) i.focus(); }, 100);
-  }
+   </footer>
 
-  else if (step === 'action') {
-    const food = state._selectedFood;
-    const grams = state._foodGrams;
-    const kcal = Math.round(food[1] * grams / 100);
-    const p = Math.round(food[3] * grams / 100 * 10) / 10;
-    const c = Math.round(food[2] * grams / 100 * 10) / 10;
-    const g = Math.round(food[4] * grams / 100 * 10) / 10;
-    modal.innerHTML = `
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
-        <div style="font-size:15px;font-weight:700;color:var(--text)">${food[0]} · ${grams}g</div>
-        <button onclick="state._foodStep='grams';renderAddFoodModal()" style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted)">←</button>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:20px">
-        <div class="rec-macro"><div class="rec-macro-val" style="color:var(--green)">${kcal}</div><div class="rec-macro-lab">Kcal</div></div>
-        <div class="rec-macro"><div class="rec-macro-val" style="color:var(--blue)">${p}g</div><div class="rec-macro-lab">Prot</div></div>
-        <div class="rec-macro"><div class="rec-macro-val" style="color:var(--amber)">${c}g</div><div class="rec-macro-lab">Carb</div></div>
-        <div class="rec-macro"><div class="rec-macro-val" style="color:var(--purple)">${g}g</div><div class="rec-macro-lab">Grasa</div></div>
-      </div>
-      <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:10px">¿Qué quieres hacer?</div>
-      <button class="add-btn-row" onclick="addFoodToday()" style="margin-bottom:8px;background:var(--green)">✅ Solo para hoy</button>
-      <button class="add-btn-row" onclick="state._foodStep='save';renderAddFoodModal()" style="background:#1d4ed8">📖 Guardar en recetas también</button>`;
-  }
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/backstretch.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/main.js"></script>
 
-  else if (step === 'save') {
-    const food = state._selectedFood;
-    const grams = state._foodGrams;
-    modal.innerHTML = `
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
-        <div style="font-size:15px;font-weight:700;color:var(--text)">Guardar receta</div>
-        <button onclick="state._foodStep='action';renderAddFoodModal()" style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted)">←</button>
-      </div>
-      <div style="font-size:13px;color:var(--text2);margin-bottom:6px;font-weight:600">Nombre de la receta</div>
-      <input id="recipe-name-input" class="food-search-input" type="text" placeholder="${food[0]}" value="${food[0]}" style="margin-bottom:12px">
-      <div style="font-size:13px;color:var(--text2);margin-bottom:6px;font-weight:600">Tiempo de comida</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:12px">
-        ${['desayuno','comida','cena','snack'].map(k => {
-          const labels = {desayuno:'1er alimento',comida:'Comida',cena:'Cena',snack:'Snacks'};
-          return `<button onclick="document.querySelectorAll('.meal-type-btn').forEach(b=>b.style.background='');document.querySelectorAll('.meal-type-btn').forEach(b=>b.style.color='');this.style.background='var(--acc)';this.style.color='#fff';state._foodMealKey='${k}'"
-            class="meal-type-btn btn" style="font-size:12px;padding:8px">${labels[k]}</button>`;
-        }).join('')}
-      </div>
-      <div style="font-size:13px;color:var(--text2);margin-bottom:6px;font-weight:600">Preparación (opcional)</div>
-      <textarea id="recipe-steps-input" style="width:100%;padding:10px;border:.5px solid var(--border);border-radius:var(--rs);font-size:13px;color:var(--text);background:var(--bg2);min-height:70px;resize:none" placeholder="Describe cómo prepararlo..."></textarea>
-      <button class="add-btn-row" onclick="saveCustomRecipe()" style="margin-top:12px">💾 Guardar y agregar a hoy</button>`;
-  }
-}
+   <script>
+   window.addEventListener('load', function() {
+     var navWrap = document.getElementById('nav-wrap');
+     if (navWrap && window.innerWidth <= 768) {
+       navWrap.style.right = '15px';
+     }
+     var toggleBtn = document.getElementById('toggle-btn');
+     if (toggleBtn && window.innerWidth <= 768) {
+       toggleBtn.style.width = '60px';
+       toggleBtn.style.display = 'flex';
+       toggleBtn.style.alignItems = 'center';
+       toggleBtn.style.justifyContent = 'center';
+       toggleBtn.style.padding = '0';
+     }
+   });
+   </script>
 
-function updateFoodSuggestions(query) {
-  state._foodSearch = query;
-  const matches = query.length > 0
-    ? FOOD_DB.filter(f => f[0].toLowerCase().startsWith(query.toLowerCase())).slice(0, 20)
-    : [];
-  const el = document.getElementById('food-suggestions-list');
-  if (!el) return;
-  if (!matches.length && !query.length) { el.style.display = 'none'; return; }
-  el.style.display = 'block';
-  el.innerHTML = matches.length
-    ? matches.map(f => `<div class="food-suggestion-item" onclick="selectFood(${JSON.stringify(f[0])})">
-        <span>${f[0]}</span>
-        <span class="food-suggestion-kcal">${f[1]} kcal/100g</span>
-      </div>`).join('')
-    : '<div style="padding:12px 14px;font-size:12px;color:var(--muted)">Sin resultados</div>';
-}
+   <!-- Mobile portfolio touch -->
+   <script>
+   (function() {
+     function initPortfolioTouch() {
+       var items = document.querySelectorAll('.item');
+       items.forEach(function(item) {
+         item.addEventListener('click', function(e) {
+           if (window.innerWidth <= 768) {
+             e.preventDefault();
+             var isActive = item.classList.contains('touched');
+             items.forEach(function(i) { i.classList.remove('touched'); });
+             if (!isActive) {
+               item.classList.add('touched');
+             }
+           }
+         });
+       });
+     }
+     if (document.readyState === 'loading') {
+       document.addEventListener('DOMContentLoaded', initPortfolioTouch);
+     } else {
+       initPortfolioTouch();
+     }
+   })();
+   </script>
 
-function handleFoodSearchKey(e) {
-  if (e.key === 'Enter') {
-    const query = state._foodSearch || '';
-    const matches = FOOD_DB.filter(f => f[0].toLowerCase().includes(query.toLowerCase()));
-    if (matches.length > 0) selectFood(matches[0][0]);
-  }
-}
+   <!-- WhatsApp flotante -->
+   <a href="https://wa.me/525543516946?text=Hola%20BeOcean%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios."
+      target="_blank"
+      style="position:fixed;bottom:24px;left:24px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,0.25);z-index:9999;transition:transform 0.2s;"
+      onmouseover="this.style.transform='scale(1.1)'"
+      onmouseout="this.style.transform='scale(1)'"
+      title="Escríbenos por WhatsApp">
+     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white">
+       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+     </svg>
+   </a>
 
-function selectFood(name) {
-  const food = FOOD_DB.find(f => f[0] === name);
-  if (!food) return;
-  state._selectedFood = food;
-  state._foodStep = 'grams';
-  renderAddFoodModal();
-}
-
-function updateGramsPreview() {
-  const food = state._selectedFood;
-  const grams = state._foodGrams;
-  if (!food || !grams || grams <= 0) { document.getElementById('grams-preview').style.display = 'none'; return; }
-  const kcal = Math.round(food[1] * grams / 100);
-  const p = Math.round(food[3] * grams / 100 * 10) / 10;
-  const c = Math.round(food[2] * grams / 100 * 10) / 10;
-  const g = Math.round(food[4] * grams / 100 * 10) / 10;
-  document.getElementById('grams-preview').style.display = 'block';
-  document.getElementById('preview-kcal').textContent = kcal + ' kcal';
-  document.getElementById('preview-macros').textContent = `P:${p}g · C:${c}g · G:${g}g`;
-}
-
-function confirmGrams() {
-  const grams = state._foodGrams;
-  if (!grams || grams <= 0) { showToast('Ingresa los gramos'); return; }
-  state._foodStep = 'action';
-  renderAddFoodModal();
-}
-
-function addFoodToday() {
-  const food = state._selectedFood;
-  const grams = state._foodGrams;
-  const todayStr = new Date().toLocaleDateString('es-MX');
-  if (!state.extraFoods) state.extraFoods = [];
-  state.extraFoods.push({
-    name: food[0],
-    kcal: Math.round(food[1] * grams / 100),
-    p: Math.round(food[3] * grams / 100 * 10) / 10,
-    c: Math.round(food[2] * grams / 100 * 10) / 10,
-    g: Math.round(food[4] * grams / 100 * 10) / 10,
-    grams, date: todayStr
-  });
-  saveState();
-  closeAddFoodModal();
-  renderExtraFoods();
-  renderHoy();
-  showToast('✅ Alimento agregado al día');
-}
-
-function saveCustomRecipe() {
-  const food = state._selectedFood;
-  const grams = state._foodGrams;
-  const mealKey = state._foodMealKey;
-  if (!mealKey) { showToast('Selecciona el tiempo de comida'); return; }
-  const nameInput = document.getElementById('recipe-name-input');
-  const stepsInput = document.getElementById('recipe-steps-input');
-  const name = (nameInput && nameInput.value.trim()) || food[0];
-  const steps = stepsInput && stepsInput.value.trim() ? [stepsInput.value.trim()] : ['Preparar según preferencia.'];
-  const kcal = Math.round(food[1] * grams / 100);
-  const p = Math.round(food[3] * grams / 100 * 10) / 10;
-  const c = Math.round(food[2] * grams / 100 * 10) / 10;
-  const g = Math.round(food[4] * grams / 100 * 10) / 10;
-  const newRecipe = {
-    name, kcal, p, c, g,
-    ing: [[food[0], grams + 'g']],
-    steps, custom: true
-  };
-  MEALS[mealKey].options.push(newRecipe);
-  // Also add to today
-  addFoodToday();
-  showToast('✅ Receta guardada en ' + MEALS[mealKey].label);
-}
-
-
-// ═══════════════════════════════════════════
-// PRICE EDITOR
-// ═══════════════════════════════════════════
-function openPriceEditor() {
-  state._priceSearch = '';
-  state._priceSelectedFood = null;
-  state._priceStep = 'search';
-  document.getElementById('price-editor-modal').classList.remove('hidden');
-  renderPriceEditor();
-  setTimeout(() => { const i = document.getElementById('price-search-input'); if(i) i.focus(); }, 100);
-}
-
-function closePriceEditor() {
-  document.getElementById('price-editor-modal').classList.add('hidden');
-  state._priceSearch = '';
-  state._priceSelectedFood = null;
-  state._priceStep = 'search';
-}
-
-function updatePriceSuggestions(query) {
-  state._priceSearch = query;
-  const matches = query.length > 0
-    ? FOOD_DB.filter(f => f[0].toLowerCase().startsWith(query.toLowerCase())).slice(0, 20)
-    : [];
-  const el = document.getElementById('price-suggestions-list');
-  if (!el) return;
-  if (!matches.length && !query.length) { el.style.display = 'none'; return; }
-  el.style.display = 'block';
-  el.innerHTML = matches.length
-    ? matches.map(f => {
-        const p = state.prices[f[0]];
-        const priceLabel = p && p.price > 0 ? `$${p.price}/100g` : 'Sin precio';
-        return `<div class="food-suggestion-item" onclick="selectPriceFood(${JSON.stringify(f[0])})">
-          <span>${f[0]}</span>
-          <span class="food-suggestion-kcal">${priceLabel}</span>
-        </div>`;
-      }).join('')
-    : '<div style="padding:12px 14px;font-size:12px;color:var(--muted)">Sin resultados</div>';
-}
-
-function selectPriceFood(name) {
-  state._priceSelectedFood = name;
-  state._priceStep = 'edit';
-  renderPriceEditor();
-}
-
-function renderPriceEditor() {
-  const modal = document.getElementById('price-editor-content');
-  const step = state._priceStep || 'search';
-
-  if (step === 'search') {
-    const query = state._priceSearch || '';
-    const matches = query.length > 0
-      ? FOOD_DB.filter(f => f[0].toLowerCase().startsWith(query.toLowerCase())).slice(0, 20)
-      : [];
-    modal.innerHTML = `
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
-        <div style="font-size:16px;font-weight:700;color:var(--text)">✏️ Editar precios</div>
-        <button onclick="closePriceEditor()" style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted)">✕</button>
-      </div>
-      <input id="price-search-input" class="food-search-input" type="text"
-        placeholder="Buscar ingrediente..." value="${query}"
-        oninput="updatePriceSuggestions(this.value)">
-      <div class="food-suggestions" id="price-suggestions-list" style="display:${matches.length||query.length?'block':'none'}">
-        ${matches.map(f => {
-          const p = state.prices[f[0]];
-          const priceLabel = p && p.price > 0 ? `$${p.price}/100g` : 'Sin precio';
-          return `<div class="food-suggestion-item" onclick="selectPriceFood(${JSON.stringify(f[0])})">
-            <span>${f[0]}</span>
-            <span class="food-suggestion-kcal">${priceLabel}</span>
-          </div>`;
-        }).join('')}
-      </div>`;
-    setTimeout(() => { const i = document.getElementById('price-search-input'); if(i) i.focus(); }, 50);
-  }
-
-  else if (step === 'edit') {
-    const name = state._priceSelectedFood;
-    const p = state.prices[name] || {price:0, store:''};
-    const storeChips = STORES.map(s =>
-      `<button onclick="setPriceStore('${s}')" class="store-chip ${p.store===s?'active':''}" style="padding:8px 14px;font-size:13px">${s}</button>`
-    ).join('');
-    modal.innerHTML = `
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
-        <div style="font-size:15px;font-weight:700;color:var(--text)">${name}</div>
-        <button onclick="state._priceStep='search';renderPriceEditor()" style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted)">←</button>
-      </div>
-      <div style="font-size:13px;color:var(--text2);margin-bottom:6px;font-weight:600">Precio por 100g ($)</div>
-      <input id="price-value-input" class="food-search-input" type="number" min="0" step="0.5"
-        placeholder="ej. 16.90" value="${p.price||''}"
-        oninput="state._priceValue=parseFloat(this.value)">
-      <div style="font-size:13px;color:var(--text2);margin-top:14px;margin-bottom:8px;font-weight:600">Tienda</div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px">${storeChips}</div>
-      <button class="add-btn-row" onclick="savePriceEdit()">💾 Guardar precio</button>`;
-    setTimeout(() => { const i = document.getElementById('price-value-input'); if(i) i.focus(); }, 50);
-  }
-}
-
-function setPriceStore(store) {
-  const name = state._priceSelectedFood;
-  if (!state.prices[name]) state.prices[name] = {price:0, store:''};
-  state.prices[name].store = store;
-  state.prices[name]._userSet = true;
-  saveState();
-  renderPriceEditor();
-}
-
-function savePriceEdit() {
-  const name = state._priceSelectedFood;
-  const val = state._priceValue !== undefined ? state._priceValue : parseFloat(document.getElementById('price-value-input')?.value);
-  if (!name) return;
-  if (!state.prices[name]) state.prices[name] = {price:0, store:''};
-  if (!isNaN(val) && val >= 0) {
-    state.prices[name].price = val;
-    state.prices[name]._userSet = true;
-  }
-  saveState();
-  showToast('✅ Precio guardado: ' + name);
-  // Go back to search to add more
-  state._priceStep = 'search';
-  state._priceSearch = '';
-  state._priceValue = undefined;
-  renderPriceEditor();
-  renderSuper();
-}
-
-// INIT
-// ═══════════════════════════════════════════
-
-// Load initial prices if not already set by user
-(function loadInitialPrices() {
-
-// Initial prices load — Walmart México junio 2026
-const INITIAL_PRICES = {
-  // PROTEÍNAS
-  'Atún en agua':       {price: 21,  store: 'Walmart'},
-  'Atún fresco':        {price: 90,  store: 'Walmart'},
-  'Pechuga de pollo':   {price: 169, store: 'Walmart'},
-  'Camarón':            {price: 189, store: 'Walmart'},
-  'Carne molida':       {price: 147, store: 'Walmart'},
-  'Res en trozos':      {price: 256, store: 'Walmart'},
-  'Res en milanesa':    {price: 225, store: 'Walmart'},
-  'Res en tiras':       {price: 256, store: 'Walmart'},
-  'Chorizo de pavo':    {price: 49,  store: 'Walmart'},
-  'Huevo':              {price: 45,  store: 'Walmart'},
-  // VERDURAS
-  'Papa':               {price: 25,  store: 'Walmart'},
-  'Jitomate':           {price: 26,  store: 'Frutería'},
-  'Pepino':             {price: 25,  store: 'Frutería'},
-  'Aguacate':           {price: 69,  store: 'Walmart'},
-  'Espinaca':           {price: 35,  store: 'Walmart'},
-  'Espinaca baby':      {price: 35,  store: 'Walmart'},
-  'Arúgula':            {price: 35,  store: 'Walmart'},
-  'Lechuga':            {price: 15,  store: 'Walmart'},
-  'Zanahoria':          {price: 12,  store: 'Frutería'},
-  'Brócoli':            {price: 30,  store: 'Frutería'},
-  'Calabaza':           {price: 20,  store: 'Frutería'},
-  'Cebolla':            {price: 25,  store: 'Frutería'},
-  'Repollo':            {price: 20,  store: 'Frutería'},
-  'Ejotes':             {price: 20,  store: 'Frutería'},
-  'Espárragos':         {price: 35,  store: 'Walmart'},
-  'Chile poblano':      {price: 12,  store: 'Frutería'},
-  // FRUTAS
-  'Manzana':            {price: 37,  store: 'Frutería'},
-  'Fresas':             {price: 35,  store: 'Frutería'},
-  'Mango':              {price: 35,  store: 'Frutería'},
-  'Naranja':            {price: 20,  store: 'Frutería'},
-  'Durazno':            {price: 39,  store: 'Frutería'},
-  'Pera':               {price: 39,  store: 'Walmart'},
-  'Jícama':             {price: 20,  store: 'Frutería'},
-  'Uvas':               {price: 55,  store: 'Walmart'},
-  'Sandía':             {price: 15,  store: 'Frutería'},
-  'Mandarina':          {price: 55,  store: 'Walmart'},
-  'Plátano':            {price: 19,  store: 'Frutería'},
-  // CARBOHIDRATOS
-  'Arroz cocido':       {price: 33,  store: 'Walmart'},
-  'Pasta cocida':       {price: 25,  store: 'Walmart'},
-  'Tortilla de maíz':   {price: 18,  store: 'Walmart'},
-  'Tortilla integral':  {price: 32,  store: 'Walmart'},
-  'Tostadas horneadas': {price: 28,  store: 'Walmart'},
-  'Pan integral':       {price: 59,  store: 'Walmart'},
-  'Pan telera':         {price: 4,   store: 'Walmart'},
-  'Frijoles cocidos':   {price: 22,  store: 'Walmart'},
-  'Lentejas cocidas':   {price: 33,  store: 'Walmart'},
-  'Masa para sopes':    {price: 18,  store: 'Walmart'},
-  'Maíz pozolero':      {price: 22,  store: 'Walmart'},
-  'Maíz desgranado':    {price: 10,  store: 'Frutería'},
-  // LÁCTEOS
-  'Queso panela':       {price: 70,  store: 'Walmart'},
-  'Yogurt griego sin azúcar': {price: 88, store: 'Walmart'},
-  'Crema light':        {price: 28,  store: 'Walmart'},
-  'Proteína en polvo':  {price: 0,   store: ''},
-  // GRASAS Y CONDIMENTOS
-  'Aceite de oliva':    {price: 95,  store: 'Walmart'},
-  'Mayonesa light':     {price: 66,  store: 'Walmart'},
-  'Mantequilla light':  {price: 45,  store: 'Walmart'},
-  'Salsa verde':        {price: 18,  store: 'Walmart'},
-  'Salsa roja':         {price: 18,  store: 'Walmart'},
-  'Chipotle':           {price: 18,  store: 'Walmart'},
-  'Miel':               {price: 55,  store: 'Walmart'},
-  // OTROS
-  'Alga nori':          {price: 45,  store: 'Walmart'},
-  'Salsa soya':         {price: 32,  store: 'Walmart'},
-  'Caldo':              {price: 28,  store: 'Walmart'},
-  'Edamames':           {price: 45,  store: 'Walmart'},
-  'Atún en filete':     {price: 90,  store: 'Walmart'},
-  'Cacahuates naturales':{price: 45, store: 'Walmart'},
-  'Papa hervida':       {price: 25,  store: 'Walmart'},
-  'Yogurt griego':      {price: 88,  store: 'Walmart'},
-  'Zanahoria rallada':  {price: 12,  store: 'Frutería'},
-};
-  let changed = false;
-  // Always load initial prices (user can override in edit mode)
-  Object.entries(INITIAL_PRICES).forEach(([name, data]) => {
-    if (!state.prices[name] || !state.prices[name]._userSet) {
-      state.prices[name] = Object.assign({}, data, {_userSet: false});
-      changed = true;
-    }
-  });
-  if (changed) saveState();
-})();
-
-renderHoy();
-checkFridayReminder();
-
-// prices loaded
-</script>
-
-<!-- Add Food Modal -->
-<div class="modal-overlay hidden" id="add-food-modal" onclick="if(event.target===this)closeAddFoodModal()">
-  <div class="modal" style="max-height:85vh;overflow-y:auto;padding:20px;max-width:380px;width:100%" id="add-food-modal-content"></div>
-</div>
-
-
-<!-- Price Editor Modal -->
-<div class="modal-overlay hidden" id="price-editor-modal" onclick="if(event.target===this)closePriceEditor()">
-  <div class="modal" style="max-height:85vh;overflow-y:auto;padding:20px;max-width:380px;width:100%" id="price-editor-content"></div>
-</div>
 </body>
 </html>
