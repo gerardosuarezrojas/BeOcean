@@ -1,0 +1,732 @@
+
+<!DOCTYPE HTML>
+<!--
+	Propuesta Comercial BeOcean Digital
+	Basado en Read Only by HTML5 UP — html5up.net | @ajlkn
+	CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Propuesta Comercial — ICCG | BeOcean Digital</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<style>
+			/* ── BeOcean Brand Override ── */
+			:root {
+				--navy:  #0B1F3A;
+				--blue:  #1E40AF;
+				--cyan:  #00C2CB;
+				--light: #F4F7FA;
+				--gray:  #444444;
+			}
+
+			/* Sidebar */
+			#header {
+				background: var(--navy) !important;
+				border-right: 4px solid var(--blue);
+			}
+			#header header h1 a,
+			#header nav ul li a {
+				color: #fff !important;
+			}
+			#header nav ul li a:hover,
+			#header nav ul li a.active {
+				color: var(--cyan) !important;
+				border-left: 3px solid var(--cyan);
+				padding-left: 10px;
+			}
+			#header header p {
+				color: #aaccdd !important;
+				font-size: 0.82em;
+				line-height: 1.5;
+			}
+			#header footer {
+				border-top: 1px solid rgba(255,255,255,0.08) !important;
+			}
+
+			/* Logo area */
+			.sidebar-logo {
+				display: block;
+				background: #fff;
+				border-radius: 8px;
+				padding: 10px 14px;
+				margin: 0 auto 1rem auto;
+				max-width: 160px;
+				text-align: center;
+			}
+			.sidebar-logo img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			.sidebar-client {
+				text-align: center;
+				margin-bottom: 1.2rem;
+			}
+			.sidebar-client .label-para {
+				font-size: 0.72em;
+				text-transform: uppercase;
+				letter-spacing: 0.12em;
+				color: var(--cyan) !important;
+				margin-bottom: 0.2rem;
+			}
+			.sidebar-client .client-name {
+				font-size: 1em;
+				font-weight: 700;
+				color: #fff !important;
+				line-height: 1.3;
+			}
+			.sidebar-client .client-date {
+				font-size: 0.72em;
+				color: #aaccdd !important;
+				margin-top: 0.2rem;
+			}
+
+			/* Section headers */
+			.section-tag {
+				display: inline-block;
+				background: var(--blue);
+				color: #fff !important;
+				font-size: 0.7em;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.12em;
+				padding: 3px 10px;
+				border-radius: 3px;
+				margin-bottom: 0.6rem;
+			}
+			header.major h2 {
+				color: var(--navy) !important;
+				border-bottom: 3px solid var(--cyan);
+				padding-bottom: 0.4rem;
+				display: inline-block;
+			}
+			h3 {
+				color: var(--navy) !important;
+				border-left: 4px solid var(--cyan);
+				padding-left: 12px;
+			}
+
+			/* Diferenciadores cards */
+			.dif-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 1rem;
+				margin-top: 1.2rem;
+			}
+			.dif-card {
+				background: var(--light);
+				border-radius: 8px;
+				padding: 1.2rem 1rem;
+				border-top: 3px solid var(--blue);
+			}
+			.dif-card .dif-icon {
+				font-size: 1.6em;
+				margin-bottom: 0.5rem;
+				display: block;
+			}
+			.dif-card h4 {
+				color: var(--navy) !important;
+				margin: 0 0 0.4rem 0;
+				font-size: 0.9em;
+			}
+			.dif-card p {
+				font-size: 0.82em;
+				color: var(--gray);
+				margin: 0;
+				line-height: 1.5;
+			}
+
+			/* Clientes logos row */
+			.clientes-row {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.6rem;
+				margin-top: 0.8rem;
+			}
+			.cliente-chip {
+				background: #fff;
+				border: 1px solid #dde4ee;
+				border-radius: 20px;
+				padding: 4px 14px;
+				font-size: 0.8em;
+				color: var(--navy);
+				font-weight: 600;
+			}
+
+			/* El plan - bloques */
+			.plan-block {
+				display: flex;
+				gap: 1rem;
+				align-items: flex-start;
+				background: #fff;
+				border: 1px solid #dde4ee;
+				border-radius: 8px;
+				padding: 1.2rem;
+				margin-bottom: 1rem;
+				border-left: 4px solid var(--blue);
+			}
+			.plan-block .plan-num {
+				background: var(--navy);
+				color: var(--cyan);
+				font-weight: 700;
+				font-size: 1.1em;
+				width: 36px;
+				height: 36px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-shrink: 0;
+			}
+			.plan-block .plan-content h4 {
+				color: var(--navy) !important;
+				margin: 0 0 0.4rem 0;
+				font-size: 0.95em;
+			}
+			.plan-block .plan-content p {
+				font-size: 0.85em;
+				color: var(--gray);
+				margin: 0;
+				line-height: 1.6;
+			}
+
+			/* Setup incluido */
+			.setup-list {
+				list-style: none;
+				padding: 0;
+				margin: 1rem 0 0 0;
+			}
+			.setup-list li {
+				display: flex;
+				align-items: flex-start;
+				gap: 0.6rem;
+				padding: 0.5rem 0;
+				border-bottom: 1px solid #eee;
+				font-size: 0.88em;
+				color: var(--gray);
+			}
+			.setup-list li:last-child { border-bottom: none; }
+			.setup-list li .check {
+				color: var(--blue);
+				font-weight: 700;
+				flex-shrink: 0;
+			}
+
+			/* Paquetes */
+			.paquetes-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				gap: 1rem;
+				margin-top: 1.2rem;
+			}
+			.paquete-card {
+				border: 1px solid #dde4ee;
+				border-radius: 10px;
+				overflow: hidden;
+				background: #fff;
+			}
+			.paquete-card.recommended {
+				border-color: var(--blue);
+				box-shadow: 0 4px 18px rgba(30,64,175,0.12);
+			}
+			.paquete-header {
+				background: var(--navy);
+				color: #fff;
+				padding: 1rem;
+				text-align: center;
+			}
+			.paquete-card.recommended .paquete-header {
+				background: var(--blue);
+			}
+			.paquete-header .rec-badge {
+				display: inline-block;
+				background: var(--cyan);
+				color: var(--navy);
+				font-size: 0.65em;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				padding: 2px 8px;
+				border-radius: 10px;
+				margin-bottom: 0.4rem;
+			}
+			.paquete-header h4 {
+				color: #fff !important;
+				margin: 0.3rem 0 0 0;
+				font-size: 0.95em;
+				letter-spacing: 0.05em;
+			}
+			.paquete-body {
+				padding: 1rem;
+			}
+			.paquete-price {
+				text-align: center;
+				margin-bottom: 0.8rem;
+				padding-bottom: 0.8rem;
+				border-bottom: 1px solid #eee;
+			}
+			.paquete-price .price-main {
+				font-size: 1.6em;
+				font-weight: 700;
+				color: var(--navy);
+				display: block;
+			}
+			.paquete-price .price-sub {
+				font-size: 0.72em;
+				color: #888;
+			}
+			.paquete-price .price-note {
+				font-size: 0.72em;
+				color: var(--blue);
+				font-weight: 600;
+				margin-top: 0.2rem;
+				display: block;
+			}
+			.paquete-features {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.paquete-features li {
+				font-size: 0.8em;
+				color: var(--gray);
+				padding: 0.3rem 0;
+				display: flex;
+				align-items: flex-start;
+				gap: 0.5rem;
+				line-height: 1.4;
+			}
+			.paquete-features li .fi { color: var(--blue); flex-shrink: 0; }
+			.paquete-features li .fx { color: #ccc; flex-shrink: 0; }
+
+			/* Pauta nota */
+			.pauta-nota {
+				background: var(--light);
+				border-left: 4px solid var(--cyan);
+				border-radius: 0 6px 6px 0;
+				padding: 0.8rem 1rem;
+				font-size: 0.83em;
+				color: var(--gray);
+				margin-top: 1rem;
+			}
+
+			/* Siguientes pasos */
+			.pasos-list {
+				list-style: none;
+				padding: 0;
+				margin: 1rem 0 0 0;
+				counter-reset: paso;
+			}
+			.pasos-list li {
+				display: flex;
+				align-items: flex-start;
+				gap: 1rem;
+				padding: 0.9rem 0;
+				border-bottom: 1px solid #eee;
+				font-size: 0.9em;
+				color: var(--gray);
+				line-height: 1.5;
+			}
+			.pasos-list li:last-child { border-bottom: none; }
+			.pasos-list li .paso-num {
+				background: var(--navy);
+				color: var(--cyan);
+				font-weight: 700;
+				font-size: 1em;
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-shrink: 0;
+			}
+
+			/* CTA box */
+			.cta-box {
+				background: var(--navy);
+				border-radius: 10px;
+				padding: 1.8rem 2rem;
+				text-align: center;
+				margin-top: 1.5rem;
+			}
+			.cta-box p {
+				color: #aaccdd !important;
+				margin: 0 0 0.4rem 0;
+				font-size: 0.9em;
+			}
+			.cta-box a {
+				color: var(--cyan) !important;
+				font-weight: 700;
+				font-size: 1em;
+				text-decoration: none;
+			}
+			.cta-box a:hover { text-decoration: underline; }
+
+			/* Print button */
+			.print-btn {
+				position: fixed;
+				bottom: 1.5rem;
+				right: 1.5rem;
+				background: var(--blue);
+				color: #fff !important;
+				border: none;
+				border-radius: 50px;
+				padding: 0.7rem 1.4rem;
+				font-size: 0.85em;
+				font-weight: 700;
+				cursor: pointer;
+				box-shadow: 0 4px 14px rgba(30,64,175,0.3);
+				z-index: 9999;
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+				gap: 0.4rem;
+			}
+			.print-btn:hover { background: var(--navy); }
+
+			/* Footer */
+			#footer { background: var(--light) !important; }
+			#footer .copyright li { color: #888 !important; }
+			#footer .copyright a { color: var(--blue) !important; }
+
+			/* Print styles */
+			@media print {
+				.print-btn { display: none !important; }
+				#header { position: relative !important; width: 100% !important; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Print Button -->
+		<button class="print-btn" onclick="window.print()">
+			⬇ Exportar PDF
+		</button>
+
+		<!-- Header / Sidebar -->
+		<section id="header">
+			<header>
+				<a class="sidebar-logo" href="https://www.beocean.digital" target="_blank">
+					<!-- Reemplaza con la ruta correcta al logo si lo tienes en assets/images -->
+					<img src="../assets/images/logo.png" alt="BeOcean Digital"
+						onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+					<span style="display:none; font-weight:700; color:#1E40AF; font-size:1.1em;">BeOcean</span>
+				</a>
+				<div class="sidebar-client">
+					<p class="label-para">Propuesta para</p>
+					<p class="client-name">Instituto Certificador<br>Conexión Global</p>
+					<p class="client-date">Junio 2026 · v1.0</p>
+				</div>
+			</header>
+			<nav id="nav">
+				<ul>
+					<li><a href="#nosotros" class="active">Quiénes somos</a></li>
+					<li><a href="#plan">El plan</a></li>
+					<li><a href="#inversion">Inversión</a></li>
+					<li><a href="#pasos">Siguientes pasos</a></li>
+				</ul>
+			</nav>
+			<footer>
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/beocean.digital" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/beocean.digital" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+					<li><a href="https://www.linkedin.com/company/beocean" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:hola@beocean.digital" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</footer>
+		</section>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<div id="main">
+
+				<!-- SECCIÓN 1: Quiénes somos -->
+				<section id="nosotros">
+					<div class="image main" data-position="center">
+						<!-- Banner decorativo — puedes reemplazar con imagen real -->
+						<div style="background: linear-gradient(135deg, #0B1F3A 60%, #1E40AF); height: 180px; display:flex; align-items:center; justify-content:center;">
+							<p style="color:#00C2CB; font-size:1.1em; font-weight:700; letter-spacing:0.1em; margin:0;">
+								Be Creative · Be Different · BeOcean
+							</p>
+						</div>
+					</div>
+					<div class="container">
+						<header class="major">
+							<span class="section-tag">01 · Quiénes somos</span>
+							<h2>Más de 16 años<br>transformando marcas digitales</h2>
+						</header>
+						<p>
+							BeOcean es una agencia boutique de marketing digital fundada con un propósito claro:
+							ayudar a empresas y profesionales a crecer en el mundo digital con estrategias
+							personalizadas, resultados medibles y atención directa — sin intermediarios, sin burocracia.
+						</p>
+						<p>
+							Somos especialistas en <strong>diseño web, campañas de pago, estrategia de contenidos
+							y posicionamiento de marca</strong>. Hemos trabajado con clientes en sectores tan
+							diversos como retail, salud, educación, manufactura y servicios profesionales,
+							siempre con el mismo compromiso: entender el negocio antes de proponer cualquier solución.
+						</p>
+
+						<h3>Clientes con los que hemos trabajado</h3>
+						<div class="clientes-row">
+							<span class="cliente-chip">TMF</span>
+							<span class="cliente-chip">Becara Chairs</span>
+							<span class="cliente-chip">Blanco Castelar</span>
+							<span class="cliente-chip">Mariachi con Sabor a México</span>
+							<span class="cliente-chip">Riman</span>
+							<span class="cliente-chip">Tierra de Sueños</span>
+							<span class="cliente-chip">TMFlex USA</span>
+							<span class="cliente-chip">Work and Roll</span>
+						</div>
+
+						<h3 style="margin-top:2rem;">Nuestros diferenciadores</h3>
+						<div class="dif-grid">
+							<div class="dif-card">
+								<span class="dif-icon">🎯</span>
+								<h4>Estrategia antes que ejecución</h4>
+								<p>Entendemos tu negocio y tu cliente antes de lanzar cualquier campaña o publicación.</p>
+							</div>
+							<div class="dif-card">
+								<span class="dif-icon">🤝</span>
+								<h4>Trato directo</h4>
+								<p>Trabajas directamente con quien toma las decisiones. Sin cuentas ejecutivas ni teléfonos descompuestos.</p>
+							</div>
+							<div class="dif-card">
+								<span class="dif-icon">📊</span>
+								<h4>Resultados medibles</h4>
+								<p>Cada peso invertido tiene seguimiento. Reportes claros, métricas reales, optimización constante.</p>
+							</div>
+							<div class="dif-card">
+								<span class="dif-icon">⚡</span>
+								<h4>Velocidad de respuesta</h4>
+								<p>Somos ágiles por diseño. Las decisiones se toman rápido y la ejecución no espera.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- SECCIÓN 2: El Plan -->
+				<section id="plan">
+					<div class="container">
+						<span class="section-tag">02 · El plan</span>
+						<h3>¿Qué vamos a hacer juntos?</h3>
+						<p>
+							Para llenar la primera edición del diplomado necesitamos tres cosas trabajando al mismo tiempo:
+							una página que convierta visitas en inscritos, anuncios que traigan el tráfico correcto
+							y contenido que genere confianza mientras la gente decide.
+						</p>
+
+						<div class="plan-block">
+							<div class="plan-num">01</div>
+							<div class="plan-content">
+								<h4>Landing Page profesional</h4>
+								<p>
+									Diseñamos y publicamos una página específica para el diplomado, con dominio y
+									hospedaje incluidos. Es la base de todo: aquí llegan los anuncios y aquí se
+									convierte el interés en inscripción. El costo se divide en los primeros 2 meses
+									para que no sientas el golpe inicial.
+								</p>
+							</div>
+						</div>
+
+						<div class="plan-block">
+							<div class="plan-num">02</div>
+							<div class="plan-content">
+								<h4>Campañas en Meta Ads</h4>
+								<p>
+									Creamos y gestionamos los anuncios en Facebook e Instagram segmentados al perfil
+									exacto de tu alumno ideal: docentes, psicólogos, coaches y profesionales de RRHH.
+									Optimizamos semana a semana para bajar el costo por prospecto.
+									El presupuesto de pauta (~$3,400 MXN/mes) lo pagas directo a Meta.
+								</p>
+							</div>
+						</div>
+
+						<div class="plan-block">
+							<div class="plan-num">03</div>
+							<div class="plan-content">
+								<h4>Contenido orgánico mensual</h4>
+								<p>
+									12 publicaciones al mes listas para postear: copy, hashtags y llamada a la acción.
+									En paquetes superiores también generamos las imágenes y nos encargamos de
+									publicar por ti.
+								</p>
+							</div>
+						</div>
+
+						<h3 style="margin-top: 1.5rem;">Incluido en todos los paquetes desde el día 1</h3>
+						<ul class="setup-list">
+							<li>
+								<span class="check">✓</span>
+								<span><strong>Píxel de Meta</strong> — Para rastrear qué hace cada visitante que llega desde un anuncio y optimizar en tiempo real.</span>
+							</li>
+							<li>
+								<span class="check">✓</span>
+								<span><strong>Google Analytics 4</strong> — Para medir todo el tráfico del sitio, no solo el de pago.</span>
+							</li>
+							<li>
+								<span class="check">✓</span>
+								<span><strong>Script de ventas</strong> — Un guion de cierre para que tu equipo convierta cada conversación en inscripción.</span>
+							</li>
+						</ul>
+
+						<p style="margin-top:1rem; font-weight:700; color: var(--blue); font-size:0.9em;">
+							La factura se emite el día 1 de cada mes. Sin anticipos.
+						</p>
+					</div>
+				</section>
+
+				<!-- SECCIÓN 3: Inversión -->
+				<section id="inversion">
+					<div class="container">
+						<span class="section-tag">03 · Inversión</span>
+						<h3>Elige tu paquete</h3>
+						<p>
+							Los tres paquetes incluyen landing page, setup técnico completo, campañas Meta Ads
+							y parrilla de contenido mensual. La diferencia está en quién genera las imágenes
+							y quién publica.
+						</p>
+
+						<div class="paquetes-grid">
+
+							<!-- Paquete Esencial -->
+							<div class="paquete-card">
+								<div class="paquete-header">
+									<h4>ESENCIAL</h4>
+								</div>
+								<div class="paquete-body">
+									<div class="paquete-price">
+										<span class="price-main">$4,500 <small style="font-size:0.5em;">MXN</small></span>
+										<span class="price-sub">Mes 1 y 2 (landing diferida)</span>
+										<span class="price-note">Mes 3 en adelante: $3,500 MXN</span>
+									</div>
+									<ul class="paquete-features">
+										<li><span class="fi">✓</span> Landing page (dominio + hospedaje)</li>
+										<li><span class="fi">✓</span> Píxel Meta + GA4 + Script de ventas</li>
+										<li><span class="fi">✓</span> Gestión de campañas Meta Ads</li>
+										<li><span class="fi">✓</span> Parrilla de contenido (12 posts/mes)</li>
+										<li><span class="fi">✓</span> Reporte mensual de resultados</li>
+										<li><span class="fx">✗</span> Generación de imágenes</li>
+										<li><span class="fx">✗</span> BeOcean publica en tus redes</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Paquete Crecimiento (recomendado) -->
+							<div class="paquete-card recommended">
+								<div class="paquete-header">
+									<span class="rec-badge">★ Recomendado</span>
+									<h4>CRECIMIENTO</h4>
+								</div>
+								<div class="paquete-body">
+									<div class="paquete-price">
+										<span class="price-main">$6,750 <small style="font-size:0.5em;">MXN</small></span>
+										<span class="price-sub">Mes 1 y 2 (landing diferida)</span>
+										<span class="price-note">Mes 3 en adelante: $5,500 MXN</span>
+									</div>
+									<ul class="paquete-features">
+										<li><span class="fi">✓</span> Landing page (dominio + hospedaje)</li>
+										<li><span class="fi">✓</span> Píxel Meta + GA4 + Script de ventas</li>
+										<li><span class="fi">✓</span> Gestión de campañas Meta Ads</li>
+										<li><span class="fi">✓</span> Parrilla de contenido (12 posts/mes)</li>
+										<li><span class="fi">✓</span> Reporte mensual de resultados</li>
+										<li><span class="fi">✓</span> Generación de imágenes para posts</li>
+										<li><span class="fx">✗</span> BeOcean publica en tus redes</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Paquete Aceleración -->
+							<div class="paquete-card">
+								<div class="paquete-header">
+									<h4>ACELERACIÓN</h4>
+								</div>
+								<div class="paquete-body">
+									<div class="paquete-price">
+										<span class="price-main">$9,500 <small style="font-size:0.5em;">MXN</small></span>
+										<span class="price-sub">Mes 1 y 2 (landing diferida)</span>
+										<span class="price-note">Mes 3 en adelante: $8,000 MXN</span>
+									</div>
+									<ul class="paquete-features">
+										<li><span class="fi">✓</span> Landing page (dominio + hospedaje)</li>
+										<li><span class="fi">✓</span> Píxel Meta + GA4 + Script de ventas</li>
+										<li><span class="fi">✓</span> Gestión de campañas Meta Ads</li>
+										<li><span class="fi">✓</span> Parrilla de contenido (12 posts/mes)</li>
+										<li><span class="fi">✓</span> Reporte mensual de resultados</li>
+										<li><span class="fi">✓</span> Generación de imágenes para posts</li>
+										<li><span class="fi">✓</span> BeOcean publica en tus redes</li>
+									</ul>
+								</div>
+							</div>
+
+						</div><!-- /paquetes-grid -->
+
+						<div class="pauta-nota">
+							<strong>Presupuesto de pauta:</strong> El gasto en anuncios (~$3,400 MXN/mes) se paga
+							directamente a Meta desde tu cuenta. No está incluido en los honorarios de BeOcean.
+							BeOcean gestiona la cuenta sin costo adicional.
+						</div>
+
+					</div>
+				</section>
+
+				<!-- SECCIÓN 4: Siguientes pasos -->
+				<section id="pasos">
+					<div class="container">
+						<span class="section-tag">04 · Siguientes pasos</span>
+						<h3>¿Cómo arrancamos?</h3>
+						<p>Solo necesitamos tres cosas para poner todo en marcha:</p>
+
+						<ul class="pasos-list">
+							<li>
+								<span class="paso-num">1</span>
+								<span>Necesitamos la aprobación de esta propuesta junto con el paquete seleccionado.</span>
+							</li>
+							<li>
+								<span class="paso-num">2</span>
+								<span>Confirmación del primer pago.</span>
+							</li>
+							<li>
+								<span class="paso-num">3</span>
+								<span>Acceso a Meta para configurar la campaña.</span>
+							</li>
+						</ul>
+
+						<div class="cta-box">
+							<p>¿Listo para llenar la primera edición del diplomado?</p>
+							<a href="mailto:hola@beocean.digital">hola@beocean.digital</a>
+							&nbsp;·&nbsp;
+							<a href="https://www.beocean.digital" target="_blank">www.beocean.digital</a>
+						</div>
+
+					</div>
+				</section>
+
+			</div><!-- /main -->
+
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; 2026 BeOcean Digital. Todos los derechos reservados.</li>
+						<li>Be Creative · Be Different · <a href="https://www.beocean.digital" target="_blank">BeOcean</a></li>
+					</ul>
+				</div>
+			</section>
+
+		</div><!-- /wrapper -->
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script src="../assets/js/breakpoints.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
