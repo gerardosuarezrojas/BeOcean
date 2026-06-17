@@ -371,7 +371,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-d
     <div class="config-row"><span class="config-label">Nombre</span><input class="config-input" id="cfg-nombre" placeholder="Jerry" style="width:140px"></div>
     <div class="config-row"><span class="config-label">Edad</span><input class="config-input" id="cfg-edad" type="number" placeholder="43"></div>
     <div class="config-row"><span class="config-label">Estatura (m)</span><input class="config-input" id="cfg-estatura" type="number" step="0.01" placeholder="1.67"></div>
-    <div class="config-row"><span class="config-label">Peso actual (kg)</span><input class="config-input" id="cfg-peso" type="number" step="0.1" placeholder="73"></div>
+    <div class="config-row"><span class="config-label">Peso actual (kg)</span><input class="config-input" id="cfg-peso" type="number" step="0.1" placeholder="76"></div>
     <div class="config-row"><span class="config-label">Peso meta (kg)</span><input class="config-input" id="cfg-meta" type="number" step="0.1" placeholder="62"></div>
     <div class="config-row">
       <span class="config-label">Actividad</span>
@@ -635,7 +635,7 @@ const state = {
   bought: savedData.bought || {},
   superHistory: savedData.superHistory || [],
   weightHistory: savedData.weightHistory || [],
-  config: savedData.config || {nombre:'Jerry',edad:43,estatura:1.67,peso:73,meta:62,actividad:1.375,protObj:120,carbObj:160,grasaObj:53},
+  config: savedData.config || {nombre:'Jerry',edad:43,estatura:1.67,peso:76,meta:62,actividad:1.375,protObj:120,carbObj:160,grasaObj:53},
   editingPrices: false,
   superFilter: savedData.superFilter || 'current',
   recFilter: 'all',
@@ -840,7 +840,7 @@ function rateHoy(k, idx, stars) {
 function renderProgress() {
   const cfg = state.config;
   const wh = state.weightHistory;
-  const startKg = parseFloat(cfg.peso) || 73;
+  const startKg = parseFloat(cfg.peso) || 76;
   const targetKg = 62;
   const currentKg = wh.length > 0 ? wh[wh.length-1].kg : startKg;
   const total = startKg - targetKg;
@@ -1570,7 +1570,7 @@ function saveConfig() {
     nombre: document.getElementById('cfg-nombre').value,
     edad: parseFloat(document.getElementById('cfg-edad').value) || 43,
     estatura: parseFloat(document.getElementById('cfg-estatura').value) || 1.67,
-    peso: parseFloat(document.getElementById('cfg-peso').value) || 73,
+    peso: parseFloat(document.getElementById('cfg-peso').value) || 76,
     meta: parseFloat(document.getElementById('cfg-meta').value) || 62,
     actividad: parseFloat(document.getElementById('cfg-actividad').value) || 1.375,
     protObj: parseInt(document.getElementById('cfg-prot').value) || 120,
