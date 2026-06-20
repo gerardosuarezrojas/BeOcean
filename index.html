@@ -1,477 +1,1238 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="es"> <!--<![endif]-->
+<html lang="es">
 <head>
-
-   <meta charset="utf-8">
-   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KTJ2C35F');</script>
-<!-- End Google Tag Manager -->
-   <title>BeOcean — Agencia Boutique de Marketing Digital</title>
-   <meta name="description" content="BeOcean — agencia boutique de sitios web, contenido y pauta digital, con acompañamiento real de principio a fin.">
-   <meta name="author" content="BeOcean">
-   <meta property="og:title" content="BeOcean — Agencia Boutique de Marketing Digital">
-   <meta property="og:description" content="Agencia boutique de sitios web, contenido y pauta digital, con acompañamiento real de principio a fin.">
-   <meta property="og:type" content="website">
-   <meta property="og:url" content="https://beocean.digital">
-   <meta property="og:image" content="https://beocean.digital/images/BeO_logo.png">
-   <meta name="twitter:card" content="summary_large_image">
-   <meta name="twitter:title" content="BeOcean — Agencia Boutique de Marketing Digital">
-   <meta name="twitter:description" content="Agencia boutique de sitios web, contenido y pauta digital, con acompañamiento real de principio a fin.">
-
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-   <link rel="stylesheet" href="css/base.css">
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-
-   <!-- Josefin Sans -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300&display=swap" rel="stylesheet">
-
-   <!-- BeOcean brand overrides -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Control de Gastos</title>
 <style>
-  body, h1, h2, h3, h4, h5, h6, p, a, li, input, textarea, button, label {
-    font-family: 'Josefin Sans', sans-serif !important;
-  }
-  #main-header { background: #ffffff; }
-  #main-header .logo a { color: #ffffff; font-weight: 700; letter-spacing: 0.06em; }
-  ul#nav li a { color: #1a1a2e !important; }
-  ul#nav li a:hover { color: #ffffff !important; background: #1B6FC8 !important; }
-  ul#nav li.current a { background: #004AAD !important; color: #ffffff !important; }
-  #hero { background: url('images/hero.jpg') no-repeat center center / cover !important; }
-  .flex-caption h1 { font-weight: 700; letter-spacing: -0.01em; }
-  .button.stroke { border-color: #B8D4F0; color: #B8D4F0; }
-  .button.stroke:hover { background: #B8D4F0; color: #0A2F5C; }
-  .section-head h1 { color: #0A2F5C; }
-  .section-head h1 span { color: #1B6FC8; }
-  .icon-part [class^="icon-"], .icon-part i { color: #1B6FC8; }
-  .item-wrap .overlay { background: rgba(10,47,92,0.85); }
-  .about-content h3 { color: #0A2F5C; }
-  #contact { background: #ffffff; }
-  #contact h1 { color: #004AAD; }
-  #contact input, #contact textarea, #contact select { background: transparent; }
-  #contact button.submit { color: #ffffff; }
-  .submit { background: #1B6FC8 !important; border-color: #1B6FC8 !important; }
-  .submit:hover { background: #0A2F5C !important; border-color: #0A2F5C !important; }
-  footer { background: #1A1A2E; }
-  footer h3 { color: #B8D4F0; }
-  footer p, footer li a { color: rgba(255,255,255,0.5); }
-  footer li a:hover { color: #ffffff; }
-  footer .copyright { color: rgba(255,255,255,0.25); }
-  footer .copyright a { color: rgba(255,255,255,0.4); }
-  hr { border-color: #1B6FC8; }
-  #go-top a { background: #1B6FC8; }
-  #go-top a:hover { background: #0A2F5C; }
-  #contact input, #contact textarea, #contact select { color: #1a1a2e !important; border-color: #a9aaab !important; }
-  #contact input:focus, #contact textarea:focus { color: #1a1a2e !important; border-color: #004AAD !important; background: #ffffff !important; }
-  #contact button.submit { color: #ffffff !important; border-color: #004AAD !important; background: #004AAD !important; }
-  #contact button.submit:hover { background: #002d6b !important; }
-  ::-webkit-input-placeholder { color: #888 !important; }
-  ::placeholder { color: #888 !important; }
-  #about { background: #F5F7FA; }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-  /* Mobile portfolio touch */
-  @media only screen and (max-width: 768px) {
-    .item.touched .overlay { opacity: 1 !important; }
-    .item.touched .portfolio-item-meta { opacity: 1 !important; }
-    .item.touched .item-wrap img { transform: scale(1.05); }
-    .item .portfolio-item-meta h5 { margin-bottom: 12px; line-height: 1.3; display: block; }
-    .item .portfolio-item-meta p { font-size: 12px; line-height: 1.5; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #0f0f13;
+    --surface: #1a1a22;
+    --surface2: #22222d;
+    --border: #2e2e3e;
+    --text: #f0f0f5;
+    --text2: #8888a0;
+    --accent: #7c6af7;
+    --accent2: #a594f9;
+    --green: #34d399;
+    --red: #f87171;
+    --yellow: #fbbf24;
+    --card-radius: 16px;
   }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    max-width: 430px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+  }
+
+  /* Header */
+  .header {
+    padding: 24px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-title { font-size: 20px; font-weight: 700; }
+
+  /* Month nav */
+  .month-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 14px 16px 0;
+  }
+  .month-arrow {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    width: 36px; height: 36px;
+    color: var(--text);
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    transition: border-color 0.15s, opacity 0.15s;
+  }
+  .month-arrow:hover { border-color: var(--accent); }
+  .month-arrow:disabled { opacity: 0.3; cursor: default; }
+  .month-arrow:disabled:hover { border-color: var(--border); }
+  .month-label {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    min-width: 140px;
+    text-align: center;
+  }
+
+  /* Total card */
+  .total-card {
+    margin: 16px 16px 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 20px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .total-card:hover { border-color: var(--accent); }
+  .total-label {
+    font-size: 12px;
+    color: var(--text2);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .total-label .chevron {
+    font-size: 16px;
+    transition: transform 0.25s;
+    color: var(--text2);
+  }
+  .total-label .chevron.open { transform: rotate(180deg); }
+  .total-bar-wrap {
+    height: 10px;
+    background: var(--surface2);
+    border-radius: 99px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .total-bar-fill {
+    height: 100%;
+    border-radius: 99px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    transition: width 0.6s ease;
+  }
+  .total-bar-fill.over { background: linear-gradient(90deg, #ef4444, #f87171); }
+  .disponible-label { font-size: 12px; color: var(--text2); margin-bottom: 4px; }
+  .disponible-amount {
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+  .disponible-amount.positive { color: var(--green); }
+  .disponible-amount.negative { color: var(--red); }
+  .total-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--text2);
+  }
+
+  /* Categories */
+  .categories-wrap {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease;
+  }
+  .categories-wrap.open { max-height: 3000px; }
+  .categories-inner { padding: 12px 16px 0; display: flex; flex-direction: column; gap: 10px; }
+
+  .cat-card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+  .cat-card:hover { border-color: var(--accent); }
+  .cat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .cat-name { font-size: 14px; font-weight: 600; }
+  .cat-amounts { font-size: 13px; color: var(--text2); }
+  .cat-bar-wrap {
+    height: 6px;
+    background: var(--bg);
+    border-radius: 99px;
+    overflow: visible;
+    position: relative;
+  }
+  .cat-bar-fill {
+    height: 100%;
+    border-radius: 99px;
+    transition: width 0.5s ease, background 0.3s;
+    max-width: 100%;
+  }
+  .cat-bar-fill.ok { background: var(--green); }
+  .cat-bar-fill.warn { background: var(--yellow); }
+  .cat-bar-fill.over { background: var(--red); }
+  .cat-over-label { font-size: 11px; color: var(--red); margin-top: 4px; }
+
+  /* Recent gastos */
+  .section-title {
+    padding: 24px 16px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text2);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .gastos-list { padding: 0 16px; display: flex; flex-direction: column; gap: 8px; }
+  .gasto-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+  .gasto-item:hover { border-color: var(--accent); }
+  .gasto-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .gasto-info { flex: 1; min-width: 0; }
+  .gasto-desc { font-size: 14px; font-weight: 500; }
+  .gasto-cat { font-size: 12px; color: var(--text2); margin-top: 2px; }
+  .gasto-note { font-size: 12px; color: var(--text2); margin-top: 2px; font-style: italic; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .gasto-right { text-align: right; flex-shrink: 0; }
+  .gasto-amount { font-size: 15px; font-weight: 600; }
+  .gasto-date { font-size: 11px; color: var(--text2); margin-top: 2px; }
+
+  .ingreso-item .gasto-amount { color: var(--green); }
+
+  .empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text2);
+    font-size: 14px;
+  }
+
+  /* ── BOTTOM MENU ── */
+  .bottom-menu {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    max-width: 430px;
+    margin: 0 auto;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    display: flex;
+    padding: 10px 8px calc(10px + env(safe-area-inset-bottom));
+    z-index: 50;
+  }
+  .menu-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    color: var(--text2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 6px 2px;
+    border-radius: 10px;
+    transition: background 0.15s, color 0.15s;
+  }
+  .menu-btn:hover { background: var(--surface2); color: var(--text); }
+  .menu-btn .icon { font-size: 20px; }
+  .menu-btn.primary {
+    color: white;
+  }
+  .menu-btn.primary .icon-wrap {
+    background: var(--accent);
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: -2px;
+  }
+
+  /* ── MODALS ── */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--surface);
+    border-radius: 20px 20px 0 0;
+    padding: 24px;
+    width: 100%;
+    max-width: 430px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-top: 1px solid var(--border);
+  }
+  .modal-handle {
+    width: 40px; height: 4px;
+    background: var(--border);
+    border-radius: 99px;
+    margin: 0 auto 20px;
+  }
+  .modal-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .field { margin-bottom: 16px; }
+  .field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text2);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+  }
+  .field input, .field select, .field textarea {
+    width: 100%;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 13px 14px;
+    color: var(--text);
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .field textarea { resize: vertical; min-height: 60px; }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--accent); }
+  .field select option { background: var(--surface2); }
+
+  .modal-actions { display: flex; gap: 10px; margin-top: 20px; }
+  .btn-cancel {
+    flex: 1;
+    padding: 14px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text2);
+    font-size: 15px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .btn-save {
+    flex: 2;
+    padding: 14px;
+    background: var(--accent);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .btn-danger {
+    padding: 14px;
+    background: transparent;
+    border: 1px solid var(--red);
+    border-radius: 10px;
+    color: var(--red);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Lists inside management modals */
+  .manage-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .manage-item {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .manage-item-name { flex: 1; font-size: 14px; font-weight: 500; }
+  .manage-item-budget { font-size: 12px; color: var(--text2); }
+  .icon-btn {
+    background: none;
+    border: none;
+    color: var(--text2);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px 6px;
+    font-family: inherit;
+  }
+  .icon-btn:hover { color: var(--text); }
+  .icon-btn.danger:hover { color: var(--red); }
+
+  .subcats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+    padding-left: 4px;
+  }
+  .subcat-chip {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 99px;
+    padding: 5px 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .subcat-chip button {
+    background: none;
+    border: none;
+    color: var(--text2);
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 1;
+    padding: 0;
+  }
+  .add-subcat-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .add-subcat-row input {
+    flex: 1;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 9px 10px;
+    color: var(--text);
+    font-size: 13px;
+    font-family: inherit;
+    outline: none;
+  }
+  .add-subcat-row button {
+    background: var(--accent);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 0 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .section-divider {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 999;
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 14px;
+    color: var(--text2);
+    flex-direction: column;
+    gap: 16px;
+  }
+  .spinner {
+    width: 32px; height: 32px;
+    border: 2px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
 </style>
-
-   <script src="js/modernizr.js"></script>
-   <link rel="shortcut icon" href="favicon.png">
-
 </head>
+<body>
 
-<body class="homepage">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTJ2C35F"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<!-- LOADING -->
+<div id="loading-screen" class="loading">
+  <div class="spinner"></div>
+  <span>Cargando...</span>
+</div>
 
-   <div id="preloader">
-      <div id="status">
-         <img src="images/loader.gif" height="60" width="60" alt="">
-         <div class="loader">Cargando...</div>
+<!-- MAIN APP -->
+<div id="app" style="display:none">
+  <div class="header">
+    <span class="header-title">💰 Control de Gastos</span>
+  </div>
+
+  <div class="month-nav">
+    <button class="month-arrow" onclick="changeMonth(-1)">‹</button>
+    <span class="month-label" id="month-label"></span>
+    <button class="month-arrow" id="next-month-btn" onclick="changeMonth(1)">›</button>
+  </div>
+
+  <!-- TOTAL CARD -->
+  <div class="total-card" onclick="toggleCategories()">
+    <div class="total-label">
+      Presupuesto del mes
+      <span class="chevron" id="chevron">▾</span>
+    </div>
+    <div class="total-bar-wrap">
+      <div class="total-bar-fill" id="total-bar" style="width:0%"></div>
+    </div>
+    <div class="disponible-label">Disponible</div>
+    <div class="disponible-amount" id="disponible-amount">$0</div>
+    <div class="total-meta">
+      <span id="gastado-label">Gastado $0</span>
+      <span id="presupuesto-label">de $0</span>
+    </div>
+  </div>
+
+  <!-- CATEGORIES (collapsed) -->
+  <div class="categories-wrap" id="categories-wrap">
+    <div class="categories-inner" id="categories-inner"></div>
+  </div>
+
+  <!-- RECENT -->
+  <div class="section-title">Movimientos</div>
+  <div class="gastos-list" id="gastos-list"></div>
+</div>
+
+<!-- BOTTOM MENU -->
+<div class="bottom-menu" id="bottom-menu" style="display:none">
+  <button class="menu-btn" onclick="openIngresoModal()">
+    <span class="icon">💵</span>
+    Ingreso
+  </button>
+  <button class="menu-btn" onclick="openCatManageModal()">
+    <span class="icon">🗂️</span>
+    Categorías
+  </button>
+  <button class="menu-btn primary" onclick="openGastoModal()">
+    <span class="icon-wrap">+</span>
+  </button>
+  <button class="menu-btn" onclick="toggleCategories()">
+    <span class="icon">📊</span>
+    Resumen
+  </button>
+  <button class="menu-btn" onclick="openHistorialIngresos()">
+    <span class="icon">📜</span>
+    Ingresos
+  </button>
+</div>
+
+<!-- MODAL: NUEVO/EDITAR GASTO -->
+<div class="modal-overlay" id="gasto-modal">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-title" id="gasto-modal-title">Nuevo gasto</div>
+    <input type="hidden" id="g-id">
+    <div class="field">
+      <label>Categoría</label>
+      <select id="g-cat" onchange="onCatChange()"></select>
+    </div>
+    <div class="field">
+      <label>Subcategoría</label>
+      <select id="g-subcat"></select>
+    </div>
+    <div class="field">
+      <label>Monto</label>
+      <input type="number" id="g-monto" placeholder="0.00" inputmode="decimal">
+    </div>
+    <div class="field">
+      <label>Anotación</label>
+      <textarea id="g-nota" placeholder="Detalle u observación (opcional)"></textarea>
+    </div>
+    <div class="field">
+      <label>Fecha</label>
+      <input type="date" id="g-fecha">
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeGastoModal()">Cancelar</button>
+      <button class="btn-save" onclick="saveGasto()">Guardar</button>
+    </div>
+    <button class="btn-danger" id="g-delete-btn" style="display:none" onclick="deleteGastoConfirm()">Eliminar gasto</button>
+  </div>
+</div>
+
+<!-- MODAL: NUEVO INGRESO -->
+<div class="modal-overlay" id="ingreso-modal">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-title">Nuevo ingreso</div>
+    <div class="field">
+      <label>Descripción</label>
+      <input type="text" id="i-desc" placeholder="ej. Quincena, Bono, etc.">
+    </div>
+    <div class="field">
+      <label>Monto</label>
+      <input type="number" id="i-monto" placeholder="0.00" inputmode="decimal">
+    </div>
+    <div class="field">
+      <label>Fecha</label>
+      <input type="date" id="i-fecha">
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeIngresoModal()">Cancelar</button>
+      <button class="btn-save" onclick="saveIngreso()">Guardar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: HISTORIAL DE INGRESOS -->
+<div class="modal-overlay" id="historial-ingresos-modal">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-title">Ingresos del mes</div>
+    <div id="ingresos-list" class="manage-list"></div>
+    <div class="modal-actions">
+      <button class="btn-cancel" style="flex:1" onclick="closeHistorialIngresos()">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: GESTIONAR CATEGORÍAS -->
+<div class="modal-overlay" id="cat-manage-modal">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-title">Categorías</div>
+    <div id="cat-manage-list"></div>
+    <div class="section-divider">
+      <div style="font-size:14px;font-weight:600;margin-bottom:14px;">Nueva categoría</div>
+      <div class="field">
+        <label>Nombre</label>
+        <input type="text" id="new-cat-name" placeholder="ej. Mascotas">
       </div>
-   </div>
-
-   <header id="main-header">
-      <div class="row header-inner">
-         <div class="logo" style="background:none;">
-            <a class="smoothscroll" href="#hero" style="background-image:none; width:auto; height:auto; font:normal; color:white; text-shadow:none;">
-               <img src="images/BeO_logo.png" alt="BeOcean" style="height:55px; width:auto; display:block;">
-            </a>
-         </div>
-         <nav id="nav-wrap">
-            <a class="mobile-btn" href="#nav-wrap" title="Show navigation"><span class='menu-text'>Menú</span><span class="menu-icon"></span></a>
-            <a class="mobile-btn" href="#" title="Hide navigation"><span class='menu-text'>Cerrar</span><span class="menu-icon"></span></a>
-            <ul id="nav" class="nav">
-               <li class="current"><a class="smoothscroll" href="#hero">Inicio.</a></li>
-               <li><a class="smoothscroll" href="#portfolio">Portafolio.</a></li>
-               <li><a class="smoothscroll" href="#services">Servicios.</a></li>
-               <li><a class="smoothscroll" href="#about">Nosotros.</a></li>
-               <li><a class="smoothscroll" href="#contact">Contacto.</a></li>
-            </ul>
-         </nav>
+      <div class="field">
+        <label>Presupuesto mensual</label>
+        <input type="number" id="new-cat-budget" placeholder="0.00" inputmode="decimal">
       </div>
-   </header>
+      <button class="btn-save" style="width:100%;padding:14px;" onclick="saveNewCategory()">Agregar categoría</button>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" style="flex:1" onclick="closeCatManageModal()">Cerrar</button>
+    </div>
+  </div>
+</div>
 
-   <section id="hero">
-      <div class="row hero-content">
-         <div class="twelve columns flex-container">
-            <div id="hero-slider" class="flexslider">
-               <ul class="slides">
-                  <li><div class="flex-caption"><h1>En BeOcean cada marca es única. Creamos con el alma, ejecutamos con precisión.</h1><p><a class="button stroke smoothscroll" href="#about">Conócenos</a></p></div></li>
-                  <li><div class="flex-caption"><h1>Más que una agencia, tu equipo digital. Acompañamos cada decisión, cada campaña, cada resultado.</h1><p><a class="button stroke smoothscroll" href="#portfolio">Ver portafolio</a></p></div></li>
-                  <li><div class="flex-caption"><h1>Mira algunos de <a class="smoothscroll" href="#portfolio">nuestros proyectos</a> o <a class="smoothscroll" href="#contact">escríbenos</a> para platicar cómo podemos ayudarte.</h1><p><a class="button stroke smoothscroll" href="#contact">Hablemos</a></p></div></li>
-               </ul>
-            </div>
-         </div>
+<!-- MODAL: EDITAR CATEGORÍA (presupuesto + subcategorías) -->
+<div class="modal-overlay" id="cat-edit-modal">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-title" id="cat-edit-title">Editar categoría</div>
+    <input type="hidden" id="ce-id">
+    <div class="field">
+      <label>Nombre</label>
+      <input type="text" id="ce-name">
+    </div>
+    <div class="field">
+      <label>Presupuesto mensual</label>
+      <input type="number" id="ce-budget" inputmode="decimal">
+    </div>
+    <div class="field">
+      <label>Subcategorías</label>
+      <div class="subcats-row" id="ce-subcats"></div>
+      <div class="add-subcat-row">
+        <input type="text" id="ce-new-subcat" placeholder="Nueva subcategoría">
+        <button onclick="addSubcatToEditing()">Agregar</button>
       </div>
-   </section>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeCatEditModal()">Cancelar</button>
+      <button class="btn-save" onclick="saveCatEdit()">Guardar</button>
+    </div>
+    <button class="btn-danger" onclick="deleteCategoryConfirm()">Eliminar categoría</button>
+  </div>
+</div>
 
-   <section id="portfolio">
-      <div class="row section-head">
-         <div class="twelve columns">
-            <h1>Proyectos Recientes<span>.</span></h1>
-            <hr />
-            <p>Cada proyecto es diferente. Cada solución también. Aquí algunos de los trabajos que más nos enorgullecen — resultados reales para marcas reales.</p>
-         </div>
+<!-- MODAL: DETALLE DE CATEGORÍA -->
+<div class="modal-overlay" id="cat-detail-modal">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-title" id="cat-detail-title">Categoría</div>
+    <div id="cat-detail-summary" style="font-size:13px;color:var(--text2);margin-bottom:16px;"></div>
+    <div id="cat-detail-list" style="display:flex;flex-direction:column;gap:8px;"></div>
+    <div class="modal-actions">
+      <button class="btn-cancel" style="flex:1" onclick="closeCatDetail()">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- FIREBASE -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import {
+  getFirestore, doc, getDoc, setDoc, updateDoc,
+  collection, addDoc, onSnapshot, query, orderBy, deleteDoc
+} from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCBBxzpawYI2V6TUyrDtu6SRG3FhmQ7dZk",
+  authDomain: "control-de-gastos-da5f4.firebaseapp.com",
+  projectId: "control-de-gastos-da5f4",
+  storageBucket: "control-de-gastos-da5f4.firebasestorage.app",
+  messagingSenderId: "789894443843",
+  appId: "1:789894443843:web:4fe23b0dd1c5c692daf5f6"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// Todo vive bajo un único grupo compartido (sin login individual)
+const GROUP_ID = 'papasmama';
+
+// Categorías y subcategorías iniciales (se siembran solo la primera vez)
+const SEED_CATEGORIES = [
+  { name: 'Supermercado', budget: 0, subcats: ['Costco', 'Walmart', 'La Comer', 'Mercado', 'Otros'] },
+  { name: 'Luca', budget: 0, subcats: ['Pensión Alimenticia', 'Natación', 'Curso de verano', 'Otros'] },
+  { name: 'Muchachas', budget: 0, subcats: ['Rosa', 'Laura', 'Otros'] },
+  { name: 'Cursos', budget: 0, subcats: ['Amelita', 'Teresita', 'Taty', 'Dibujo', 'Piano', 'Ping Pong'] },
+  { name: 'Autos', budget: 0, subcats: ['Seguros', 'Servicios', 'Verificación', 'Gasolina', 'Lavadas'] },
+  { name: 'Medicinas', budget: 0, subcats: ['Otros'] },
+  { name: 'Otros', budget: 0, subcats: ['Otros'] },
+];
+
+const CAT_COLORS = ['#7c6af7','#34d399','#f87171','#fbbf24','#60a5fa','#f472b6','#a78bfa','#4ade80'];
+
+// ── STATE ──
+let groupData = null;     // { budget } -- presupuesto = suma de ingresos
+let allGastos = [];
+let gastos = [];           // filtrados al mes visualizado
+let allIngresos = [];
+let ingresos = [];          // filtrados al mes visualizado
+let categories = [];
+let catsOpen = false;
+let viewMonth = '';
+let editingSubcats = [];    // subcategorías en edición dentro del modal de editar categoría
+let unsubGastos = null;
+let unsubCats = null;
+let unsubGroup = null;
+let unsubIngresos = null;
+
+// ── HELPERS ──
+const fmt = n => new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN', minimumFractionDigits: 0 }).format(n || 0);
+const monthName = (m) => new Date(m + '-02').toLocaleDateString('es-MX', { month: 'long', year: 'numeric' });
+const todayStr = () => new Date().toISOString().split('T')[0];
+const currentMonth = () => new Date().toISOString().slice(0, 7);
+const alpha = (a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' });
+
+let toastTimer = null;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  if (toastTimer) clearTimeout(toastTimer);
+  t.textContent = msg;
+  t.classList.add('show');
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// ── INIT ──
+async function boot() {
+  viewMonth = currentMonth();
+  updateMonthLabel();
+
+  // Presupuesto compartido (suma de ingresos)
+  const groupRef = doc(db, 'groups', GROUP_ID);
+  unsubGroup = onSnapshot(groupRef, (s) => {
+    groupData = s.exists() ? s.data() : { budget: 0 };
+    renderTotals();
+  });
+
+  // Categorías — sembrar la primera vez si no existen
+  const catsRef = collection(db, 'groups', GROUP_ID, 'categories');
+  const catsSnapOnce = await getDoc(doc(db, 'groups', GROUP_ID));
+  unsubCats = onSnapshot(catsRef, async (snap) => {
+    if (snap.empty && !window.__seeding) {
+      window.__seeding = true;
+      for (let i = 0; i < SEED_CATEGORIES.length; i++) {
+        const c = SEED_CATEGORIES[i];
+        await addDoc(catsRef, { name: c.name, budget: c.budget, color: CAT_COLORS[i % CAT_COLORS.length], subcats: c.subcats });
+      }
+      return; // el siguiente snapshot ya traerá los datos
+    }
+    categories = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+      .sort((a, b) => alpha(a.name, b.name));
+    renderAll();
+  });
+
+  // Gastos (histórico completo, filtrado por mes visualizado)
+  const gastosRef = query(collection(db, 'groups', GROUP_ID, 'gastos'), orderBy('fecha', 'desc'));
+  unsubGastos = onSnapshot(gastosRef, (snap) => {
+    allGastos = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    applyMonthFilter();
+  });
+
+  // Ingresos (histórico completo, filtrado por mes visualizado)
+  const ingresosRef = query(collection(db, 'groups', GROUP_ID, 'ingresos'), orderBy('fecha', 'desc'));
+  unsubIngresos = onSnapshot(ingresosRef, (snap) => {
+    allIngresos = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+    applyIngresoMonthFilter();
+  });
+
+  document.getElementById('loading-screen').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  document.getElementById('bottom-menu').style.display = 'flex';
+}
+
+function applyMonthFilter() {
+  gastos = allGastos.filter(g => g.mes === viewMonth);
+  renderAll();
+}
+function applyIngresoMonthFilter() {
+  ingresos = allIngresos.filter(i => i.mes === viewMonth);
+  recalcBudgetFromIngresos();
+  renderIngresosList();
+}
+
+// El presupuesto del mes es la suma de los ingresos declarados ESE mes
+async function recalcBudgetFromIngresos() {
+  const total = ingresos.reduce((s, i) => s + (i.monto || 0), 0);
+  const groupRef = doc(db, 'groups', GROUP_ID);
+  // Solo escribir si cambió, para no generar loops innecesarios
+  if (!groupData || groupData.budget !== total) {
+    await setDoc(groupRef, { budget: total }, { merge: true });
+  } else {
+    renderTotals();
+  }
+}
+
+function updateMonthLabel() {
+  document.getElementById('month-label').textContent = monthName(viewMonth);
+  document.getElementById('next-month-btn').disabled = (viewMonth >= currentMonth());
+}
+
+window.changeMonth = (delta) => {
+  const [y, m] = viewMonth.split('-').map(Number);
+  const d = new Date(y, m - 1 + delta, 1);
+  const newMonth = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+  if (newMonth > currentMonth()) return;
+  viewMonth = newMonth;
+  updateMonthLabel();
+  applyMonthFilter();
+  applyIngresoMonthFilter();
+};
+
+// ── RENDER ──
+function renderAll() {
+  renderTotals();
+  renderCategories();
+  renderGastosList();
+}
+
+function renderTotals() {
+  if (!groupData) return;
+  const budget = groupData.budget || 0;
+  const totalGastado = gastos.reduce((s, g) => s + (g.monto || 0), 0);
+  const disponible = budget - totalGastado;
+  const pct = budget > 0 ? Math.min((totalGastado / budget) * 100, 100) : 0;
+
+  const bar = document.getElementById('total-bar');
+  bar.style.width = pct + '%';
+  bar.classList.toggle('over', totalGastado > budget);
+
+  const dispEl = document.getElementById('disponible-amount');
+  dispEl.className = 'disponible-amount ' + (disponible >= 0 ? 'positive' : 'negative');
+  dispEl.textContent = disponible < 0 ? '-' + fmt(Math.abs(disponible)) : fmt(disponible);
+
+  document.getElementById('gastado-label').textContent = `Gastado ${fmt(totalGastado)}`;
+  document.getElementById('presupuesto-label').textContent = `de ${fmt(budget)}`;
+}
+
+function renderCategories() {
+  const inner = document.getElementById('categories-inner');
+  if (categories.length === 0) {
+    inner.innerHTML = '<div style="color:var(--text2);font-size:13px;padding:8px 0">Sin categorías todavía.</div>';
+    return;
+  }
+
+  inner.innerHTML = categories.map(cat => {
+    const catGastos = gastos.filter(g => g.catId === cat.id);
+    const gastado = catGastos.reduce((s, g) => s + (g.monto || 0), 0);
+    const budget = cat.budget || 0;
+    const pct = budget > 0 ? (gastado / budget) * 100 : 0;
+    const over = budget > 0 && gastado > budget;
+    const warn = pct >= 80 && !over;
+    const barClass = over ? 'over' : warn ? 'warn' : 'ok';
+    const barWidth = over ? 100 : pct;
+
+    return `<div class="cat-card" onclick="openCatDetail('${cat.id}')">
+      <div class="cat-header">
+        <div class="cat-name" style="display:flex;align-items:center;gap:8px;">
+          <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${cat.color || '#7c6af7'}"></span>
+          ${cat.name}
+        </div>
+        <div class="cat-amounts">${fmt(gastado)} / ${fmt(budget)}</div>
       </div>
-      <div class="row items">
-         <div class="twelve columns">
-            <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
-
-               <div class="bgrid item">
-                  <div class="item-wrap">
-                     <a href="javascript:void(0)" class="portfolio-link">
-                        <img src="images/portfolio/portfolio-tmf.png" alt="TMF">
-                        <div class="overlay"></div>
-                        <div class="portfolio-item-meta">
-                           <h5>TMF — Tubos Mexicanos Flexibles</h5><br>
-                           <p>Transformamos la presencia digital del líder nacional en tubería flexible. Sitio web, micrositios por sector, landings y campañas en Google que multiplicaron sus leads por 7.</p>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div class="bgrid item">
-                  <div class="item-wrap">
-                     <a href="javascript:void(0)" class="portfolio-link">
-                        <img src="images/portfolio/portfolio-becara.png" alt="Becara Chairs">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Becara Chairs</h5><br>
-                              <p>Lanzamos una marca de muebles de diseño en el mercado americano desde cero. Ecommerce, identidad digital y campañas de adquisición en Miami con ventas desde el primer mes.</p>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div class="bgrid stack item">
-                  <div class="item-wrap">
-                     <a href="javascript:void(0)" class="portfolio-link">
-                        <img src="images/portfolio/portfolio-blanco-castelar.png" alt="Blanco Castelar">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Blanco Castelar</h5><br>
-                              <p>Definimos la estrategia digital de este restaurante de autor en Ciudad de México, posicionando su propuesta gastronómica única en el mercado digital.</p>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div class="bgrid item">
-                  <div class="item-wrap">
-                     <a href="javascript:void(0)" class="portfolio-link">
-                        <img src="images/portfolio/portfolio-mariachi.png" alt="Mariachi con Sabor a México">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Mariachi con Sabor a México</h5><br>
-                              <p>Llevamos la tradición del mariachi al mundo digital. Landing page de alto impacto y campañas en Meta para conectar con audiencias apasionadas por la cultura mexicana.</p>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div class="bgrid item">
-                  <div class="item-wrap">
-                     <a href="javascript:void(0)" class="portfolio-link">
-                        <img src="images/portfolio/portfolio-riman.png" alt="Riman">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Riman</h5><br>
-                              <p>Construimos la presencia digital completa de esta marca de bienestar. Sitio web, modelo de negocio online, estrategia de contenidos y pauta orgánica alineada a su comunidad.</p>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div class="bgrid item">
-                  <div class="item-wrap">
-                     <a href="javascript:void(0)" class="portfolio-link">
-                        <img src="images/portfolio/portfolio-tierra-suenos.png" alt="Tierra de Sueños">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Tierra de Sueños</h5><br>
-                              <p>Diseñamos y desarrollamos el sitio web de esta marca infantil junto con campañas digitales para conectar con padres y familias que buscan experiencias únicas para sus hijos.</p>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div class="bgrid item">
-                  <div class="item-wrap">
-                     <a href="javascript:void(0)" class="portfolio-link">
-                        <img src="images/portfolio/portfolio-tmflex.png" alt="TMFlex USA">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>TMFlex USA</h5><br>
-                              <p>Expandimos la marca TMF al mercado norteamericano. Sitio web en inglés y campañas digitales orientadas a distribuidores y clientes industriales en Estados Unidos.</p>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-               <div class="bgrid item">
-                  <div class="item-wrap">
-                     <a href="javascript:void(0)" class="portfolio-link">
-                        <img src="images/portfolio/portfolio-work-roll.png" alt="Work and Roll">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Work and Roll</h5><br>
-                              <p>Desarrollamos el sitio web y las campañas digitales de este innovador espacio de coworking, atrayendo a profesionales y empresas que buscan un lugar donde trabajar diferente.</p>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-
-            </div>
-         </div>
+      <div class="cat-bar-wrap">
+        <div class="cat-bar-fill ${barClass}" style="width:${barWidth}%;background:${over ? 'var(--red)' : warn ? 'var(--yellow)' : (cat.color || 'var(--green)')}"></div>
       </div>
-   </section>
+      ${over ? `<div class="cat-over-label">↑ ${fmt(gastado - budget)} sobre el presupuesto</div>` : ''}
+    </div>`;
+  }).join('');
+}
 
-   <section id="services">
-      <div class="row section-head">
-         <div class="twelve columns">
-            <h1>Nuestros Servicios<span>.</span></h1>
-            <hr />
-            <p>Tres pilares que construyen la presencia digital de tu negocio. Los ofrecemos por separado o como una solución completa — siempre con acompañamiento real de principio a fin.</p>
-         </div>
+function renderGastosList() {
+  const list = document.getElementById('gastos-list');
+
+  if (gastos.length === 0) {
+    const isCurrent = viewMonth === currentMonth();
+    list.innerHTML = isCurrent
+      ? '<div class="empty-state">Sin gastos este mes.<br>Usa el botón + para agregar uno.</div>'
+      : '<div class="empty-state">Sin gastos registrados en este mes.</div>';
+    return;
+  }
+
+  list.innerHTML = gastos.slice(0, 40).map(g => {
+    const cat = categories.find(c => c.id === g.catId);
+    const color = cat?.color || '#8888a0';
+    const dateStr = g.fecha ? new Date(g.fecha + 'T12:00:00').toLocaleDateString('es-MX', { day: 'numeric', month: 'short' }) : '';
+    const subcatTxt = g.subcat ? ` · ${g.subcat}` : '';
+    return `<div class="gasto-item" onclick="openGastoModal('${g.id}')">
+      <div class="gasto-dot" style="background:${color}"></div>
+      <div class="gasto-info">
+        <div class="gasto-desc">${cat?.name || 'Sin categoría'}${subcatTxt}</div>
+        ${g.nota ? `<div class="gasto-note">${g.nota}</div>` : ''}
       </div>
-      <div class="row">
-         <div class="twelve columns">
-            <div class="service-list bgrid-third s-bgrid-half mob-bgrid-whole">
-               <div class="bgrid"><div class="icon-part"><span class="icon-graph"></span></div><h3>Pauta Digital.</h3><div class="service-content"><p>Campañas en Meta y Google que generan leads y ventas reales, no solo clics. Segmentación a medida, optimización continua y reportes claros sin tecnicismos.</p></div></div>
-               <div class="bgrid"><div class="icon-part"><i class="icon-film"></i></div><h3>Contenido.</h3><div class="service-content"><p>Parrillas y estrategia de contenido con propósito. Para que cada publicación construya tu marca, eduque a tu audiencia y genere confianza en tu negocio.</p></div></div>
-               <div class="bgrid"><div class="icon-part"><i class="icon-camera"></i></div><h3>Sitios Web.</h3><div class="service-content"><p>Diseñamos y desarrollamos tu presencia digital desde cero — moderna, rápida y adaptada a la identidad de tu marca. Informativos, corporativos o ecommerce.</p></div></div>
-               <div class="bgrid first"><div class="icon-part"><i class="icon-eye"></i></div><h3>Estrategia.</h3><div class="service-content"><p>Diagnóstico digital, roadmap y ejecución alineada a tu negocio. Antes de invertir en pauta o contenido, definimos juntos el camino correcto.</p></div></div>
-               <div class="bgrid"><div class="icon-part"><i class="icon-screen-desktop"></i></div><h3>Ecommerce.</h3><div class="service-content"><p>Lanzamos tu tienda en línea con todo lo necesario: diseño, integración de pagos, catálogo de productos y campañas de adquisición desde el primer día.</p></div></div>
-               <div class="bgrid"><div class="icon-part"><i class="icon-eyeglasses"></i></div><h3>Acompañamiento.</h3><div class="service-content"><p>No desaparecemos después de entregar. Estamos presentes en cada etapa — respondemos rápido, resolvemos problemas y seguimos contigo hasta lograr el objetivo.</p></div></div>
-            </div>
-         </div>
+      <div class="gasto-right">
+        <div class="gasto-amount">${fmt(g.monto)}</div>
+        <div class="gasto-date">${dateStr}</div>
       </div>
-   </section>
+    </div>`;
+  }).join('');
+}
 
-   <section id="about">
-      <div class="row section-head">
-         <div class="twelve columns">
-            <h1>¿Quiénes Somos?</h1>
-            <hr />
-            <p>BeOcean es una agencia boutique de marketing digital. Trabajamos con pocas marcas a la vez porque creemos que la atención profunda genera mejores resultados que la producción masiva.</p>
-         </div>
+function renderIngresosList() {
+  const list = document.getElementById('ingresos-list');
+  if (!list) return;
+  if (ingresos.length === 0) {
+    list.innerHTML = '<div class="empty-state">Sin ingresos registrados este mes.</div>';
+    return;
+  }
+  list.innerHTML = ingresos.map(i => {
+    const dateStr = i.fecha ? new Date(i.fecha + 'T12:00:00').toLocaleDateString('es-MX', { day: 'numeric', month: 'short' }) : '';
+    return `<div class="gasto-item ingreso-item">
+      <div class="gasto-dot" style="background:var(--green)"></div>
+      <div class="gasto-info">
+        <div class="gasto-desc">${i.desc || 'Ingreso'}</div>
+        <div class="gasto-cat">${dateStr}</div>
       </div>
-      <div class="row about-content">
-         <div class="mob-whole six columns left">
-            <h3>Nuestra Filosofía.</h3>
-            <p>No somos para todos — somos para los que quieren resultados reales. En BeOcean diseñamos estrategias personalizadas y las ejecutamos con precisión. Cada marca que acompañamos recibe atención directa, comunicación transparente y un equipo que no para hasta lograr el objetivo.</p>
-         </div>
-         <div class="mob-whole six columns right">
-            <h3>Nuestro Enfoque.</h3>
-            <p>Antes de cualquier campaña o sitio web, entendemos tu negocio. Hacemos las preguntas correctas, identificamos las oportunidades reales y construimos soluciones que tienen sentido para tu mercado, tu presupuesto y tus metas.</p>
-         </div>
+      <div class="gasto-right">
+        <div class="gasto-amount">+${fmt(i.monto)}</div>
       </div>
-      <div class="row about-content">
-         <div class="mob-whole six columns left">
-            <h3>Nuestro Proceso.</h3>
-            <p>Diagnóstico → Estrategia → Ejecución → Optimización. Un ciclo continuo donde cada decisión se basa en datos reales y en un entendimiento profundo de tu negocio y tu cliente ideal.</p>
-         </div>
-         <div class="mob-whole six columns right">
-            <h3>Nuestra Promesa.</h3>
-            <p>Respuesta rápida, acompañamiento real y resultados medibles. No desaparecemos después de entregar. Estamos contigo en cada etapa porque tu éxito es nuestra mejor carta de presentación.</p>
-         </div>
-      </div>
-   </section>
+      <button class="icon-btn danger" onclick="event.stopPropagation();deleteIngreso('${i.id}')">✕</button>
+    </div>`;
+  }).join('');
+}
 
-   <section id="contact">
-      <div class="row section-head">
-         <div class="twelve columns">
-            <h1>Hablemos<span>.</span></h1>
-            <hr />
-            <p>Sin presión ni compromisos. Cuéntanos de tu negocio y en menos de 24 horas te respondemos con ideas concretas — no con una propuesta genérica.</p>
-         </div>
-      </div>
-      <div class="row form-section">
-         <div id="contact-form" class="twelve columns">
-            <form name="contactForm" id="contactForm" method="post" action="">
-               <fieldset>
-                  <input type="hidden" name="access_key" value="2e0c30fc-a9d3-4e1a-8344-a375e7bc1cb2">
-                  <input type="hidden" name="subject" value="Nuevo mensaje desde BeOcean.digital">
-                  <input type="hidden" name="from_name" value="Formulario BeOcean">
-                  <div class="row">
-                     <div class="six columns mob-whole">
-                        <label for="contactFname">Nombre <span class="required">*</span></label>
-                        <input name="contactFname" type="text" id="contactFname" placeholder="Tu nombre" value="" />
-                     </div>
-                     <div class="six columns mob-whole">
-                        <label for="contactLname">Empresa</label>
-                        <input name="contactLname" type="text" id="contactLname" placeholder="Nombre de tu negocio" value="" />
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="six columns mob-whole">
-                        <label for="contactEmail">Correo electrónico <span class="required">*</span></label>
-                        <input name="contactEmail" type="text" id="contactEmail" placeholder="tu@correo.com" value="" />
-                     </div>
-                     <div class="six columns mob-whole">
-                        <label for="contactSubject">¿En qué te podemos ayudar?</label>
-                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Sitio web, pauta, contenido..." value="" />
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="twelve columns">
-                        <label for="contactMessage">Cuéntanos más <span class="required">*</span></label>
-                        <textarea name="contactMessage" id="contactMessage" placeholder="¿Qué quieres lograr? ¿Qué problema quieres resolver?" rows="10" cols="50"></textarea>
-                     </div>
-                  </div>
-                  <div>
-                     <button class="submit full-width">Enviar mensaje</button>
-                     <div id="image-loader"><img src="images/loader.gif" alt="" /></div>
-                  </div>
-               </fieldset>
-            </form>
-            <div id="message-warning"></div>
-            <div id="message-success"><i class="fa fa-check"></i>¡Tu mensaje fue enviado! Te contactamos pronto.<br /></div>
-         </div>
-      </div>
-   </section>
+// ── TOGGLE CATEGORIES ──
+window.toggleCategories = () => {
+  catsOpen = !catsOpen;
+  document.getElementById('categories-wrap').classList.toggle('open', catsOpen);
+  document.getElementById('chevron').classList.toggle('open', catsOpen);
+  if (catsOpen) document.querySelector('.total-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
 
-   <footer>
-      <div class="row">
-         <div class="six columns tab-whole footer-about">
-            <h3>Sobre BeOcean</h3>
-            <p>Agencia boutique de sitios web, contenido y pauta digital. Trabajamos con pocas marcas a la vez porque creemos en la atención profunda y los resultados reales.</p>
-            <p>No somos para todos — somos para los que quieren crecer en digital con un equipo que no los abandona.</p>
-         </div>
-         <div class="six columns tab-whole right-cols">
-            <div class="row">
-               <div class="columns">
-                  <h3 class="address">Contacto</h3>
-                  <p>México &amp; Estados Unidos</p>
-                  <ul>
-                     <li><a href="mailto:hola@beocean.online">hola@beocean.online</a></li>
-                     <li><a href="https://wa.me/525543516946">WhatsApp</a></li>
-                  </ul>
-               </div>
-               <div class="columns last">
-                  <h3 class="contact">Síguenos</h3>
-                  <ul>
-                     <li><a href="#">Facebook</a></li>
-                     <li><a href="#">Instagram</a></li>
-                     <li><a href="#">LinkedIn</a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <p class="copyright">&copy; 2026 BeOcean. Todos los derechos reservados. Diseño base por <a href="http://www.styleshout.com/">Styleshout.</a></p>
-         <div id="go-top">
-            <a class="smoothscroll" title="Volver arriba" href="#hero"><span>Top</span><i class="fa fa-long-arrow-up"></i></a>
-         </div>
-      </div>
-   </footer>
+// ── CATEGORY DETAIL ──
+window.openCatDetail = (catId) => {
+  const cat = categories.find(c => c.id === catId);
+  if (!cat) return;
 
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/backstretch.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/main.js"></script>
+  const monthGastos = allGastos.filter(g => g.catId === catId && g.mes === viewMonth)
+    .sort((a, b) => b.fecha.localeCompare(a.fecha));
 
-   <script>
-   window.addEventListener('load', function() {
-     var navWrap = document.getElementById('nav-wrap');
-     if (navWrap && window.innerWidth <= 768) {
-       navWrap.style.right = '15px';
-     }
-     var toggleBtn = document.getElementById('toggle-btn');
-     if (toggleBtn && window.innerWidth <= 768) {
-       toggleBtn.style.width = '60px';
-       toggleBtn.style.display = 'flex';
-       toggleBtn.style.alignItems = 'center';
-       toggleBtn.style.justifyContent = 'center';
-       toggleBtn.style.padding = '0';
-     }
-   });
-   </script>
+  const gastado = monthGastos.reduce((s, g) => s + (g.monto || 0), 0);
+  const budget = cat.budget || 0;
 
-   <!-- Mobile portfolio touch -->
-   <script>
-   (function() {
-     function initPortfolioTouch() {
-       var items = document.querySelectorAll('.item');
-       items.forEach(function(item) {
-         item.addEventListener('click', function(e) {
-           if (window.innerWidth <= 768) {
-             e.preventDefault();
-             var isActive = item.classList.contains('touched');
-             items.forEach(function(i) { i.classList.remove('touched'); });
-             if (!isActive) {
-               item.classList.add('touched');
-             }
-           }
-         });
-       });
-     }
-     if (document.readyState === 'loading') {
-       document.addEventListener('DOMContentLoaded', initPortfolioTouch);
-     } else {
-       initPortfolioTouch();
-     }
-   })();
-   </script>
+  document.getElementById('cat-detail-title').innerHTML =
+    `<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${cat.color};margin-right:8px;"></span>${cat.name}`;
+  document.getElementById('cat-detail-summary').textContent =
+    `${monthName(viewMonth)} · ${fmt(gastado)} de ${fmt(budget)}`;
 
-   <!-- WhatsApp flotante -->
-   <a href="https://wa.me/525543516946?text=Hola%20BeOcean%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios."
-      target="_blank"
-      style="position:fixed;bottom:24px;left:24px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,0.25);z-index:9999;transition:transform 0.2s;"
-      onmouseover="this.style.transform='scale(1.1)'"
-      onmouseout="this.style.transform='scale(1)'"
-      title="Escríbenos por WhatsApp">
-     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white">
-       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-     </svg>
-   </a>
+  const list = document.getElementById('cat-detail-list');
+  if (monthGastos.length === 0) {
+    list.innerHTML = '<div class="empty-state" style="padding:24px 0">Sin gastos en este mes para esta categoría.</div>';
+  } else {
+    list.innerHTML = monthGastos.map(g => {
+      const dateStr = g.fecha ? new Date(g.fecha + 'T12:00:00').toLocaleDateString('es-MX', { day: 'numeric', month: 'short' }) : '';
+      return `<div class="gasto-item" onclick="closeCatDetail();openGastoModal('${g.id}')">
+        <div class="gasto-dot" style="background:${cat.color}"></div>
+        <div class="gasto-info">
+          <div class="gasto-desc">${g.subcat || cat.name}</div>
+          ${g.nota ? `<div class="gasto-note">${g.nota}</div>` : ''}
+        </div>
+        <div class="gasto-right">
+          <div class="gasto-amount">${fmt(g.monto)}</div>
+          <div class="gasto-date">${dateStr}</div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+  document.getElementById('cat-detail-modal').classList.add('open');
+};
+window.closeCatDetail = () => document.getElementById('cat-detail-modal').classList.remove('open');
 
+// ── GASTO MODAL (crear / editar) ──
+window.openGastoModal = (gastoId) => {
+  const sel = document.getElementById('g-cat');
+  sel.innerHTML = categories.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+
+  document.getElementById('g-id').value = gastoId || '';
+  document.getElementById('g-delete-btn').style.display = gastoId ? 'block' : 'none';
+  document.getElementById('gasto-modal-title').textContent = gastoId ? 'Editar gasto' : 'Nuevo gasto';
+
+  if (gastoId) {
+    const g = allGastos.find(x => x.id === gastoId);
+    if (g) {
+      sel.value = g.catId;
+      onCatChange();
+      setTimeout(() => { document.getElementById('g-subcat').value = g.subcat || ''; }, 0);
+      document.getElementById('g-monto').value = g.monto;
+      document.getElementById('g-nota').value = g.nota || '';
+      document.getElementById('g-fecha').value = g.fecha;
+    }
+  } else {
+    onCatChange();
+    document.getElementById('g-fecha').value = todayStr();
+    document.getElementById('g-monto').value = '';
+    document.getElementById('g-nota').value = '';
+  }
+
+  document.getElementById('gasto-modal').classList.add('open');
+};
+window.closeGastoModal = () => document.getElementById('gasto-modal').classList.remove('open');
+
+window.onCatChange = () => {
+  const catId = document.getElementById('g-cat').value;
+  const cat = categories.find(c => c.id === catId);
+  const sel = document.getElementById('g-subcat');
+  const subcats = (cat?.subcats || []).slice().sort(alpha);
+  sel.innerHTML = subcats.map(s => `<option value="${s}">${s}</option>`).join('');
+};
+
+window.saveGasto = async () => {
+  const id = document.getElementById('g-id').value;
+  const catId = document.getElementById('g-cat').value;
+  const subcat = document.getElementById('g-subcat').value;
+  const monto = parseFloat(document.getElementById('g-monto').value);
+  const nota = document.getElementById('g-nota').value.trim();
+  const fecha = document.getElementById('g-fecha').value;
+
+  if (!catId || isNaN(monto) || monto <= 0 || !fecha) {
+    showToast('Completa categoría, monto y fecha'); return;
+  }
+
+  const mes = fecha.slice(0, 7);
+  const data = { catId, subcat, monto, nota, fecha, mes };
+
+  if (id) {
+    await updateDoc(doc(db, 'groups', GROUP_ID, 'gastos', id), data);
+    showToast('Gasto actualizado ✓');
+  } else {
+    data.createdAt = new Date().toISOString();
+    await addDoc(collection(db, 'groups', GROUP_ID, 'gastos'), data);
+    showToast('Gasto guardado ✓');
+  }
+
+  closeGastoModal();
+};
+
+window.deleteGastoConfirm = async () => {
+  const id = document.getElementById('g-id').value;
+  if (!id) return;
+  if (!confirm('¿Eliminar este gasto?')) return;
+  await deleteDoc(doc(db, 'groups', GROUP_ID, 'gastos', id));
+  closeGastoModal();
+  showToast('Gasto eliminado');
+};
+
+// ── INGRESOS ──
+window.openIngresoModal = () => {
+  document.getElementById('i-desc').value = '';
+  document.getElementById('i-monto').value = '';
+  document.getElementById('i-fecha').value = todayStr();
+  document.getElementById('ingreso-modal').classList.add('open');
+};
+window.closeIngresoModal = () => document.getElementById('ingreso-modal').classList.remove('open');
+
+window.saveIngreso = async () => {
+  const desc = document.getElementById('i-desc').value.trim();
+  const monto = parseFloat(document.getElementById('i-monto').value);
+  const fecha = document.getElementById('i-fecha').value;
+
+  if (!desc || isNaN(monto) || monto <= 0 || !fecha) {
+    showToast('Completa todos los campos'); return;
+  }
+
+  const mes = fecha.slice(0, 7);
+  await addDoc(collection(db, 'groups', GROUP_ID, 'ingresos'), {
+    desc, monto, fecha, mes, createdAt: new Date().toISOString()
+  });
+
+  closeIngresoModal();
+  showToast('Ingreso guardado ✓');
+};
+
+window.openHistorialIngresos = () => {
+  renderIngresosList();
+  document.getElementById('historial-ingresos-modal').classList.add('open');
+};
+window.closeHistorialIngresos = () => document.getElementById('historial-ingresos-modal').classList.remove('open');
+
+window.deleteIngreso = async (id) => {
+  if (!confirm('¿Eliminar este ingreso? Esto reducirá el presupuesto total.')) return;
+  await deleteDoc(doc(db, 'groups', GROUP_ID, 'ingresos', id));
+  showToast('Ingreso eliminado');
+};
+
+// ── GESTIONAR CATEGORÍAS ──
+window.openCatManageModal = () => {
+  renderCatManageList();
+  document.getElementById('new-cat-name').value = '';
+  document.getElementById('new-cat-budget').value = '';
+  document.getElementById('cat-manage-modal').classList.add('open');
+};
+window.closeCatManageModal = () => document.getElementById('cat-manage-modal').classList.remove('open');
+
+function renderCatManageList() {
+  const list = document.getElementById('cat-manage-list');
+  if (categories.length === 0) {
+    list.innerHTML = '<div class="empty-state">Sin categorías.</div>';
+    return;
+  }
+  list.innerHTML = categories.map(cat => `
+    <div class="manage-item" style="cursor:pointer" onclick="openCatEditModal('${cat.id}')">
+      <span style="width:10px;height:10px;border-radius:50%;background:${cat.color};flex-shrink:0"></span>
+      <div class="manage-item-name">${cat.name}<div class="manage-item-budget">${fmt(cat.budget)}/mes · ${(cat.subcats || []).length} subcategorías</div></div>
+      <span class="icon-btn">✎</span>
+    </div>
+  `).join('');
+}
+
+window.saveNewCategory = async () => {
+  const name = document.getElementById('new-cat-name').value.trim();
+  const budget = parseFloat(document.getElementById('new-cat-budget').value) || 0;
+  if (!name) { showToast('Ponle un nombre a la categoría'); return; }
+
+  await addDoc(collection(db, 'groups', GROUP_ID, 'categories'), {
+    name, budget, color: CAT_COLORS[categories.length % CAT_COLORS.length], subcats: ['Otros']
+  });
+
+  document.getElementById('new-cat-name').value = '';
+  document.getElementById('new-cat-budget').value = '';
+  renderCatManageList();
+  showToast('Categoría creada ✓');
+};
+
+// ── EDITAR CATEGORÍA (presupuesto + subcategorías) ──
+window.openCatEditModal = (catId) => {
+  const cat = categories.find(c => c.id === catId);
+  if (!cat) return;
+  document.getElementById('ce-id').value = cat.id;
+  document.getElementById('ce-name').value = cat.name;
+  document.getElementById('ce-budget').value = cat.budget || 0;
+  document.getElementById('cat-edit-title').textContent = `Editar ${cat.name}`;
+  editingSubcats = (cat.subcats || []).slice().sort(alpha);
+  renderEditingSubcats();
+  document.getElementById('cat-edit-modal').classList.add('open');
+};
+window.closeCatEditModal = () => document.getElementById('cat-edit-modal').classList.remove('open');
+
+function renderEditingSubcats() {
+  const wrap = document.getElementById('ce-subcats');
+  if (editingSubcats.length === 0) {
+    wrap.innerHTML = '<span style="color:var(--text2);font-size:12px;">Sin subcategorías.</span>';
+    return;
+  }
+  wrap.innerHTML = editingSubcats.map((s, idx) =>
+    `<span class="subcat-chip">${s}<button onclick="removeEditingSubcat(${idx})">×</button></span>`
+  ).join('');
+}
+
+window.addSubcatToEditing = () => {
+  const input = document.getElementById('ce-new-subcat');
+  const val = input.value.trim();
+  if (!val) return;
+  if (editingSubcats.some(s => s.toLowerCase() === val.toLowerCase())) {
+    showToast('Esa subcategoría ya existe'); return;
+  }
+  editingSubcats.push(val);
+  editingSubcats.sort(alpha);
+  input.value = '';
+  renderEditingSubcats();
+};
+
+window.removeEditingSubcat = (idx) => {
+  editingSubcats.splice(idx, 1);
+  renderEditingSubcats();
+};
+
+window.saveCatEdit = async () => {
+  const id = document.getElementById('ce-id').value;
+  const name = document.getElementById('ce-name').value.trim();
+  const budget = parseFloat(document.getElementById('ce-budget').value) || 0;
+
+  if (!name) { showToast('El nombre no puede quedar vacío'); return; }
+
+  await updateDoc(doc(db, 'groups', GROUP_ID, 'categories', id), {
+    name, budget, subcats: editingSubcats
+  });
+
+  closeCatEditModal();
+  renderCatManageList();
+  showToast('Categoría actualizada ✓');
+};
+
+window.deleteCategoryConfirm = async () => {
+  const id = document.getElementById('ce-id').value;
+  if (!id) return;
+  if (!confirm('¿Eliminar esta categoría? Los gastos ya registrados con ella no se borrarán, pero quedarán sin categoría visible.')) return;
+  await deleteDoc(doc(db, 'groups', GROUP_ID, 'categories', id));
+  closeCatEditModal();
+  closeCatManageModal();
+  showToast('Categoría eliminada');
+};
+
+boot();
+</script>
 </body>
 </html>
