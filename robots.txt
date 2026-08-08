@@ -2,4 +2,9 @@ User-agent: *
 Allow: /
 Disallow: /propuestas/
 
-Sitemap: https://www.beocean.digital/sitemap.xml
+# ChatGPT Search (OpenAI) — permiso explícito, no depender solo del wildcard genérico
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /propuestas/
+
+Sitemap: https://www.beocean.digital/sitemap.xml 
